@@ -3,20 +3,19 @@ state=
 {
 	id=134
 	name="STATE_134"
-	manpower = 667100
-	
+	manpower = 760480
+
 	state_category = town
 
-	history= {
+	resources={
+		wood=9
+	}
+
+	history=
+	{
 		owner = IRE
-		victory_points = {
-			9303 3 #Galway
-		}
-		victory_points = {
-			11371 1 #Sligo
-		}
 		buildings = {
-			infrastructure = 3 #was: 6
+			infrastructure = 6
 		}
 		add_core_of = IRE
 	}
@@ -24,6 +23,4 @@ state=
 	provinces=
 	{
 337 3396 9255 9303 9321 9369 11238 11287 11371 	}
-
-	local_supplies=13.0 
 }

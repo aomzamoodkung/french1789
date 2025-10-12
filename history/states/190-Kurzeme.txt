@@ -2,33 +2,26 @@
 state={
 	id=190
 	name="STATE_190"
-	
+	manpower = 120000
+
 	state_category = rural
-	
+
+	resources={
+		wood=12
+	}
+
 	history={
-		victory_points = {
-			9262 3
-		}
-		victory_points = {
-			3296 1 #Ventspils
-		}
-		owner = LAT
+		owner = POL
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 5
 			9262 = {
 				naval_base = 1
 			}
-			dockyard = 1
 		}
-		add_core_of = LAT
+		add_core_of = POL
 	}
 
 	provinces={
-		3194 3296 3319 6322 9262 11246 
+		265 3194 3296 3319 3525 6222 6322 6342 9262 11246
 	}
-
-	local_supplies=5.0 
-	manpower=315500
-	buildings_max_level_factor=1.000
-	state_category=rural
 }

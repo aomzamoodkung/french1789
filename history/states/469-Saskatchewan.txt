@@ -1,29 +1,25 @@
-state = {
-	id = 469
-	name = "STATE_469"
-	manpower = 800000
-	
+
+state={
+	id=469
+	name="STATE_469"
+	manpower = 865605
+
 	state_category = rural
 
-	history = {
+	resources={
+		wood=5
+	}
 
-		owner = CAN 
-		add_core_of = CAN
-
+	history={
+		owner = HBC
 		buildings = {
-			infrastructure = 2
+			infrastructure = 4
 			industrial_complex = 1
 		}
-
-		victory_points = {
-			4739 2 
-		}
-		
+		add_core_of = HBC
 	}
 
-	provinces = {
-		736 1788 3481 3498 3769 4739 9669 10552 10611 10656 11440 12593 12603 12663 
+	provinces={
+		736 1788 3481 3498 3769 4739 9669 10552 10611 10656 11440 12593 12603 12663
 	}
-
-	local_supplies = 0.0 
 }

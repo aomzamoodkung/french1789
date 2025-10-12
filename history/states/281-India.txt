@@ -3,26 +3,21 @@ state={
 	id=281
 	name="STATE_281"
 	manpower=79300
-	
+
 	state_category = enclave
 
 	history={
-		owner = ENG
-		add_core_of = MLD
+		owner = MLD
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			4967 = {
 				naval_base = 1
 			}
 		}
-		victory_points = {
-			4967 1
-		}
+		add_core_of = MLD
 	}
 
 	provinces={
-		4967 
+		4967
 	}
-
-	local_supplies=0.0 
 }

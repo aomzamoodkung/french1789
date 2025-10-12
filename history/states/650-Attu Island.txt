@@ -2,14 +2,14 @@ state=
 {
 	id=650
 	name="STATE_650"
-	manpower=20
+	manpower=175
 	state_category = tiny_island
-	
+
 	history=
 	{
-		owner = USA
+		owner = RUS
 		victory_points = {
-			13067 1 
+			13067 1
 		}
 		buildings = {
 			infrastructure = 1
@@ -17,10 +17,9 @@ state=
 				naval_base = 1
 			}
 		}
+		add_core_of = RUS
 	}
 	provinces=
 	{
 13067 	}
-
-	local_supplies=0.0 
 }

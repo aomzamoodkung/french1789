@@ -2,9 +2,13 @@
 state={
 	id=14
 	name="STATE_14"
-	manpower = 2396600
-	
+	manpower = 1596000
+
 	state_category = city
+
+	resources={
+		wood=10
+	}
 
 	history={
 		owner = FRA
@@ -18,9 +22,9 @@ state={
 			9495 1
 		}
 		buildings = {
-			infrastructure = 3
-			dockyard = 5
-			air_base = 5
+			infrastructure = 6
+			dockyard = 4
+
 			3552 = {
 				naval_base = 10
 				coastal_bunker = 1
@@ -34,7 +38,6 @@ state={
 			}
 		}
 		add_core_of = FRA
-		add_core_of = BRI
 		1939.1.1 = {
 			buildings = {
 				dockyard = 5
@@ -43,8 +46,6 @@ state={
 	}
 
 	provinces={
-		542 3552 3758 6536 6548 6572 9495 9510 9525 11508 
+		542 3552 3758 6536 6548 6572 9495 9510 9525 11508
 	}
-
-	local_supplies=0.0 
 }

@@ -7,21 +7,15 @@ state={
 	history={
 		owner = ENG
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			12251 = {
 				naval_base = 2
 
 			}
 		}
 
-		victory_points = {
-			12251 1 #Port Blair 
-		}
-
 	}
 	provinces={
 		10321 12251 
 	}
-
-	local_supplies=0.0 
 }

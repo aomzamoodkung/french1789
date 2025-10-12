@@ -1,32 +1,33 @@
-state = {
-	id = 540
-	name = "STATE_540"
-	manpower = 1600000
+
+state={
+	id=540
+	name="STATE_540"
+	manpower = 3225000
+
 	state_category = rural
 
-	history = {
+	resources={
+		wood=14
+	}
 
+	history={
 		owner = POR
-		add_core_of = ANG
-
 		buildings = {
-			infrastructure = 1
-			8248 = {
+			infrastructure = 2
+			8248 ={
 				naval_base = 1
 			}
 		}
-
 		victory_points = {
-			8248 1 # Luanda
+			8248 1
 		}
-
+		victory_points = {
+			10966 1
+		}
+	#	add_core_of = POR
 	}
 
-	provinces = {
-		5158 7548 8219 8248 12981 13371 13373
+	provinces={
+		1552 2115 2126 4735 5158 7548 8054 8138 8202 8219 8248 10966 12391 12958 12981 12985
 	}
-
-	buildings_max_level_factor = 1.000
-	
-	local_supplies = 0.000
 }

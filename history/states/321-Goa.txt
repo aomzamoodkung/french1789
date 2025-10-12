@@ -6,23 +6,25 @@ state={
 
 	state_category = enclave
 
+	resources={
+		wood=2
+	}
+
 	history={
 		owner = POR
-		add_core_of = RAJ
 		victory_points = {
-			1273 1 
+			1273 1
 		}
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 5
 			1273 ={
 				naval_base = 1
 			}
 		}
+		add_core_of = POR
 	}
 
 	provinces={
-		1273 
+		1273
 	}
-
-	local_supplies=0.0 
 }

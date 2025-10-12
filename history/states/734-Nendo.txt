@@ -5,10 +5,9 @@ state={
 	state_category = tiny_island
 
 	history={
-		owner = FRA
-		add_core_of = TAH
+	#	owner = FRA
 		buildings = {
-			infrastructure = 2
+			infrastructure = 0
 			7390 = {
 				naval_base = 1
 			}
@@ -18,8 +17,6 @@ state={
 	buildings_max_level_factor=1.000
 
 	provinces={
-		7390 
+		7390
 	}
-
-	local_supplies=0.0 
 }

@@ -1,31 +1,26 @@
 state={
 	id=722
-	name="STATE_722" #PETSAMO
-	manpower = 2371
+	name="STATE_722"
+	manpower = 400107
 
-	state_category = enclave
+	state_category = rural
+
+	resources={
+		wood=4
+	}
 
 	history={
-		owner = FIN
-
-		victory_points = { #Petsamo
-			9140 1
-		}
-
+		owner = MOD
 		buildings = {
-			infrastructure = 1 #MM: Was 2
-			9140 = {
-				naval_base = 1
-			}
+			infrastructure = 7
+			6973 = {
+				naval_base = 10
+			}	#La Spezia in Genoa
 		}
-		add_core_of = FIN
-		add_core_of = SMI
-
+		add_core_of = MOD
 	}
-	
+
 	provinces={
-		6012 6183 9140 11142 
+		3976 6973 9752 11734
 	}
-
-	local_supplies=0.0 
 }

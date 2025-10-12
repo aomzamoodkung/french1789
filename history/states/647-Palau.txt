@@ -6,24 +6,22 @@ state=
 	manpower = 12100
 	history=
 	{
-		owner = JAP
-		add_core_of = FSM
+		owner = MEX
+		add_core_of = MEX
 		buildings = {
-			infrastructure = 2
-			air_base = 1
+			infrastructure = 1
+
 			4357 = {
 				naval_base = 1
 
 			}
 		}
-		
+
 		victory_points = {
-			4357 1 
+			4357 1
 		}
 	}
 	provinces={
 		4357 12103
 	}
-
-	local_supplies=0.0 
 }
