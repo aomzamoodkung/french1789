@@ -1,24 +1,22 @@
 
 state={
 	id=449
-	name="STATE_449"
+	name="STATE_449" # El Agheila
+	manpower = 40431
+	
+	state_category = wasteland
 
 	history={
-		owner = MAU
+		owner = ITA
 		buildings = {
-			infrastructure = 1
-			7195 = {
-				naval_base = 1
-			}
+			infrastructure = 2
 		}
-		add_core_of = MAU
-
+		add_core_of = LBA
 	}
 
 	provinces={
-		7195
+		1041 1198 4047 4057 10046 10117 12088 
 	}
-	manpower=33750
-	buildings_max_level_factor=1.000
-	state_category=town
+
+	local_supplies=0.0 
 }

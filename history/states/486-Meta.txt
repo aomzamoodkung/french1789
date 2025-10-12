@@ -3,12 +3,8 @@ state={
 	id=486
 	name="STATE_486"
 	manpower = 213160
-
+	
 	state_category = pastoral
-
-	resources={
-		wood=12
-	}
 
 	history={
 		owner = COL
@@ -19,6 +15,8 @@ state={
 	}
 
 	provinces={
-		1887 2007 5026 10792 12729 12770 12825
+		1887 2007 5026 10792 12729 12770 12825 
 	}
+
+	local_supplies=0.0 
 }

@@ -1,22 +1,22 @@
 state={
 	id=662
 	name="STATE_662"
-	provinces={
-		3701 3704 6727 6743 9683 11686
-	}
-	manpower=10
-	state_category = rural
-
-	history = {
-		owner = TUR
+	manpower = 13213
+	
+	state_category = wasteland
+	
+	
+	history={
+		owner = ITA
 		buildings = {
-			infrastructure = 5
-			industrial_complex = 1
-			dockyard = 1
-			6727 = {
-				naval_base = 3
-			}
+			infrastructure = 1
 		}
-		add_core_of = TUR
+		add_core_of = LBA
 	}
+	
+	provinces={
+		4200 7076 7136 8069 13073 
+	}
+
+	local_supplies=0.0 
 }

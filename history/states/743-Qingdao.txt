@@ -1,27 +1,37 @@
-state={
+state=
+{
 	id=743
 	name="STATE_743"
-
-	history={
-		owner = MUS
-		buildings = {
-			infrastructure = 2
-			10760 = {
-				naval_base = 3
-			}
-			arms_factory = 1
-			industrial_complex = 1
-		}
+	manpower = 385000
+	state_category = large_town
+	
+	
+	history=
+	{
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
 		victory_points = {
-			10760 3
+			10000 5 
 		}
-		add_core_of = MUS
+		buildings = {
+			infrastructure = 3 #was: 5
+			industrial_complex = 1
+			air_base = 1
+			10000 = {
+				naval_base = 5
+				coastal_bunker = 1
+				bunker = 1
+			}
+		}
+
+		1938.10.25 = {
+			controller = JAP
+		}
+	}
+	provinces={
+		10000
 	}
 
-	provinces={
-		1947 4993 8002 8020 10760 10904
-	}
-	manpower=111000
-	state_category=rural
-	buildings_max_level_factor=1.000
+	local_supplies=0.0 
 }

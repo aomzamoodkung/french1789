@@ -1,26 +1,27 @@
-
 state={
 	id=72
 	name="STATE_72"
-	resources={
-		wood=4.000
-	}
-
+	manpower = 152000
+	
+	state_category = rural
+	
 	history={
-		owner = AUS
+		owner = CZE
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3
 			industrial_complex = 1
-
 		}
-		add_core_of = AUS
+		add_core_of = CZE
 
+		1939.3.14 = {
+			owner = POL
+			controller = POL
+		}
 	}
 
 	provinces={
-		596 653 665 3654 6672 6687 6691 9596 9646 9648 9650 9679 11630
+		9551 9567 
 	}
-	manpower=804000
-	buildings_max_level_factor=1.000
-	state_category=rural
+
+	local_supplies=1.0 
 }

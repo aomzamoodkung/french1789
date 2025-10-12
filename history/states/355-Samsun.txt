@@ -5,15 +5,14 @@ state={
 	manpower = 1151863
 	state_category = rural
 
-	resources={
-		wood=3
-	}
-
 	history={
 		owner = TUR
+		victory_points = {
+			11881 10
+		}
 		buildings = {
-			infrastructure = 3
-			11894 = {
+			infrastructure = 2
+			11881 = {
 				naval_base = 3
 			}
 		}
@@ -21,6 +20,8 @@ state={
 	}
 
 	provinces={
-		933 960 975 3935 3965 9900 9915 11881 11894
+		933 960 975 3935 3965 9900 9915 11881 11894 
 	}
+
+	local_supplies=0.0 
 }

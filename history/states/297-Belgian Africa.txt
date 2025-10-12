@@ -3,18 +3,18 @@ state=
 	id=297
 	name="STATE_297" # Equatorial Guinea
 	manpower = 185000
-
+	
 	state_category = enclave
-
-	resources={
-		wood=2
-	}
-
+	
 	history=
 	{
 		owner = SPR
+		add_core_of = EQG
+		victory_points = {
+			1903 1 
+		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 			1903 = {
 				naval_base = 1
 			}
@@ -22,9 +22,10 @@ state=
 				naval_base = 1
 			}
 		}
-		add_core_of = SPR
 	}
 	provinces=
 	{
 1903 8244 	}
+
+	local_supplies=0.0 
 }
