@@ -1,0 +1,17 @@
+ideas = {
+
+	country = {
+		banco_giorgio = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				trade_opinion_factor = 0.2
+			}
+		}
+	}
+}

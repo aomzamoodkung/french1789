@@ -1,0 +1,77 @@
+﻿capital = 449
+
+oob = "MAU_1792"
+
+set_research_slots = 0
+
+#set_stability = 0.8
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+add_ideas = {
+	native_tribe
+	service_by_requirement
+}
+
+set_convoys = 5
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1792.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 0
+	fascism = 0
+	communism = 0
+	neutrality = 100
+}
+
+# DIPLOMACY
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = KAU
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.4
+	}
+	else = {
+		puppet = KAU
+	}
+}
+if = {
+	limit = { has_dlc = "Together for Victory" }
+	add_to_tech_sharing_group = continuous_tech_share
+}
+
+set_convoys = 0
+
+# Order matters
+
+create_country_leader = {
+	name = "Kahekili II"
+	desc = ""
+	picture = "Portrait_Hawaii_Kahekili.dds"
+	expire = "1794.7.1"
+	ideology = despotism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Kalanikūpule"
+	desc = ""
+	picture = "gfx/leaders/HAW/Portrait_Hawaii_Generic_1.dds"
+	expire = "1796.1.1"
+	ideology = absolutism
+	traits = {
+		#
+	}
+}

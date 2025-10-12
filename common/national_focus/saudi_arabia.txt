@@ -1,0 +1,739 @@
+focus_tree = {
+	id = saudi_arabia
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SAU
+		}
+	}
+	default = no
+	focus = {
+		id = SAU_first_saudi_state
+		icon = GFX_goal_saudi
+		cost = 40
+
+		completion_reward = {
+			add_political_power = 60
+		}
+
+		x = 5
+		y = 0
+
+	}
+	focus = {
+		id = SAU_dschizya
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 40
+		prerequisite = {
+			focus = SAU_etablish_salafi_scholar_schools
+		}
+		completion_reward = {
+			add_ideas = sau_jizya
+		}
+		x = 6
+		y = 5
+
+	}
+	focus = {
+		id = SAU_royal_saudi_land_forces
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		cost = 40
+		prerequisite = {
+			focus = SAU_first_saudi_state
+		}
+		completion_reward = {
+			army_experience = 20
+		}
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = SAU_follow_wahhabs
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 40
+		prerequisite = {
+			focus = SAU_first_saudi_state
+		}
+		completion_reward = {
+			add_ideas = wahhabism
+		}
+		x = 5
+		y = 1
+
+	}
+	focus = {
+		id = SAU_befriend_ottomans
+		icon = GFX_goal_generic_improve_relations
+		cost = 40
+		prerequisite = {
+			focus = SAU_follow_wahhabs
+		}
+		mutually_exclusive = {
+			focus = SAU_rivalry_ottomans
+		}
+		completion_reward = {
+			TUR = { country_event = saudi.3 }
+		}
+		x = 2
+		y = 3
+
+	}
+	focus = {
+		id = SAU_holy_alliance
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 40
+		prerequisite = {
+			focus = SAU_befriend_ottomans
+		}
+		completion_reward = {
+			set_rule = { can_create_factions = yes }
+			create_faction = "holy_alliance"
+			TUR = { country_event = saudi.5 }
+		}
+		x = 2
+		y = 4
+	}
+
+	focus = {
+		id = SAU_rivalry_ottomans
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 40
+		prerequisite = {
+			focus = SAU_follow_wahhabs
+		}
+		mutually_exclusive = {
+			focus = SAU_befriend_ottomans
+		}
+		completion_reward = {
+			TUR = { country_event = saudi.4 }
+		}
+		x = 4
+		y = 3
+
+	}
+
+	focus = {
+		id = SAU_raid_caravans
+		icon = GFX_goal_desert
+		cost = 40
+		prerequisite = {
+			focus = SAU_rivalry_ottomans
+		}
+		completion_reward = {
+			add_political_power = 60
+		}
+		x = 4
+		y = 4
+	}
+
+	focus = {
+		id = SAU_attack_karbala
+		icon = GFX_goal_anti_comintern_pact
+		cost = 40
+		prerequisite = {
+			focus = SAU_raid_caravans
+		}
+		completion_reward = {
+			add_named_threat = { threat = 1 name = saudi.8.t }
+			TUR = { country_event = saudi.8 }
+		}
+		x = 4
+		y = 5
+	}
+
+	focus = {
+		id = SAU_take_jerusalem
+		icon = GFX_goal_sau_jerusalem
+		cost = 40
+		prerequisite = {
+			focus = SAU_attack_karbala
+		}
+		will_lead_to_war_with = TUR
+
+		cancel = {
+			NOT = { country_exists = TUR }
+		}
+		cost = 10
+		historical_ai = {
+			NOT = {
+				any_home_area_neighbor_country = {
+					has_war_with = ROOT
+				}
+			}
+		}
+		bypass = {
+			has_war_with = TUR
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				OR = {
+					any_home_area_neighbor_country = {
+						has_war_with = ROOT
+					}
+				}
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = TUR
+				generator = { 454 }
+			}
+		}
+		x = 4
+		y = 6
+
+	}
+	focus = {
+		id = SAU_declare_jihad
+		icon = GFX_goal_generic_major_war
+		cost = 40
+		prerequisite = {
+			focus = SAU_holy_alliance
+			focus = SAU_take_jerusalem
+		}
+		completion_reward = {
+			add_ideas = sau_jihad
+		}
+		x = 2
+		y = 7
+
+	}
+	focus = {
+		id = SAU_etablish_sharia
+		icon = GFX_goal_generic_attack_allies
+		cost = 40
+		prerequisite = {
+			focus = SAU_dschizya
+		}
+		completion_reward = {
+			add_ideas = sau_sharia
+		}
+		x = 6
+		y = 6
+
+	}
+	focus = {
+		id = SAU_found_caliphate
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 40
+		prerequisite = {
+			focus = SAU_etablish_sharia
+		}
+		prerequisite = {
+			focus = SAU_take_jerusalem
+		}
+
+		completion_reward = {
+			add_political_power = -100
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			set_popularities = {
+				democratic = 0
+				fascism = 100
+				communism = 0
+				neutrality = 0
+			}
+		}
+
+		x = 5
+		y = 7
+
+	}
+	focus = {
+		id = SAU_spread_wahhabism
+		icon = GFX_goal_sau_wahhabism
+		cost = 40
+		prerequisite = {
+			focus = SAU_follow_wahhabs
+		}
+		completion_reward = {
+			custom_effect_tooltip = SAU_wahhabism_tt
+			every_other_country = {
+				limit = {
+					has_country_flag = sunni_islam
+					NOT = { tag = SAU }
+				}
+				country_event = saudi.1
+			}
+			hidden_effect = {
+				news_event = { hours = 12 id = news.5 }
+			}
+		}
+		x = 6
+		y = 2
+
+	}
+	focus = {
+		id = SAU_etablish_salafi_scholar_schools
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 40
+		prerequisite = {
+			focus = SAU_spread_wahhabism
+		}
+		completion_reward = {
+			add_ideas = sau_salafi_schools
+		}
+		x = 6
+		y = 4
+
+	}
+	focus = {
+		id = SAU_dawa
+		icon = GFX_goal_generic_propaganda
+		cost = 40
+		prerequisite = {
+			focus = SAU_spread_wahhabism
+		}
+
+		completion_reward = {
+			SAU = { country_event = saudi.2 }
+		}
+
+		x = 8
+		y = 3
+
+	}
+	focus = {
+		id = SAU_unite_arabia
+		icon = GFX_goal_sau_unite
+		cost = 40
+		prerequisite = {
+			focus = SAU_spread_wahhabism
+		}
+		completion_reward = {
+			add_political_power = 60
+		}
+		x = 11
+		y = 3
+
+	}
+	focus = {
+		id = SAU_conquer_east
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		cost = 40
+		prerequisite = {
+			focus = SAU_unite_arabia
+		}
+		will_lead_to_war_with = BKH
+
+		cancel = {
+			NOT = { country_exists = BKH }
+		}
+		cost = 10
+		historical_ai = {
+			NOT = {
+				any_home_area_neighbor_country = {
+					has_war_with = ROOT
+				}
+			}
+		}
+		bypass = {
+			has_war_with = BKH
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				OR = {
+					any_home_area_neighbor_country = {
+						has_war_with = ROOT
+					}
+				}
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = BKH
+			}
+			add_state_core = 658
+		}
+		x = 8
+		y = 4
+
+	}
+
+	focus = {
+		id = SAU_attack_bahrain
+		icon = GFX_goal_generic_political_pressure
+		cost = 40
+		prerequisite = {
+			focus = SAU_conquer_east
+		}
+		will_lead_to_war_with = QAT
+
+		cancel = {
+			NOT = { country_exists = QAT }
+		}
+		cost = 10
+		historical_ai = {
+			NOT = {
+				any_home_area_neighbor_country = {
+					has_war_with = ROOT
+				}
+			}
+		}
+		bypass = {
+			has_war_with = QAT
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				OR = {
+					any_home_area_neighbor_country = {
+						has_war_with = ROOT
+					}
+				}
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = QAT
+			}
+		}
+		x = 8
+		y = 5
+	}
+
+	focus = {
+		id = SAU_expand_into_oman
+		icon = GFX_goal_generic_major_war
+		cost = 40
+		prerequisite = {
+			focus = SAU_attack_bahrain
+		}
+		will_lead_to_war_with = MUS
+
+		cancel = {
+			NOT = { country_exists = MUS }
+		}
+		cost = 10
+		historical_ai = {
+			NOT = {
+				any_home_area_neighbor_country = {
+					has_war_with = ROOT
+				}
+			}
+		}
+		bypass = {
+			has_war_with = MUS
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				OR = {
+					any_home_area_neighbor_country = {
+						has_war_with = ROOT
+					}
+				}
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = MUS
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = OMA
+			}
+		}
+		x = 8
+		y = 6
+	}
+
+	focus = {
+		id = SAU_cultivate_desert
+		icon = GFX_goal_desert
+		cost = 40
+		prerequisite = {
+			focus = SAU_first_saudi_state
+		}
+		completion_reward = {
+			292 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		x = 9
+		y = 1
+
+	}
+	focus = {
+		id = SAU_develop_oases
+		icon = GFX_goal_generic_construction2
+		cost = 40
+		prerequisite = {
+			focus = SAU_first_saudi_state
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 292 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		x = 12
+		y = 1
+
+	}
+#	focus = {
+#		id = SAU_colonize_an_nafud
+#		icon = GFX_goal_generic_position_armies
+#		cost = 30
+#		prerequisite = {
+#			focus = SAU_cultivate_desert
+#			focus = SAU_develop_oases
+#		}
+#		completion_reward = {
+#				 SAU = { set_state_owner = 744 }
+#				 SAU = { set_state_controller = 678 }
+#		}
+#		x = 9
+#		y = 2
+#
+#	}
+	focus = {
+		id = SAU_conquer_south
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		cost = 40
+		prerequisite = {
+			focus = SAU_unite_arabia
+		}
+		completion_reward = {
+			add_state_core = 766
+		}
+		x = 10
+		y = 4
+
+	}
+	focus = {
+		id = SAU_intigrate_asir
+		icon = GFX_goal_generic_political_pressure
+		cost = 40
+		prerequisite = {
+			focus = SAU_conquer_south
+		}
+		will_lead_to_war_with = YEM
+
+		cancel = {
+			NOT = { country_exists = YEM }
+		}
+		cost = 10
+		historical_ai = {
+			NOT = {
+				any_home_area_neighbor_country = {
+					has_war_with = ROOT
+				}
+			}
+		}
+		bypass = {
+			has_war_with = YEM
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				OR = {
+					any_home_area_neighbor_country = {
+						has_war_with = ROOT
+					}
+				}
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = YEM
+			}
+		}
+		x = 10
+		y = 5
+
+	}
+	focus = {
+		id = SAU_fortify_holy_cities
+		icon = GFX_goal_sau_fortify
+		cost = 40
+		prerequisite = {
+			focus = SAU_conquer_west
+		}
+		available = {
+			HEJ = { exists = no }
+			SAU = { controls_state = 679 }
+		}
+		completion_reward = {
+			679 = {
+				add_building_construction = {
+					type = bunker
+					province = 5037
+					level = 3
+					instant_build = yes
+				}
+			}
+			679 = {
+				add_building_construction = {
+					type = bunker
+					province = 7934
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		x = 12
+		y = 5
+	}
+	focus = {
+		id = SAU_conquer_west
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		cost = 40
+		prerequisite = {
+			focus = SAU_unite_arabia
+		}
+		prerequisite = {
+			focus = SAU_rivalry_ottomans
+		}
+		will_lead_to_war_with = HEJ
+
+		cancel = {
+			NOT = { country_exists = HEJ }
+		}
+		cost = 10
+		historical_ai = {
+			NOT = {
+				any_home_area_neighbor_country = {
+					has_war_with = ROOT
+				}
+			}
+		}
+		bypass = {
+			has_war_with = HEJ
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				OR = {
+					any_home_area_neighbor_country = {
+						has_war_with = ROOT
+					}
+				}
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = HEJ
+			}
+		}
+		x = 12
+		y = 4
+
+	}
+
+	focus = {
+		id = SAU_conquer_north
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		cost = 40
+		prerequisite = {
+			focus = SAU_unite_arabia
+		}
+		completion_reward = {
+			add_state_core = 762
+			add_state_core = 749
+		}
+		x = 14
+		y = 4
+	}
+
+#	focus = {
+#		id = SAU_destroy_shiite
+#		icon = GFX_goal_generic_major_war
+#		cost = 40
+#		prerequisite = {
+#			focus = SAU_declare_jihad
+#			focus = SAU_found_caliphate
+#		}
+#		x = 3
+#		y = 8
+#	}
+	focus = {
+		id = SAU_copy_western_tactics
+		icon = GFX_goal_generic_army_doctrines
+		cost = 40
+		prerequisite = {
+			focus = SAU_form_ikhwan
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = SAU_copy_west
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+		x = 0
+		y = 7
+
+	}
+	focus = {
+		id = SAU_form_ikhwan
+		icon = GFX_focus_RAJ_indian_gentlemen_offcers
+		cost = 40
+		prerequisite = {
+			focus = SAU_conquer_east
+			focus = SAU_conquer_south
+			focus = SAU_conquer_west
+			focus = SAU_conquer_north
+		}
+		prerequisite = {
+			focus = SAU_royal_saudi_land_forces
+		}
+		completion_reward = {
+			add_ideas = sau_ikhwan
+		}
+		x = 0
+		y = 5
+
+	}
+#	focus = {
+#		id = SAU_colonize_rub_al_khali
+#		icon = GFX_goal_generic_position_armies
+#		cost = 30
+#		prerequisite = {
+#			focus = SAU_cultivate_desert
+#			focus = SAU_develop_oases
+#		}
+#		completion_reward = {
+#				SAU = { set_state_owner = 678 }
+#				SAU = { set_state_controller = 678 }
+#		}
+#		x = 12
+#		y = 2
+#	}
+}

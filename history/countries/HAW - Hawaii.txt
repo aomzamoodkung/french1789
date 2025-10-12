@@ -1,0 +1,88 @@
+﻿capital = 629
+
+oob = "HAW_1792"
+
+set_research_slots = 0
+
+#set_stability = 0.8
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+add_ideas = {
+	native_tribe
+	service_by_requirement
+}
+
+# DIPLOMACY / WAR 92
+	declare_war_on = {
+		target = MAU
+		type = annex_everything
+	}
+
+set_convoys = 5
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1792.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 0
+	fascism = 0
+	communism = 0
+	neutrality = 100
+}
+
+set_convoys = 0
+
+# Order matters
+
+create_country_leader = {
+	name = "Kamehameha I"
+	desc = ""
+	picture = "Portrait_Hawaii_Kamehameha.dds"
+	expire = "1820.1.1"
+	ideology = despotism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Kamehameha I"
+	desc = ""
+	picture = "Portrait_Hawaii_Kamehameha.dds"
+	expire = "1820.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+create_corps_commander = {
+	name = "Ka'iana"
+	picture = "gfx/leaders/HAW/Portrait_Hawaii_Generic_1.dds"
+	traits = {
+		#
+	}
+	skill = 1
+}
+create_corps_commander = {
+	name = "John Young"
+	picture = "Portrait_Hawaii_John_Young.dds"
+	traits = {
+		#
+	}
+	skill = 1
+}
+create_corps_commander = {
+	name = "Isaac Davis"
+	picture = "Portrait_Hawaii_John_Young.dds"
+	traits = {
+		#
+	}
+	skill = 1
+}

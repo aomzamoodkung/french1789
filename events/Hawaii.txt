@@ -1,0 +1,519 @@
+﻿#####################
+### Hawaii Events ###
+#####################
+
+add_namespace = hawaii
+
+# King Kahekili II dead
+country_event = {
+	id = hawaii.1
+	title = hawaii.1.t
+	desc = hawaii.1.d
+	picture = GFX_report_event_hawaii_01
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	trigger = {
+		tag = MAU
+		date > 1793.7.1
+	}
+
+		fire_only_once = yes
+
+	option = {
+		name = hawaii.1.a
+		hidden_effect = {
+			white_peace = HAW
+		}
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Kalanikūpule"
+			desc = ""
+			picture = "gfx/leaders/HAW/Portrait_Hawaii_Generic_1.dds"
+			expire = "1796.1.1"
+			ideology = despotism
+			traits = {
+				#
+			}
+		}
+		HAW = { country_event = hawaii.2 }
+		KAU = { country_event = hawaii.3 }
+	}
+}
+
+# King Kahekili II dead
+country_event = {
+	id = hawaii.2
+	title = hawaii.2.t
+	desc = hawaii.2.d
+	picture = GFX_report_event_hawaii_01
+
+	is_triggered_only	= yes
+
+	option = {
+		name = hawaii.2.a
+	}
+}
+
+# King Kahekili II dead
+country_event = {
+	id = hawaii.3
+	title = hawaii.3.t
+	desc = hawaii.3.d
+	picture = GFX_report_event_hawaii_01
+
+	is_triggered_only	= yes
+
+	option = {
+		name = hawaii.3.a
+		MAU = {
+			end_puppet = KAU
+		}
+		KAU	=	{	set_state_controller = 449 }
+		MAU = { country_event = { days = 3 id = hawaii.4 }}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = hawaii.3.b
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+# Kauai took maui
+country_event = {
+	id = hawaii.4
+	title = hawaii.4.t
+	desc = hawaii.4.d
+	picture = GFX_report_event_hawaii_02
+
+	is_triggered_only	= yes
+
+	option = {
+		name = hawaii.4.a
+		effect_tooltip = {
+			MAU = {
+				end_puppet = KAU
+			}
+			KAU	=	{	set_state_controller = 449 }
+		}
+		MAU = {
+			declare_war_on = {
+				target = KAU
+				type = take_state
+				generator = { 449 }
+			}
+		}
+		hidden_effect = {
+			HAW = {
+				declare_war_on = {
+					target = MAU
+					type = annex_everything
+				}
+			}
+		}
+		ai_chance = {
+			factor = 90
+		}
+	}
+	option = {
+		name = hawaii.4.b
+		effect_tooltip = {
+			MAU = {
+				end_puppet = KAU
+			}
+			KAU	=	{	set_state_controller = 449 }
+		}
+		hidden_effect = {
+			HAW = {
+				declare_war_on = {
+					target = MAU
+					type = annex_everything
+				}
+			}
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+# Create the Kingdom
+country_event = {
+	id = hawaii.5
+	title = hawaii.5.t
+	desc = hawaii.5.d
+	picture = GFX_report_event_hawaii_03
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	trigger = {
+		OR = {
+			tag = MAU
+			tag = HAW
+			tag = KAU
+		}
+		629 = { is_owned_and_controlled_by = ROOT }
+		449 = { is_owned_and_controlled_by = ROOT }
+		665 = { is_owned_and_controlled_by = ROOT }
+		451 = { is_owned_and_controlled_by = ROOT }
+		NOT = { has_government = fascism }
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = hawaii.5.a
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 1.00
+		}
+		add_research_slot = 1
+		629	=	{	add_core_of = ROOT }
+		449	=	{	add_core_of = ROOT }
+		665	=	{	add_core_of = ROOT }
+		451	=	{	add_core_of = ROOT }
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = hawaii.5.b
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+# Kamakahelei dead
+country_event = {
+	id = hawaii.6
+	title = hawaii.6.t
+	desc = hawaii.6.d
+	picture = GFX_report_event_hawaii_01
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	trigger = {
+		tag = KAU
+		date > 1794.1.1
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = hawaii.6.a
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Kaeokulani"
+			desc = ""
+			picture = "gfx/leaders/HAW/Portrait_Hawaii_Generic_1.dds"
+			expire = "1795.1.1"
+			ideology = despotism
+			traits = {
+				#
+			}
+		}
+		set_country_flag = hawaii.6_fired
+	}
+}
+
+# Kaeokulani dead
+country_event = {
+	id = hawaii.7
+	title = hawaii.7.t
+	desc = hawaii.7.d
+	picture = GFX_report_event_hawaii_01
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	trigger = {
+		tag = KAU
+		OR = {
+			AND = {
+				has_war = yes
+				NOT = { controls_state = 451 }
+				}
+			}
+			NOT = { controls_state = 665 }
+			has_country_flag = hawaii.6_fired
+			has_country_flag = hawaii.12_fired
+		}
+
+	fire_only_once = yes
+
+	option = {
+		name = hawaii.7.a
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Kaumuali'i"
+			desc = ""
+			picture = "Portrait_Hawaii_Kaumualii.dds"
+			expire = "1819.1.1"
+			ideology = despotism
+			traits = {
+			}
+		}
+	}
+}
+
+# Butterworth Squadron arrives
+country_event = {
+	id = hawaii.8
+	title = hawaii.8.t
+	desc = hawaii.8.d
+	picture = GFX_report_event_hawaii_04
+
+	mean_time_to_happen = {
+		days = 20
+	}
+
+	trigger = {
+		OR = {
+			tag = MAU
+			tag = KAU
+			tag = HAW
+		}
+		date > 1793.2.1
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = hawaii.8.a
+		ENG = {
+			send_equipment = {
+				target = KAU
+				type = infantry_equipment
+				amount = 50
+			}
+		#	send_equipment = {
+		#		target = KAU
+		#		type = artillery_equipment
+		#		amount = 10
+		#	}
+			send_equipment = {
+				target = HAW
+				type = infantry_equipment
+				amount = 100
+			}
+		#	send_equipment = {
+		#		target = HAW
+		#		type = artillery_equipment
+		#		amount = 20
+		#	}
+			send_equipment = {
+				target = MAU
+				type = infantry_equipment
+				amount = 150
+			}
+		#	send_equipment = {
+		#		target = MAU
+		#		type = artillery_equipment
+		#		amount = 30
+		#	}
+		}
+	}
+}
+
+# Kauali offers Peace
+country_event = {
+	id = hawaii.9
+	title = hawaii.9.t
+	desc = hawaii.9.d
+	picture = GFX_report_event_hawaii_02
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	trigger = {
+		tag = KAU
+		has_war_with = MAU
+		NOT = { controls_state = 449 }
+		}
+
+	fire_only_once = yes
+
+	option = {
+		name = hawaii.9.a
+		effect_tooltip = {
+			white_peace = MAU
+		}
+		MAU = { country_event = hawaii.10 }
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = hawaii.9.b
+	}
+}
+
+# Kauali offers Peace - Maui
+country_event = {
+	id = hawaii.10
+	title = hawaii.10.t
+	desc = hawaii.10.d
+	picture = GFX_report_event_hawaii_02
+
+	is_triggered_only	= yes
+
+	option = {
+		name = hawaii.10.a
+		white_peace = MAU
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = hawaii.10.b
+		KAU = { country_event = hawaii.11 }
+	}
+}
+
+# Maui decline
+country_event = {
+	id = hawaii.11
+	title = hawaii.11.t
+	desc = hawaii.11.d
+	picture = GFX_report_event_hawaii_02
+
+	is_triggered_only	= yes
+
+	option = {
+		name = hawaii.11.a
+	}
+}
+
+# Butterworth Squadron
+country_event = {
+	id = hawaii.12
+	title = hawaii.12.t
+	desc = hawaii.12.d
+	picture = GFX_report_event_hawaii_04
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	trigger = {
+		tag = MAU
+		date > 1794.11.19
+		has_war_with = KAU
+		NOT = { controls_state = 449 }
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = hawaii.12.a
+		MAU	=	{	set_state_controller = 449 }
+		add_ideas = HAW_Squadron
+		KAU = { country_event = { days = 2 id = hawaii.13 }}
+		MAU = { country_event = { days = 2 id = hawaii.14 }}
+		set_country_flag = hawaii.12_fired
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = hawaii.12.b
+	}
+}
+
+# Maui attacked Maui
+country_event = {
+	id = hawaii.13
+	title = hawaii.13.t
+	desc = hawaii.13.d
+	picture = GFX_report_event_hawaii_05
+
+	is_triggered_only	= yes
+
+	option = {
+		name = hawaii.13.a
+	}
+}
+
+# Captain want island
+country_event = {
+	id = hawaii.14
+	title = hawaii.14.t
+	desc = hawaii.14.d
+	picture = GFX_report_event_hawaii_05
+
+	is_triggered_only	= yes
+
+	option = {
+		name = hawaii.14.a
+		MAU = { country_event = { days = 5 id = hawaii.15 }}
+	}
+	option = {
+		name = hawaii.14.b
+		451 = { remove_core_of = MAU }
+	}
+}
+
+# Crew revolt
+country_event = {
+	id = hawaii.15
+	title = hawaii.15.t
+	desc = hawaii.15.d
+	picture = GFX_report_event_hawaii_04
+
+	is_triggered_only	= yes
+
+	option = {
+		name = hawaii.15.a
+		remove_ideas = HAW_Squadron
+	}
+}
+
+# Ka'iana
+country_event = {
+	id = hawaii.16
+	title = hawaii.16.t
+	desc = hawaii.16.d
+	picture = GFX_report_event_hawaii_01
+
+	trigger = {
+		tag = MAU
+		date > 1795.1.1
+		has_war_with = HAW
+		controls_state = 451
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = hawaii.16.a
+		create_corps_commander = {
+			name = "Ka'iana"
+			picture = "gfx/leaders/HAW/Portrait_Hawaii_Generic_1.dds"
+			traits = {
+				#
+			}
+			skill = 1
+		}
+	}
+}

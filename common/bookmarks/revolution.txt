@@ -1,0 +1,72 @@
+bookmarks = {
+	bookmark = {
+		name = "REVOLUTION_NAME"
+		desc = "REVOLUTION_DESC"
+		date = 1792.1.1.12
+		picture = "GFX_select_date_1792"
+		default_country = "FRA"
+		default = yes
+
+		"AUS"={
+			history = "AUS_REVOLUTION_DESC"
+			ideology = fascism
+			ideas = {
+				hre
+				hre_kaiser
+			}
+		}
+		"PRE"={
+			history = "AUS_REVOLUTION_DESC"
+			ideology = fascism
+			ideas = {
+				hre
+			}
+		}
+		"SPR"={
+			history = "AUS_REVOLUTION_DESC"
+			ideology = fascism
+		}
+		"FRA"={
+			history = "AUS_REVOLUTION_DESC"
+			ideology = neutrality
+			focuses = {
+			#	fra_revolution
+			#	fra_tuileries
+			#	fra_reign
+			}
+		}
+		"ENG"={
+			history = "AUS_REVOLUTION_DESC"
+			ideology = fascism
+		}
+		"USA"={
+			history = "AUS_REVOLUTION_DESC"
+			ideology = democratic
+		}
+		"RUS"={
+			history = "AUS_REVOLUTION_DESC"
+			ideology = fascism
+		}
+
+		"---"={
+			history = "OTHER_REVOLUTION_DESC"
+		}
+
+		"SAU"={
+			minor = yes
+			history = "SAU_REVOLUTION_DESC"
+			ideology = fascism
+			ideas = {
+			}
+			focuses = {
+				SAU_first_saudi_state
+				SAU_unite_arabia
+				SAU_take_jerusalem
+			}
+		}
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

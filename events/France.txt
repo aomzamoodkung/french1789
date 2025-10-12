@@ -1,0 +1,705 @@
+###########################
+# French Events
+###########################
+
+add_namespace = france
+
+# French revolution
+country_event = {
+	id = france.1
+	title = france.1.t
+	desc = france.1.d
+	picture = GFX_report_event_fra_revolution
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.1.a
+		ai_chance = {
+			factor = 100
+		}
+		add_ideas = fra_home_of_the_free
+	}
+}
+
+# Jacobin Constitution
+country_event = {
+	id = france.2
+	title = france.2.t
+	desc = france.2.d
+	picture = GFX_report_event_fra_jacobin_constitution
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.2.a
+		ai_chance = {
+			factor = 100
+		}
+		add_ideas = jacobin_constitution
+	}
+}
+
+# Storm the Tuileries
+country_event = {
+	id = france.3
+	title = france.3.t
+	desc = france.3.d
+	picture = GFX_report_event_fra_storming_tuileries
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.3.a
+		ai_chance = {
+			factor = 100
+		}
+		add_ideas = tuileries
+	}
+}
+
+# Kill the King
+country_event = {
+	id = france.4
+	title = france.4.t
+	desc = france.4.d
+	picture = GFX_report_event_fra_king_beheaded
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.4.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+# Exile the King
+country_event = {
+	id = france.5
+	title = france.5.t
+	desc = france.5.d
+	picture = GFX_report_event_fra_exile
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.5.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+# Execute the Royalists
+country_event = {
+	id = france.6
+	title = france.6.t
+	desc = france.6.d
+	picture = GFX_report_event_fra_guillotine
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.6.a
+		ai_chance = {
+			factor = 100
+		}
+		add_ideas = kill_royalists
+	}
+}
+
+# Exile the Royalists
+country_event = {
+	id = france.7
+	title = france.7.t
+	desc = france.7.d
+	picture = GFX_report_event_fra_exile
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.7.a
+		ai_chance = {
+			factor = 100
+		}
+		add_ideas = exile_royalists
+	}
+}
+
+# Protect the Revolution
+country_event = {
+	id = france.8
+	title = france.8.t
+	desc = france.8.d
+	picture = GFX_report_event_fra_army
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.8.a
+		ai_chance = {
+			factor = 100
+		}
+		add_ideas = protect
+	}
+}
+
+# Reforms
+country_event = {
+	id = france.9
+	title = france.9.t
+	desc = france.9.d
+	picture = GFX_report_event_fra_government
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.9.a
+		ai_chance = {
+			factor = 100
+		}
+		add_ideas = reforms
+	}
+}
+
+# Robespierre
+country_event = {
+	id = france.10
+	title = france.10.t
+	desc = france.10.d
+	picture = GFX_report_event_fra_robbespierre
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.10.a
+		ai_chance = {
+			factor = 100
+		}
+		add_ideas = reignofterror
+	}
+}
+
+# Trials
+country_event = {
+	id = france.11
+	title = france.11.t
+	desc = france.11.d
+	picture = GFX_report_event_fra_trials
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.11.a
+		ai_chance = {
+			factor = 100
+		}
+		add_ideas = trials
+	}
+}
+
+# God Save the King
+country_event = {
+	id = france.13
+	title = france.13.t
+	desc = france.13.d
+	picture = GFX_report_event_fra_king
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.13.a
+		ai_chance = {
+			factor = 100
+		}
+		add_ideas = save
+	}
+}
+
+# Let them Eat Cake
+country_event = {
+	id = france.14
+	title = france.14.t
+	desc = france.14.d
+	picture = GFX_report_event_fra_cake
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.14.a
+		ai_chance = {
+			factor = 50
+		}
+		add_ideas = cake
+	}
+
+	option = {
+		name = france.14.b
+		ai_chance = {
+			factor = 50
+		}
+		add_ideas = nocake
+	}
+}
+
+# Civil War
+country_event = {
+	id = france.12
+	title = france.12.t
+	desc = france.12.d
+	picture = GFX_report_event_fra_first_coalition
+
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { has_global_flag = scw_over }
+		tag = FRA
+		NOT = { has_government = democratic }
+		has_completed_focus = fra_flee
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = { # Uh Oh
+		name = france.12.a
+		trigger = { is_ai = no }
+		hidden_effect = {
+			set_capital = 735
+			start_civil_war = {
+				ruling_party = fascism
+				ideology = democratic
+				size = 0.5
+				capital = 16
+				states = { 16 29 18 28 17 27 20 21 32 22 31 26 24 15 14 30 33 19 25 23 }
+			}
+			random_country = {
+				limit = {
+					original_tag = FRA
+					has_government = democratic
+				}
+				load_oob = "fra_civil_war"
+				set_equipment_fraction = 0.7
+				set_stability = 0.9
+				add_popularity = {
+					ideology = democratic
+					popularity = 1
+				}
+			}
+			news_event = { hours = 6 id = news.99 }
+
+			load_oob = "frr_civil_war"
+			set_equipment_fraction = 1
+			set_stability = 0.9
+
+			add_popularity = {
+				ideology = fascism
+				popularity = 1
+			}
+		}
+	}
+}
+
+# Terms
+country_event = {
+	id = france.15
+	title = france.15.t
+	desc = france.15.d
+	picture = GFX_report_event_fra_trials
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.15.a
+		ai_chance = {
+			factor = 50
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 1
+		}
+	}
+
+	option = {
+		name = france.15.b
+		ai_chance = {
+			factor = 50
+		}
+			remove_ideas = save
+	}
+}
+
+# Super Civil War
+country_event = {
+	id = france.16
+	title = france.16.t
+	desc = france.16.d
+	picture = GFX_report_event_fra_first_coalition
+
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { has_global_flag = scw_over }
+		tag = FRA
+		NOT = { has_government = democratic }
+		has_completed_focus = fra_civilwar
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = { # Not a Chance
+		name = france.16.a
+		trigger = { is_ai = no }
+		hidden_effect = {
+			set_capital = 16
+			start_civil_war = {
+				ruling_party = fascism
+				ideology = democratic
+				size = 0.5
+				capital = 16
+				states = { 27 20 21 32 22 26 24 15 14 30 33 19 25 23 735 }
+			}
+			random_country = {
+				limit = {
+					original_tag = FRA
+					has_government = democratic
+				}
+				load_oob = "fra_civil_war"
+				set_equipment_fraction = 0.7
+				set_stability = 0.9
+				add_popularity = {
+					ideology = democratic
+					popularity = 1
+				}
+			}
+			news_event = { hours = 6 id = news.99 }
+
+			load_oob = "frr_civil_war"
+			set_equipment_fraction = 1
+			set_stability = 0.9
+
+			add_popularity = {
+				ideology = fascism
+				popularity = 1
+			}
+		}
+	}
+}
+
+# Revolutionary Army
+country_event = {
+	id = france.17
+	title = france.17.t
+	desc = france.17.d
+	picture = GFX_report_event_fra_army
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.17.a
+		ai_chance = {
+			factor = 100
+		}
+		add_ideas = revolutionaryarmy
+	}
+}
+
+# Levee en masse
+country_event = {
+	id = france.18
+	title = france.18.t
+	desc = france.18.d
+	picture = GFX_report_event_fra_army
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.18.a
+		ai_chance = {
+			factor = 100
+		}
+		add_ideas = levee
+	}
+}
+
+# Defense
+country_event = {
+	id = france.19
+	title = france.19.t
+	desc = france.19.d
+	picture = GFX_report_event_fra_army
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.19.a
+		ai_chance = {
+			factor = 100
+		}
+		add_ideas = defense
+	}
+}
+
+# What we Need
+country_event = {
+	id = france.20
+	title = france.20.t
+	desc = france.20.d
+	picture = GFX_report_event_fra_industry
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.20.a
+		ai_chance = {
+			factor = 100
+		}
+		add_ideas = need
+	}
+}
+
+# Militia
+country_event = {
+	id = france.21
+	title = france.21.t
+	desc = france.21.d
+	picture = GFX_report_event_fra_army
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.21.a
+		ai_chance = {
+			factor = 100
+		}
+		add_ideas = militia
+	}
+}
+
+# Workers
+country_event = {
+	id = france.22
+	title = france.22.t
+	desc = france.22.d
+	picture = GFX_report_event_fra_worker
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.22.a
+		ai_chance = {
+			factor = 100
+		}
+		add_ideas = worker
+	}
+}
+
+# demi
+country_event = {
+	id = france.23
+	title = france.23.t
+	desc = france.23.d
+	picture = GFX_report_event_fra_army
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.23.a
+		ai_chance = {
+			factor = 100
+		}
+		add_ideas = demi
+	}
+}
+
+# National Guard
+country_event = {
+	id = france.24
+	title = france.24.t
+	desc = france.24.d
+	picture = GFX_report_event_fra_army
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.22.a
+		ai_chance = {
+			factor = 100
+		}
+		add_ideas = nationalguard
+	}
+}
+
+# Guillotine
+country_event = {
+	id = france.25
+	title = france.25.t
+	desc = france.25.d
+	picture = GFX_report_event_fra_guillotine
+
+	fire_only_once = yes
+
+	trigger = {
+		date > 1792.3.20
+		tag = FRA
+		}
+
+	option = {
+		name = france.25.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+# First Coalition War - Austria wants peace
+country_event = {
+	id = france.26
+	title = france.26.t
+	desc = france.26.d
+	picture = GFX_report_event_france_first_coalition_treaty
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.26.a
+		if = {
+			limit = { has_war_with = PRE }
+			white_peace = PRE
+		}
+		if = {
+			limit = { has_war_with = AUS }
+			white_peace = AUS
+		}
+		FRA = {
+			transfer_state = 6
+			transfer_state = 34
+		}
+		AUS = {
+			remove_from_faction = PRE
+		}
+		PRE = {
+			white_peace = FRA
+		}
+		white_peace = FRA
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = france.26.b
+		ai_chance = {
+			factor = 0
+		}
+		AUS = { country_event = austria.4 }
+	}
+}
+
+# First Coalition War - France loses
+country_event = {
+	id = france.27
+	title = france.27.t
+	desc = france.27.d
+	picture = GFX_report_event_france_first_coalition_treaty
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			AUS = { controls_state = 16 }
+			PRE = { controls_state = 16 }
+		}
+	}
+
+	option = {
+		name = france.27.a
+		AUS = { country_event = austria.5 }
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = france.27.b
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+# Who to ask?
+country_event = {
+	id = france.28
+	title = france.28.t
+	desc = france.28.d
+	picture = GFX_report_event_fra_exile
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.28.a
+		HOL = { country_event = holland.1 }
+		effect_tooltip = {
+			add_to_faction = HOL
+		}
+	}
+	option = {
+		name = france.28.b
+		USA = { country_event = usa.11 }
+		effect_tooltip = {
+			add_to_faction = USA
+		}
+	}
+	option = {
+		name = france.28.c
+		ENG = { country_event = britain.1 }
+		effect_tooltip = {
+			add_to_faction = ENG
+		}
+	}
+}
+
+# Other accepted
+country_event = {
+	id = france.29
+	title = france.29.t
+	desc = france.29.d
+	picture = GFX_report_event_fra_exile
+
+	is_triggered_only	= yes
+
+	option = {
+		name = france.29.a
+	#	create_faction = "french_alliance"
+	#	if = {
+	#		limit = { has_country_flag = french_alliance_1 }
+	#		add_to_faction = HOL
+	#	}
+	#	if = {
+	#		limit = { has_country_flag = french_alliance_2 }
+	#		add_to_faction = USA
+	#	}
+	#	if = {
+	#		limit = { has_country_flag = french_alliance_2 }
+	#		add_to_faction = ENG
+	#	}
+	}
+}
+
+# Other decline
+country_event = {
+	id = france.30
+	title = france.30.t
+	desc = france.30.d
+	picture = GFX_report_event_fra_exile
+
+	is_triggered_only	= yes
+
+	option = {
+		name = france.30.a
+	}
+}

@@ -1,0 +1,27 @@
+state=
+{
+	id=188
+	name="STATE_188"
+	manpower = 2298
+
+	state_category = rural
+
+	resources={
+		wood=1
+	}
+
+	history = {
+		owner = PRE
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			3288 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = PRE
+	}
+	provinces={
+		3288
+	}
+}

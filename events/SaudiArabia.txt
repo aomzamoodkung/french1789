@@ -1,0 +1,430 @@
+﻿#########################
+# Saudi Arabia Events ###
+#########################
+
+add_namespace = saudi
+
+# Saudis spreads Wahhabism
+country_event = {
+	id = saudi.1
+	title = saudi.1.t
+	desc = saudi.1.d
+	picture = GFX_report_event_sau_islam_1
+
+	is_triggered_only = yes
+
+	option = {
+		name = saudi.1.a
+		add_ideas = wahhabism2
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 6
+				OR = {
+					tag = MOR
+					tag = QAT
+					#tag = Sunda xxx
+				}
+			}
+		}
+	}
+  option = {
+    name = saudi.1.b
+    ai_chance = {
+      factor = 10
+    }
+  }
+}
+
+# Convert state to wahhabism
+country_event = {
+	id = saudi.2
+	title = saudi.2.t
+	desc = saudi.2.d
+	picture = GFX_report_event_sau_islam_1
+
+	is_triggered_only = yes
+
+	option = {
+		name = saudi.2.a
+		random_owned_state = { add_core_of = SAU }
+		SAU = { country_event = { days = 210 id = saudi.7 }}
+	}
+}
+
+# Befriend with Ottomans
+country_event = {
+	id = saudi.3
+	title = saudi.3.t
+	desc = saudi.3.d
+	picture = GFX_report_event_sau_islam_1
+
+	is_triggered_only = yes
+
+	option = {
+		name = saudi.3.a
+		add_opinion_modifier = { target = SAU modifier = sau_befriend_ottomans }
+	}
+}
+
+# Rivalry with Ottomans
+country_event = {
+	id = saudi.4
+	title = saudi.4.t
+	desc = saudi.4.d
+	picture = GFX_report_event_sau_islam_1
+
+	is_triggered_only = yes
+
+	option = {
+		name = saudi.4.a
+		add_opinion_modifier = { target = SAU modifier = sau_rivalry_ottomans }
+	}
+}
+
+# Sauds offer Aliance
+country_event = {
+	id = saudi.5
+	title = saudi.5.t
+	desc = saudi.5.d
+	picture = GFX_report_event_sau_islam_1
+
+	is_triggered_only = yes
+
+	option = {
+		name = saudi.5.a
+		SAU = {
+			add_to_faction = ROOT
+			ROOT = {
+				add_ai_strategy = {
+					type = alliance
+					id = "TUR"
+					value = 200
+				}
+			}
+		}
+		ai_chance = {
+			factor = 8
+		}
+	}
+	option = {
+		name = saudi.5.b
+		SAU = { country_event = saudi.6 }
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+# Ottomans declined
+country_event = {
+	id = saudi.6
+	title = saudi.6.t
+	desc = saudi.6.d
+	picture = GFX_report_event_sau_islam_1
+
+	is_triggered_only = yes
+
+	option = {
+		name = saudi.5.a
+		add_opinion_modifier = { target = TUR modifier = sau_alliance_declined_ottomans }
+	}
+}
+
+# Convert state to wahhabism 2
+country_event = {
+	id = saudi.7
+	title = saudi.7.t
+	desc = saudi.7.d
+	picture = GFX_report_event_sau_islam_1
+
+	is_triggered_only = yes
+
+	option = {
+		name = saudi.7.a
+		random_owned_state = { add_core_of = SAU }
+		SAU = { country_event = { days = 210 id = saudi.2 }}
+	}
+}
+
+# Saudis attack Karbala
+country_event = {
+	id = saudi.8
+	title = saudi.8.t
+	desc = saudi.8.d
+	picture = GFX_report_event_sau_raid1
+
+	is_triggered_only = yes
+
+	option = { # Push back
+		name = saudi.8.a
+		ai_chance = { factor = 25 }
+		add_political_power = -25
+		hidden_effect = {
+			random_list = {
+				60 = {
+					SAU = {
+						country_event = { days = 1 id = saudi.11 }
+					}
+				}
+				40 = {
+					SAU = {
+						country_event = { days = 1 id = saudi.12 }
+					}
+				}
+			}
+		}
+		effect_tooltip = {
+			random_list = {
+				60 = {
+					country_event = saudi.9
+				}
+				40 = {
+					country_event = saudi.10
+				}
+			}
+		}
+	}
+	option = { # Yield
+		name = saudi.8.b
+		ai_chance = { factor = 75 }
+		SAU = {
+			effect_tooltip = {
+				add_stability = 0.05
+			}
+			country_event = { days = 1 id = saudi.13 }
+		}
+	}
+}
+
+# Successful Raid
+country_event = {
+	id = saudi.9
+	title = saudi.9.t
+	desc = saudi.9.d
+	picture = GFX_report_event_sau_raid1
+
+	is_triggered_only = yes
+
+	option = {
+		name = saudi.9.a
+		291 = { add_manpower = -3500 }
+		army_experience = 10
+	}
+}
+
+# Failed Raid
+country_event = {
+	id = saudi.10
+	title = saudi.10.t
+	desc = saudi.10.d
+	picture = GFX_report_event_sau_raid1
+
+	is_triggered_only = yes
+
+	option = {
+		291 = { add_manpower = -2000 }
+		add_political_power = -25
+		army_experience = 5
+		name = saudi.10.a
+	}
+}
+
+# Ottomans Push Back And Win
+country_event = {
+	id = saudi.11
+	title = saudi.11.t
+	desc = saudi.11.d
+	picture = GFX_report_event_sau_raid1
+
+	is_triggered_only = yes
+
+	option = {
+		291 = { add_manpower = -500 }
+
+		army_experience = 5
+		add_tech_bonus = {
+			name = saudi.11.t
+			bonus = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+		name = saudi.11.a
+		SOV = {
+			country_event = { id = saudi.10 }
+		}
+		hidden_effect = {
+			country_event = { days = 5 id = news.6 }
+			add_opinion_modifier = { target = SAU modifier = sau_karbala }
+			TUR = { country_event = { days = 730 id = saudi.17 }}
+		}
+	}
+}
+
+# Ottoman Push Back And Lose
+country_event = {
+	id = saudi.12
+	title = saudi.12.t
+	desc = saudi.12.d
+	picture = GFX_report_event_sau_raid1
+
+	is_triggered_only = yes
+
+	option = {
+		name = saudi.12.a
+		291 = { add_manpower = -5000 }
+		army_experience = 15
+		add_tech_bonus = {
+			name = saudi.12.t #test_the_ussr_focus
+			bonus = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+		TUR = {
+			country_event = { id = saudi.9 }
+		}
+		hidden_effect = {
+			country_event = { days = 5 id = news.7 }
+			add_opinion_modifier = { target = SAU modifier = sau_karbala }
+			TUR = { country_event = { days = 730 id = saudi.17 }}
+		}
+	}
+}
+
+# Ottomans Yield
+country_event = {
+	id = saudi.13
+	title = saudi.13.t
+	desc = saudi.13.d
+	picture = GFX_report_event_sau_raid1
+
+	is_triggered_only = yes
+
+	option = {
+		name = saudi.13.a
+		add_stability = 0.05
+		hidden_effect = {
+			country_event = { days = 5 id = news.7 }
+			add_opinion_modifier = { target = SAU modifier = sau_karbala }
+			TUR = { country_event = { days = 730 id = saudi.17 }}
+		}
+	}
+}
+
+# Al-Hasa refugees
+country_event = {
+	id = saudi.14
+	title = saudi.14.t
+	desc = saudi.14.d
+	picture = GFX_report_event_sau_refugees
+
+	trigger = {
+		tag = QAT
+		SAU = {
+			controls_state = 745
+		}
+		NOT = { has_country_flag = bahrain_refugees }
+	}
+
+	option = {
+		name = saudi.14.a
+		ai_chance = { factor = 80 }
+		746 = {
+			add_manpower = 2000
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		SAU = { add_opinion_modifier = { target = QAT modifier = sau_refugees }}
+		set_country_flag = bahrain_refugees
+	}
+	option = {
+		name = saudi.14.b
+		ai_chance = { factor = 20 }
+		set_country_flag = bahrain_refugees
+	}
+}
+
+# Muscat attack saudis
+country_event = {
+	id = saudi.15
+	title = saudi.15.t
+	desc = saudi.15.d
+	picture = GFX_report_event_sau_raid1
+
+	trigger = {
+		tag = MUS
+		SAU = { has_war_with = TUR }
+		NOT = { has_war = yes }
+	}
+
+	option = {
+		name = saudi.15.a
+		ai_chance = { factor = 80 }
+		declare_war_on = {
+			target = SAU
+			type = take_state
+			generator = { 658 }
+		}
+		SAU = { country_event = saudi.16 }
+	}
+	option = {
+		name = saudi.15.b
+		ai_chance = { factor = 20 }
+	}
+}
+
+# Muscat attack us
+country_event = {
+	id = saudi.16
+	title = saudi.16.t
+	desc = saudi.16.d
+	picture = GFX_report_event_sau_raid1
+
+	is_triggered_only = yes
+
+	option = {
+		name = saudi.16.a
+	}
+}
+
+# Ottomans want revenge
+country_event = {
+	id = saudi.17
+	title = saudi.17.t
+	desc = saudi.17.d
+	picture = GFX_report_event_sau_raid1
+
+	is_triggered_only = yes
+
+	option = {
+		name = saudi.17.a
+		ai_chance = { factor = 80 }
+		declare_war_on = {
+			target = SAU
+			type = annex_everything
+		}
+		SAU = { country_event = saudi.18 }
+	}
+	option = {
+		name = saudi.17.b
+		ai_chance = { factor = 20 }
+	}
+}
+
+# Ottomans attack us
+country_event = {
+	id = saudi.18
+	title = saudi.18.t
+	desc = saudi.18.d
+	picture = GFX_report_event_sau_raid1
+
+	is_triggered_only = yes
+
+	option = {
+		name = saudi.18.a
+	}
+}

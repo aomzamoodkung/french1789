@@ -1,0 +1,36 @@
+
+state={
+	id=162
+	name="STATE_162"
+	manpower = 1746573
+
+	state_category = large_city
+
+	resources={
+		wood=10
+	}
+
+	history={
+		owner = TOS
+		victory_points = {
+			9907 3
+		}
+		victory_points = {
+			11833 1
+		}
+		buildings = {
+			infrastructure = 8
+			arms_factory = 1
+			industrial_complex = 1
+			dockyard = 3
+			11833 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = TOS
+	}
+
+	provinces={
+		910 1616 3885 6875 6946 9750 9879 9907 11833 11889
+	}
+}

@@ -1,0 +1,20 @@
+﻿division_template = {
+	name = "Kauai Warriors"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+	}
+}
+
+units = {
+	division= {
+		name = "Kauai Warriors"
+		location = 7112
+		division_template = "Kauai Warriors"
+		start_experience_factor = 0
+		start_equipment_factor = 0
+	}
+}

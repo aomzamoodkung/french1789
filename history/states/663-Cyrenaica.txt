@@ -1,0 +1,33 @@
+
+state={
+	id=663
+	name="STATE_663"
+
+	history={
+		owner = LBA
+		victory_points = {
+			11954 3
+		}
+		victory_points = {
+			1130 5
+		}
+		buildings = {
+			infrastructure = 3
+			11954 = {
+				naval_base = 1
+			}
+			1130 = {
+				naval_base = 6
+			}
+		}
+		add_core_of = LBA
+
+	}
+
+	provinces={
+		1062 1127 1130 1186 1198 1204 4057 4060 4063 4120 4136 4151 7063 7082 7139 7206 9992 10049 10120 10123 11954 12025 12094 13078
+	}
+	manpower=1500000
+	buildings_max_level_factor=1.000
+	state_category=enclave
+}

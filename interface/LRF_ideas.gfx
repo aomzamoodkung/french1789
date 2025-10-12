@@ -1,0 +1,47 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_goal_support_democracy"
+		texturefile = "gfx/interface/ideas/GFX_goal_support_democracy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_native_tribe"
+		texturefile = "gfx/interface/ideas/native_tribe.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_banco_giorgio"
+		texturefile = "gfx/interface/ideas/banco_giorgio.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sakoku"
+		texturefile = "gfx/interface/ideas/sakoku.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wahhabism"
+		texturefile = "gfx/interface/ideas/wahhabism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wahhabism2"
+		texturefile = "gfx/interface/ideas/wahhabism2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_hre"
+		texturefile = "gfx/interface/ideas/hre.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_hre_kaiser"
+		texturefile = "gfx/interface/ideas/hre_kaiser.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_haitian_revolt"
+		texturefile = "gfx/interface/ideas/FRA_haitian_revolt.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_divided_clergy"
+		texturefile = "gfx/interface/ideas/FRA_divided_clergy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_assignat"
+		texturefile = "gfx/interface/ideas/FRA_assignat.dds"
+	}
+}

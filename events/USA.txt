@@ -1,0 +1,695 @@
+﻿###########################
+# USA Events
+###########################
+
+add_namespace = usa
+
+# The horrors of St. Domingo
+country_event = {
+	id = usa.1
+	title = usa.1.t
+	desc = usa.1.d
+	picture = GFX_report_event_haiti_02
+
+	is_triggered_only	= yes
+
+	option = {
+		name = usa.1.a
+	}
+}
+
+# Election of 1792: George Washington vs John Adams
+country_event = {
+	id = usa.3
+	title = usa.3.t
+	desc = usa.3.d
+	picture = GFX_report_event_usa_election
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = USA
+		date > 1792.1.1
+		date < 1793.1.1
+	}
+
+	option = {
+		name = usa.3.a
+		ai_chance = {
+			factor = 100
+		}
+		add_political_power = 10
+	}
+
+	option = {
+		name = usa.3.b
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		create_country_leader = {
+			name = "John Adams"
+			desc = ""
+			picture = "Portrait_USA_John_Adams.dds"
+			expire = "1820.12.12"
+			ideology = federalism
+			traits = {
+			}
+		}
+	}
+	option = {
+		name = usa.3.c
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.8
+		}
+	}
+}
+
+# Election of 1796: John Adams vs Thomas Jefferson
+country_event = {
+	id = usa.4
+	title = usa.4.t
+	desc = usa.4.d
+	picture = GFX_report_event_usa_election
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = USA
+		date > 1796.1.1
+		date < 1797.1.1
+	}
+
+	option = {
+		name = usa.4.a
+		ai_chance = {
+			factor = 53
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		if = {
+			limit = { has_government = democratic }
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.3
+			}
+			else = {
+				set_politics = {
+						ruling_party = democratic
+						elections_allowed = yes
+					}
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.8
+				}
+			}
+		}
+		create_country_leader = {
+			name = "John Adams"
+			desc = ""
+			picture = "Portrait_USA_John_Adams.dds"
+			expire = "1820.12.12"
+			ideology = federalism
+			traits = {
+			}
+		}
+	}
+	option = {
+		name = usa.4.b
+		ai_chance = {
+			factor = 47
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		if = {
+			limit = { has_government = communism }
+			add_popularity = {
+				ideology = communism
+				popularity = 0.3
+			}
+			else = {
+				set_politics = {
+						ruling_party = communism
+						elections_allowed = yes
+					}
+					add_popularity = {
+						ideology = communism
+						popularity = 0.8
+				}
+			}
+		}
+		create_country_leader = {
+			name = "Thomas Jefferson"
+			desc = ""
+			picture = "Portrait_USA_Thomas_Jefferson.dds"
+			expire = "1820.12.12"
+			ideology = republicanism
+			traits = {
+			}
+		}
+	}
+}
+
+# Election of 1800: Thomas Jefferson vs Aaron Burr
+country_event = {
+	id = usa.5
+	title = usa.5.t
+	desc = usa.5.d
+	picture = GFX_report_event_usa_election
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = USA
+		date > 1800.1.1
+		date < 1801.1.1
+	}
+
+	option = {
+		name = usa.5.a
+		ai_chance = {
+			factor = 61
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		if = {
+			limit = { has_government = communism }
+			add_popularity = {
+				ideology = communism
+				popularity = 0.3
+			}
+			else = {
+				set_politics = {
+						ruling_party = communism
+						elections_allowed = yes
+					}
+					add_popularity = {
+						ideology = communism
+						popularity = 0.8
+				}
+			}
+		}
+		create_country_leader = {
+			name = "Thomas Jefferson"
+			desc = ""
+			picture = "Portrait_USA_Thomas_Jefferson.dds"
+			expire = "1820.12.12"
+			ideology = republicanism
+			traits = {
+			}
+		}
+	}
+	option = {
+		name = usa.5.b
+		ai_chance = {
+			factor = 39
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		if = {
+			limit = { has_government = democratic }
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.3
+			}
+			else = {
+				set_politics = {
+						ruling_party = democratic
+						elections_allowed = yes
+					}
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.8
+				}
+			}
+		}
+		create_country_leader = {
+			name = "Aaron Burr"
+			desc = ""
+			picture = "Portrait_USA_Aaron_Burr.dds"
+			expire = "1820.12.12"
+			ideology = federalism
+			traits = {
+			}
+		}
+	}
+}
+
+# Election of 1804: Thomas Jefferson vs Charles Cotesworth Pinckney
+country_event = {
+	id = usa.6
+	title = usa.6.t
+	desc = usa.6.d
+	picture = GFX_report_event_usa_election
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = USA
+		date > 1804.1.1
+		date < 1805.1.1
+	}
+
+	option = {
+		name = usa.6.a
+		ai_chance = {
+			factor = 72
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		if = {
+			limit = { has_government = communism }
+			add_popularity = {
+				ideology = communism
+				popularity = 0.3
+			}
+			else = {
+				set_politics = {
+						ruling_party = communism
+						elections_allowed = yes
+					}
+					add_popularity = {
+						ideology = communism
+						popularity = 0.8
+				}
+			}
+		}
+		create_country_leader = {
+			name = "Thomas Jefferson"
+			desc = ""
+			picture = "Portrait_USA_Thomas_Jefferson.dds"
+			expire = "1820.12.12"
+			ideology = republicanism
+			traits = {
+			}
+		}
+	}
+	option = {
+		name = usa.6.b
+		ai_chance = {
+			factor = 28
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		if = {
+			limit = { has_government = democratic }
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.3
+			}
+			else = {
+				set_politics = {
+						ruling_party = democratic
+						elections_allowed = yes
+					}
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.8
+				}
+			}
+		}
+		create_country_leader = {
+			name = "Charles Cotesworth Pinckney"
+			desc = ""
+			picture = "Portrait_USA_Charles_Pinckney.dds"
+			expire = "1820.12.12"
+			ideology = federalism
+			traits = {
+			}
+		}
+	}
+}
+
+# Election of 1808: James Madison vs Charles Cotesworth Pinckney
+country_event = {
+	id = usa.7
+	title = usa.7.t
+	desc = usa.7.d
+	picture = GFX_report_event_usa_election
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = USA
+		date > 1808.1.1
+		date < 1809.1.1
+	}
+
+	option = {
+		name = usa.7.a
+		ai_chance = {
+			factor = 64
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		if = {
+			limit = { has_government = communism }
+			add_popularity = {
+				ideology = communism
+				popularity = 0.3
+			}
+			else = {
+				set_politics = {
+						ruling_party = communism
+						elections_allowed = yes
+					}
+					add_popularity = {
+						ideology = communism
+						popularity = 0.8
+				}
+			}
+		}
+		create_country_leader = {
+			name = "James Madison"
+			desc = ""
+			picture = "Portrait_USA_James_Madison.dds"
+			expire = "1820.12.12"
+			ideology = republicanism
+			traits = {
+			}
+		}
+	}
+	option = {
+		name = usa.7.b
+		ai_chance = {
+			factor = 36
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		if = {
+			limit = { has_government = democratic }
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.3
+			}
+			else = {
+				set_politics = {
+						ruling_party = democratic
+						elections_allowed = yes
+					}
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.8
+				}
+			}
+		}
+		create_country_leader = {
+			name = "Charles Cotesworth Pinckney"
+			desc = ""
+			picture = "Portrait_USA_Charles_Pinckney.dds"
+			expire = "1820.12.12"
+			ideology = federalism
+			traits = {
+			}
+		}
+	}
+}
+
+# Election of 1812: James Madison vs Charles Cotesworth Pinckney
+country_event = {
+	id = usa.8
+	title = usa.8.t
+	desc = usa.8.d
+	picture = GFX_report_event_usa_election
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = USA
+		date > 1812.1.1
+		date < 1813.1.1
+	}
+
+	option = {
+		name = usa.8.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		if = {
+			limit = { has_government = communism }
+			add_popularity = {
+				ideology = communism
+				popularity = 0.3
+			}
+			else = {
+				set_politics = {
+						ruling_party = communism
+						elections_allowed = yes
+					}
+					add_popularity = {
+						ideology = communism
+						popularity = 0.8
+				}
+			}
+		}
+		create_country_leader = {
+			name = "James Madison"
+			desc = ""
+			picture = "Portrait_USA_James_Madison.dds"
+			expire = "1820.12.12"
+			ideology = republicanism
+			traits = {
+			}
+		}
+	}
+	option = {
+		name = usa.8.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		if = {
+			limit = { has_government = democratic }
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.3
+			}
+			else = {
+				set_politics = {
+						ruling_party = democratic
+						elections_allowed = yes
+					}
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.8
+				}
+			}
+		}
+		create_country_leader = {
+			name = "DeWitt Clinton"
+			desc = ""
+			picture = "Portrait_USA_DeWitt_Clinton.dds"
+			expire = "1820.12.12"
+			ideology = federalism
+			traits = {
+			}
+		}
+	}
+}
+
+# Election of 1816: James Monroe vs Rufus King
+country_event = {
+	id = usa.9
+	title = usa.9.t
+	desc = usa.9.d
+	picture = GFX_report_event_usa_election
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = USA
+		date > 1816.1.1
+		date < 1817.1.1
+	}
+
+	option = {
+		name = usa.9.a
+		ai_chance = {
+			factor = 68
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		if = {
+			limit = { has_government = communism }
+			add_popularity = {
+				ideology = communism
+				popularity = 0.3
+			}
+			else = {
+				set_politics = {
+						ruling_party = communism
+						elections_allowed = yes
+					}
+					add_popularity = {
+						ideology = communism
+						popularity = 0.8
+				}
+			}
+		}
+		create_country_leader = {
+			name = "James Monroe"
+			desc = ""
+			picture = "Portrait_USA_James_Monroe.dds"
+			expire = "1820.12.12"
+			ideology = republicanism
+			traits = {
+			}
+		}
+	}
+	option = {
+		name = usa.9.b
+		ai_chance = {
+			factor = 32
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		if = {
+			limit = { has_government = democratic }
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.3
+			}
+			else = {
+				set_politics = {
+						ruling_party = democratic
+						elections_allowed = yes
+					}
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.8
+				}
+			}
+		}
+		create_country_leader = {
+			name = "Rufus King"
+			desc = ""
+			picture = "Portrait_USA_Rufus_King.dds"
+			expire = "1820.12.12"
+			ideology = federalism
+			traits = {
+			}
+		}
+	}
+}
+
+# Election of 1820: James Monroe vs no one
+country_event = {
+	id = usa.10
+	title = usa.10.t
+	desc = usa.10.d
+	picture = GFX_report_event_usa_election
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = USA
+		date > 1812.1.1
+		date < 1813.1.1
+	}
+
+	option = {
+		name = usa.10.a
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		if = {
+			limit = { has_government = communism }
+			add_popularity = {
+				ideology = communism
+				popularity = 0.3
+			}
+			else = {
+				set_politics = {
+						ruling_party = communism
+						elections_allowed = yes
+					}
+					add_popularity = {
+						ideology = communism
+						popularity = 0.8
+				}
+			}
+		}
+		create_country_leader = {
+			name = "James Madison"
+			desc = ""
+			picture = "Portrait_USA_James_Monroe.dds"
+			expire = "1820.12.12"
+			ideology = republicanism
+			traits = {
+			}
+		}
+	}
+}
+
+# France asks for help
+country_event = {
+	id = usa.11
+	title = usa.11.t
+	desc = usa.11.d
+	picture = GFX_report_event_fra_exile
+
+	is_triggered_only	= yes
+
+	option = {
+		name = usa.11.a
+	#	set_country_flag = french_alliance_2
+		FRA = { create_faction = "french_alliance" add_to_faction = USA }
+		FRA = { country_event = france.29 }
+		ai_chance = {
+			factor = 50
+		}
+	}
+	option = {
+		name = usa.11.b
+		FRA = { country_event = france.30 }
+		ai_chance = {
+			factor = 50
+		}
+	}
+}

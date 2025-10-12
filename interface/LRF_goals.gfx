@@ -1,0 +1,39 @@
+spriteTypes = {
+
+	#### La Revolution Francaise
+
+ 	### Saudi Arabia
+
+	SpriteType = {
+	name = "GFX_goal_saudi"
+	texturefile = "gfx/interface/goals/goal_saudi.dds"
+	}
+	SpriteType = {
+	name = "GFX_goal_sau_unite"
+	texturefile = "gfx/interface/goals/goal_sau_unite.dds"
+	}
+	SpriteType = {
+	name = "GFX_goal_sau_jerusalem"
+	texturefile = "gfx/interface/goals/goal_sau_jerusalem.dds"
+	}
+	SpriteType = {
+	name = "GFX_goal_sau_wahhabism"
+	texturefile = "gfx/interface/goals/goal_sau_wahhabism.dds"
+	}
+	SpriteType = {
+	name = "GFX_goal_sau_forbid_wahhabism"
+	texturefile = "gfx/interface/goals/goal_sau_forbid_wahhabism.dds"
+	}
+	SpriteType = {
+	name = "GFX_goal_sau_fortify"
+	texturefile = "gfx/interface/goals/goal_sau_fortify.dds"
+	}
+
+	### Generic
+
+	SpriteType = {
+	name = "GFX_goal_desert"
+	texturefile = "gfx/interface/goals/goal_desert.dds"
+	}
+
+}

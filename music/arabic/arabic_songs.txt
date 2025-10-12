@@ -1,0 +1,56 @@
+music_station = "arabic_music"
+
+music = {
+	song = "arabic_ya_habibi_ya_ghaybin"
+
+	chance = {
+		modifier = {
+			factor = 10
+				has_country_flag = arabic_music
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				has_country_flag = arabic_music
+			}
+		}
+	}
+}
+
+music = {
+	song = "arabic_ahlof_bi_houbbi_ya_min"
+
+	chance = {
+		modifier = {
+			factor = 10
+			has_country_flag = arabic_music
+			}
+		modifier = {
+			factor = 0
+
+			NOT = {
+				has_country_flag = arabic_music
+			}
+		}
+	}
+}
+
+	### TUR ###
+
+		music = {
+			song = "TUR_anthem"
+
+			chance = {
+				modifier = {
+					factor = 10
+						tag = TUR
+					}
+				modifier = {
+					factor = 0
+
+					NOT = {
+						tag = TUR
+					}
+				}
+			}
+		}

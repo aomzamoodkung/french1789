@@ -1,0 +1,18 @@
+state={
+	id=762
+	name="STATE_762"
+
+	history={
+		buildings = {
+			infrastructure = 0
+		}
+	}
+
+	provinces={
+		1544 1631 4440 4562 4591 4603 8101 10383 10815 13215 13216
+	}
+	manpower=42
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	impassable = yes
+}

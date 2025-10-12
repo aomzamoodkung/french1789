@@ -1,0 +1,7 @@
+﻿l_german:
+ gunpowder:0 "Schwarzpulver"
+ gunpowder_desc:0 "Erster Explosivstoff, der als Schießpulver für Treibladungen von Schusswaffen verwendet wurde."
+ infantry_weapons2:0 "Steinschloss"
+ infantry_weapons2_desc:0 "Auslösemechanismus für Vorderladerfeuerwaffen, der mit einem Feuerstein zündet. Nachfolger des Luntenschlosses"
+ advanced_infantry_weapons2:0 "Perkussionsschloss"
+ advanced_infantry_weapons2_desc:0 "Unempfindlicher gegen Witterungseinflüsse und versagte generell seltener als seine Vorläufer. Setzte sich deshalb schnell bei Militär- und Zivilwaffen durch. Es wurde wiederum ab Mitte des 19. Jahrhunderts durch das Zündnadelgewehr abgelöst."

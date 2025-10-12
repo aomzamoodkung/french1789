@@ -1,0 +1,23 @@
+################
+##### ITA ######
+################
+
+form_italy_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_italy
+
+	allowed = {
+		OR = {
+			original_tag = SAV
+			original_tag = VNC
+			original_tag = GEN
+			original_tag = PMR
+			original_tag = MOD
+			original_tag = LUC
+			original_tag = TOS
+			original_tag = SIC
+		}
+	}
+}

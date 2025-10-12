@@ -1,0 +1,60 @@
+﻿capital = 112
+
+oob = "POR_1792"
+
+set_research_slots = 3
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+add_ideas = {
+	#
+}
+
+set_convoys = 100
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1792.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 0
+	fascism = 100
+	communism = 0
+	neutrality = 0
+}
+
+# DIPLOMACY
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = BRA
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.4
+	}
+	else = {
+		puppet = BRA
+	}
+}
+if = {
+	limit = { has_dlc = "Together for Victory" }
+	add_to_tech_sharing_group = portuguese_research
+}
+
+set_convoys = 100
+#set_stability = 0.8
+
+create_country_leader = {
+	name = "Maria I."
+	desc = "POLITICS_ADOLF_HITLER_DESC"
+	picture = "gfx/leaders/POR/Portrait_Portugal_Maria_I.dds"
+	expire = "1820.1.1"
+	ideology = absolutism
+}

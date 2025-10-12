@@ -1,0 +1,19 @@
+
+state={
+	id=749
+	name="STATE_749"
+
+	history={
+		owner = SAU
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces={
+		2057 4968 4974 5058 10850 10901 10923 12749
+	}
+	manpower=57000
+	state_category = rural
+	buildings_max_level_factor=1.000
+}

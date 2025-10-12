@@ -1,0 +1,32 @@
+state={
+	id=450
+	name="STATE_450"
+
+	resources={
+		wood=1
+	}
+
+	history={
+		owner = HAI
+		buildings = {
+
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 4
+
+			1594 = {
+				bunker = 1 # Fort Liberty
+				coastal_bunker = 1
+				naval_base = 2 # Le Cap Francaise
+			}
+		}
+		add_core_of = HAI
+	}
+
+	provinces={
+		1594
+	}
+	manpower=320000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

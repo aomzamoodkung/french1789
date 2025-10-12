@@ -1,0 +1,13 @@
+TODO
+
+-new colonization mechanic, button at province view where the nuke button is right now. Only aviable for countries which have a focus for it, countries need to be created like Saudi Desert / create a focus for SAU for its desert / need to make conolizable countries unattackable
+-check if every country has a template (BEL?)
+-upload updated logo
+-shared focus tree for SAU countries
+-generic focus tree for everyone
+-either make africa unowned or create more native countries
+-better division placement
+-fix technology bg
+-Duchy of Courland and Semigallia as a dominion of POL
+-fort ross for russia
+-different fortress levels researched by tech (like tgw)

@@ -1,0 +1,48 @@
+﻿capital = 746
+
+oob = "QAT_1792"
+
+set_research_slots = 0
+
+#set_stability = 0.6
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_country_flag = sunni_islam
+set_country_flag = arabic_music
+
+add_ideas = {
+	service_by_requirement
+}
+
+set_convoys = 5
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1792.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 0
+	fascism = 0
+	communism = 0
+	neutrality = 100
+}
+set_convoys = 0
+
+# Order matters
+
+create_country_leader = {
+	name = "Ahmed bin Muhammad bin Khalifa"
+	desc = ""
+	picture = "gfx/leaders/Arabic/Portrait_Arabia_Generic_3.dds"
+	expire = "1820.1.1"
+	ideology = despotism
+	traits = {
+	}
+}

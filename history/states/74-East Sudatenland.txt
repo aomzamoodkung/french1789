@@ -1,0 +1,26 @@
+
+state={
+	id=74
+	name="STATE_74"
+	resources={
+		wood=4.000
+	}
+
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 7
+			arms_factory = 1
+
+		}
+		add_core_of = AUS
+
+	}
+
+	provinces={
+		3414 3583 6485
+	}
+	manpower=372000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,409 @@
+﻿division_template = {
+	name = "Turkish Infantry Regiment"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Turkish Irregular Infantry Regiment"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Turkish Cavalry Regiment"
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+	}
+}
+
+units = {
+
+### TODO, just placeholder
+
+	division= {
+		name = "Turkish Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Infantry Regiment"
+	}
+
+	division= {
+		name = "Turkish Cavalry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Cavalry Regiment"
+	}
+	division= {
+		name = "Turkish Cavalry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Cavalry Regiment"
+	}
+	division= {
+		name = "Turkish Cavalry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Cavalry Regiment"
+	}
+	division= {
+		name = "Turkish Cavalry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Cavalry Regiment"
+	}
+	division= {
+		name = "Turkish Cavalry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Cavalry Regiment"
+	}
+	division= {
+		name = "Turkish Cavalry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Cavalry Regiment"
+	}
+	division= {
+		name = "Turkish Cavalry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Cavalry Regiment"
+	}
+	division= {
+		name = "Turkish Cavalry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Cavalry Regiment"
+	}
+	division= {
+		name = "Turkish Cavalry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Cavalry Regiment"
+	}
+	division= {
+		name = "Turkish Cavalry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Cavalry Regiment"
+	}
+
+	division= {
+		name = "Turkish Irregular Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Irregular Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Irregular Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Irregular Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Irregular Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Irregular Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Irregular Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Irregular Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Irregular Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Irregular Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Irregular Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Irregular Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Irregular Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Irregular Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Irregular Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Irregular Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Irregular Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Irregular Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Irregular Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Irregular Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Irregular Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Irregular Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Irregular Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Irregular Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Irregular Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Irregular Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Irregular Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Irregular Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Irregular Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Irregular Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Irregular Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Irregular Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Irregular Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Irregular Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Irregular Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Irregular Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Irregular Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Irregular Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Irregular Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Irregular Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Irregular Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Irregular Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Irregular Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Irregular Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Irregular Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Irregular Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Irregular Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Irregular Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Irregular Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Irregular Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Irregular Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Irregular Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Irregular Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Irregular Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Irregular Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Irregular Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Irregular Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Irregular Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Irregular Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Irregular Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Irregular Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Irregular Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Irregular Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Irregular Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Irregular Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Irregular Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Irregular Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Irregular Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Irregular Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Irregular Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Irregular Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Irregular Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Irregular Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Irregular Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Irregular Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Irregular Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Irregular Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Irregular Infantry Regiment"
+	}
+	division= {
+		name = "Turkish Irregular Infantry Regiment"
+		location = 9833	# Constantinople
+		division_template = "Turkish Irregular Infantry Regiment"
+	}
+}

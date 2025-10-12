@@ -1,0 +1,24 @@
+
+state={
+	id=629
+	name="STATE_629"
+
+	history={
+		owner = HAW
+		buildings = {
+			infrastructure = 1
+			10048 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = HAW
+
+	}
+
+	provinces={
+		10048 12021
+	}
+	manpower=60000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

@@ -1,0 +1,35 @@
+﻿###########################
+# Prussian Events
+###########################
+
+add_namespace = prussia
+
+# War with France
+country_event = {
+	id = prussia.1
+	title = prussia.1.t
+	desc = prussia.1.d
+	picture = GFX_report_event_fra_first_coalition
+
+	is_triggered_only = yes
+
+	option = {
+		name = prussia.1.a
+		ai_chance = {
+			factor = 100
+		}
+    declare_war_on = {
+      target = FRA
+      type = liberate_wargoal
+    }
+    set_rule = { can_create_factions = yes }
+    create_faction = "coalition"
+    add_to_faction = AUS
+	}
+  option = {
+    name = prussia.1.b
+    ai_chance = {
+      factor = 0
+    }
+  }
+}

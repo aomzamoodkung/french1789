@@ -1,0 +1,32 @@
+
+state={
+	id=163
+	name="STATE_163"
+
+	history={
+		owner = VNC
+		victory_points = {
+			3924 1
+		}
+		add_core_of = VNC
+		buildings = {
+			infrastructure = 5
+			3943 = {
+				naval_base = 1
+			}
+			6889 = {
+				naval_base = 1
+			}
+			3924 = {
+				naval_base = 3
+			}
+		}
+	}
+
+	provinces={
+		3868 3924 3943 3974 6889 11816
+	}
+	manpower=300000
+	buildings_max_level_factor=1.000
+	state_category=enclave
+}

@@ -1,0 +1,27 @@
+state={
+	id=664
+	name="STATE_664"
+	manpower = 854300
+	resources={
+		wood=8
+	}
+
+	state_category = rural
+
+	history={
+		owner = TRV
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+		}
+		victory_points = {
+			6573 1
+		}
+		add_core_of = TRV
+
+	}
+
+	provinces={
+		1238 1321 7402 7447
+	}
+}

@@ -1,0 +1,18 @@
+# Arabic music
+	music = {
+		name = "arabic_ahlof_bi_houbbi_ya_min"
+		file = "arabic_ahlof_bi_houbbi_ya_min.ogg"
+		volume = 0.65
+		}
+	music = {
+		name = "arabic_ya_habibi_ya_ghaybin"
+		file = "arabic_ya_habibi_ya_ghaybin.ogg"
+		volume = 0.65
+	}
+
+# TUR music
+	music = {
+		name = "TUR_anthem"
+		file = "TUR_anthem.ogg"
+		volume = 0.65
+	}

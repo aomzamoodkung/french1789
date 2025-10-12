@@ -1,0 +1,55 @@
+ABO = "countries/Aborigines.txt"
+CRI = "countries/Crimea.txt"
+GEN = "countries/Genoa.txt"
+HEK = "countries/HessenKassel.txt"
+JBG = "countries/JulichBerg.txt"
+LUC = "countries/Lucca.txt"
+MAP = "countries/Mapuche.txt"
+MUN = "countries/Munster.txt"
+MOD = "countries/Modena.txt"
+NBR = "countries/NewBrunswick.txt"
+NFL = "countries/Newfoundland.txt"
+NSW = "countries/New South Wales.txt"
+NVS = "countries/NovaScotia.txt"
+PMR = "countries/Parma.txt"
+RUS = "countries/Russia.txt"
+SAV = "countries/Savoy.txt"
+SIC = "countries/Sicilie.txt"
+TOS = "countries/Toskana.txt"
+TRR = "countries/Trier.txt"
+VAT = "countries/Vatican.txt"
+VNC = "countries/Venice.txt"
+WAL = "countries/Walachei.txt"
+
+### North America
+
+HBC = "countries/RupertsLand.txt"
+LCN = "countries/LowerCanada.txt"
+LOU = "countries/Louisiana.txt"
+UCN = "countries/UpperCanada.txt"
+NWC = "countries/NorthWestCompany.txt"
+
+### Pacific
+
+KAU = "countries/Kauai.txt"
+MAU = "countries/Maui.txt"
+RYU = "countries/Ryukyu.txt"
+
+### Africa
+
+BAM = "countries/Bamana.txt"
+
+### Arabia
+
+BKH = "countries/Bani Khalid.txt"
+HEJ = "countries/Hejaz.txt"
+KAH = "countries/Kathri.txt"
+LAH = "countries/Lahej.txt"
+MAH = "countries/Mahri.txt"
+MUS = "countries/Muscat.txt"
+
+### India
+
+KAN = "countries/Kandy.txt"
+MRS = "countries/Mauritius.txt"
+TRV = "countries/Travancore.txt"

@@ -1,0 +1,94 @@
+form_italy_category = {
+
+	form_italy = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			OR = {
+				original_tag = SAV
+				original_tag = VNC
+				original_tag = GEN
+				original_tag = PMR
+				original_tag = MOD
+				original_tag = LUC
+				original_tag = TOS
+				original_tag = SIC
+			}
+			has_dlc = "Waking the Tiger"
+		}
+
+		available = {
+			is_subject = no
+			controls_state = 158
+			controls_state = 159
+			controls_state = 69
+			controls_state = 674
+			controls_state = 722
+			controls_state = 161
+			controls_state = 162
+			controls_state = 156
+			controls_state = 117
+			controls_state = 115
+			controls_state = 114
+		}
+
+		visible = {
+			OR = {
+				original_tag = SAV
+				original_tag = VNC
+				original_tag = GEN
+				original_tag = PMR
+				original_tag = MOD
+				original_tag = LUC
+				original_tag = TOS
+				original_tag = SIC
+			}
+			NOT = { has_global_flag = form_italy_flag }
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = ITA_UNIFIED
+			hidden_effect = {
+				158 = { add_core_of = ROOT }
+				159 = { add_core_of = ROOT }
+				69 = { add_core_of = ROOT }
+				674 = { add_core_of = ROOT }
+				722 = { add_core_of = ROOT }
+				161 = { add_core_of = ROOT }
+				162 = { add_core_of = ROOT }
+				156 = { add_core_of = ROOT }
+				117 = { add_core_of = ROOT }
+				115 = { add_core_of = ROOT }
+				114 = { add_core_of = ROOT }
+				764 = { add_core_of = ROOT }
+				2 = { add_core_of = ROOT }
+				736 = { add_core_of = ROOT }
+				163 = { add_core_of = ROOT }
+				if = {
+					limit = { ROOT = { has_government = neutrality } }
+					ROOT = {
+						set_politics = {
+							ruling_party = fascism
+							elections_allowed = no
+						}
+						add_popularity = {
+							ideology = fascism
+							popularity = 1.00
+						}
+					}
+				}
+				news_event = { id = news.8 hours = 6 }
+				set_global_flag = form_italy_flag
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}

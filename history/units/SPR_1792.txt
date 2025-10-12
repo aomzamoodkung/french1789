@@ -1,0 +1,658 @@
+﻿division_template = {
+	name = "Regimiento de Infanteria"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+		priority = 3
+}
+
+division_template = {
+	name = "Batallon de Infanteria"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+	}
+		priority = 1
+}
+
+division_template = {
+	name = "Guardias de Infanteria"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+		priority = 1
+}
+
+division_template = {
+	name = "Infanteria de Marina"
+
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+	}
+		priority = 1
+}
+
+units = {
+
+### Regimiento de Infanteria
+
+	division= {
+		name = "Regimiento de Rey"
+		location = 3938	#
+		division_template = "Regimiento de Infanteria"
+	}
+	division= {
+		name = "Regimiento de Reina"
+		location = 3938	#
+		division_template = "Regimiento de Infanteria"
+	}
+	division= {
+		name = "Regimiento de Principe"
+		location = 3938	#
+		division_template = "Regimiento de Infanteria"
+	}
+	division= {
+		name = "Regimiento de Saboya"
+		location = 3938	#
+		division_template = "Regimiento de Infanteria"
+	}
+	division= {
+		name = "Regimiento de Corona"
+		location = 3938	#
+		division_template = "Regimiento de Infanteria"
+	}
+	division= {
+		name = "Regimiento de Africa"
+		location = 3938	#
+		division_template = "Regimiento de Infanteria"
+	}
+	division= {
+		name = "Regimiento de Zamora"
+		location = 3938	#
+		division_template = "Regimiento de Infanteria"
+	}
+	division= {
+		name = "Regimiento de Soria"
+		location = 3938	#
+		division_template = "Regimiento de Infanteria"
+	}
+	division= {
+		name = "Regimiento de Cordoba"
+		location = 3938	#
+		division_template = "Regimiento de Infanteria"
+	}
+	division= {
+		name = "Regimiento de Guadalajara"
+		location = 3938	#
+		division_template = "Regimiento de Infanteria"
+	}
+	division= {
+		name = "Regimiento de Seville"
+		location = 3938	#
+		division_template = "Regimiento de Infanteria"
+	}
+	division= {
+		name = "Regimiento de Granada"
+		location = 3938	#
+		division_template = "Regimiento de Infanteria"
+	}
+	division= {
+		name = "Regimiento de Valencia"
+		location = 3938	#
+		division_template = "Regimiento de Infanteria"
+	}
+	division= {
+		name = "Regimiento de Zaragoza"
+		location = 3938	#
+		division_template = "Regimiento de Infanteria"
+	}
+	division= {
+		name = "Regimiento de España"
+		location = 3938	#
+		division_template = "Regimiento de Infanteria"
+	}
+	division= {
+		name = "Regimiento de Toledo"
+		location = 3938	#
+		division_template = "Regimiento de Infanteria"
+	}
+	division= {
+		name = "Regimiento de Mallorca"
+		location = 3938	#
+		division_template = "Regimiento de Infanteria"
+	}
+	division= {
+		name = "Regimiento de Burgos"
+		location = 3938	#
+		division_template = "Regimiento de Infanteria"
+	}
+	division= {
+		name = "Regimiento de Murcia"
+		location = 3938	#
+		division_template = "Regimiento de Infanteria"
+	}
+	division= {
+		name = "Regimiento de Leon"
+		location = 3938	#
+		division_template = "Regimiento de Infanteria"
+	}
+	division= {
+		name = "Regimiento de Cantabria"
+		location = 3938	#
+		division_template = "Regimiento de Infanteria"
+	}
+	division= {
+		name = "Regimiento de Asturias"
+		location = 3938	#
+		division_template = "Regimiento de Infanteria"
+	}
+	division= {
+		name = "Regimiento de Fijo de Ceuta"
+		location = 3938	#
+		division_template = "Regimiento de Infanteria"
+	}
+	division= {
+		name = "Regimiento de Navarra"
+		location = 3938	#
+		division_template = "Regimiento de Infanteria"
+	}
+	division= {
+		name = "Regimiento de Aragon"
+		location = 3938	#
+		division_template = "Regimiento de Infanteria"
+	}
+	division= {
+		name = "Regimiento de America"
+		location = 3938	#
+		division_template = "Regimiento de Infanteria"
+	}
+	division= {
+		name = "Regimiento de Princesa"
+		location = 3938	#
+		division_template = "Regimiento de Infanteria"
+	}
+	division= {
+		name = "Regimiento de Extremadura"
+		location = 3938	#
+		division_template = "Regimiento de Infanteria"
+	}
+	division= {
+		name = "Regimiento de Malaga"
+		location = 3938	#
+		division_template = "Regimiento de Infanteria"
+	}
+
+# Foreign
+
+	division= {
+		name = "Regimiento de Irlanda"
+		location = 3938	#
+		division_template = "Regimiento de Infanteria"
+	}
+	division= {
+		name = "Regimiento de Hibernia"
+		location = 3938	#
+		division_template = "Regimiento de Infanteria"
+	}
+	division= {
+		name = "Regimiento de Ultonia"
+		location = 3938	#
+		division_template = "Regimiento de Infanteria"
+	}
+	division= {
+		name = "Regimiento de Kruter"
+		location = 3938	#
+		division_template = "Regimiento de Infanteria"
+	}
+	division= {
+		name = "Regimiento de San Gall"
+		location = 3938	#
+		division_template = "Regimiento de Infanteria"
+	}
+	division= {
+		name = "Regimiento de Reding"
+		location = 3938	#
+		division_template = "Regimiento de Infanteria"
+	}
+	division= {
+		name = "Regimiento de Betschart"
+		location = 3938	#
+		division_template = "Regimiento de Infanteria"
+	}
+	division= {
+		name = "Regimiento de Napoles"
+		location = 3938	#
+		division_template = "Regimiento de Infanteria"
+	}
+
+# Others
+
+	division= {
+		name = "Milicias Provinciales de Mallorca"
+		location = 9793	# Mallorca
+		division_template = "Regimiento de Infanteria"
+		start_equipment_factor = 0.3	# Volunteers
+	}
+	division= {
+		name = "Milicias Urbanas de Cadiz"
+		location = 1048	# Cadiz
+		division_template = "Regimiento de Infanteria"
+		start_equipment_factor = 0.3	# Volunteers
+	}
+
+
+### Battalon de Infanteria
+
+	division= {
+		name = "Voluntarios de Aragon"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Volunteers
+	}
+	division= {
+		name = "Voluntarios de Cataluna"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Volunteers
+	}
+	division= {
+		name = "1a Voluntarios de Cataluna"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Volunteers
+	}
+	division= {
+		name = "2o Voluntarios de Cataluna"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Volunteers
+	}
+	division= {
+		name = "Voluntarios de Tarragona"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Volunteers
+	}
+	division= {
+		name = "Voluntarios de Gerona"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Volunteers
+	}
+	division= {
+		name = "Milicias Provinciales de Islas Canarias"
+		location = 13071	# Canary Isles
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Volunteers
+	}
+	division= {
+		name = "Milicias Urbanas de Puerto Santa Maria"
+		location = 1048	# Puerto Santa Maria
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "Milicias Urbanas de Campo Gibraltar"
+		location = 10094	# Campo Gibraltar
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "Milicias Urbanas de Cartagena"
+		location = 10024	# Cartagena
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "Milicias Urbanas de Ceuta"
+		location = 7153	# Ceuta xxx
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "Milicias Urbanas de Badajos"
+		location = 11851	# Badajos
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "Milicias Urbanas de Albuquerque"
+		location = 6902	# Albuquerque
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "Milicias Urbanas de Alcantara"
+		location = 9839	# Alcantara
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "Milicias Urbanas de Alconchel"
+		location = 11851	# Alconchel
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "Milicias Urbanas de Valencia de Alcantara"
+		location = 6902	# Valencia de Alcantara
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "Milicias Urbanas de La Coruña"
+		location = 758	# La Coruña
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "Milicias Urbanas de Cuidad Rodrigo"
+		location = 9770	# Cuidad Rodrigo
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "Milicias Urbanas de Tarifa"
+		location = 10094	# Tarifa
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+
+# Milicias Provinciales
+	division= {
+		name = "1 Milicias Provinciales"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "2 Milicias Provinciales"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "3 Milicias Provinciales"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "4 Milicias Provinciales"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "5 Milicias Provinciales"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "6 Milicias Provinciales"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "7 Milicias Provinciales"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "8 Milicias Provinciales"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "9 Milicias Provinciales"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "10 Milicias Provinciales"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "11 Milicias Provinciales"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "12 Milicias Provinciales"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "13 Milicias Provinciales"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "14 Milicias Provinciales"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "15 Milicias Provinciales"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "16 Milicias Provinciales"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "17 Milicias Provinciales"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "18 Milicias Provinciales"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "19 Milicias Provinciales"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "20 Milicias Provinciales"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "21 Milicias Provinciales"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "22 Milicias Provinciales"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "23 Milicias Provinciales"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "24 Milicias Provinciales"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "25 Milicias Provinciales"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "26 Milicias Provinciales"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "27 Milicias Provinciales"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "28 Milicias Provinciales"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "29 Milicias Provinciales"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "30 Milicias Provinciales"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "31 Milicias Provinciales"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "32 Milicias Provinciales"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "33 Milicias Provinciales"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "34 Milicias Provinciales"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "35 Milicias Provinciales"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "36 Milicias Provinciales"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "37 Milicias Provinciales"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "38 Milicias Provinciales"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "39 Milicias Provinciales"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "40 Milicias Provinciales"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "41 Milicias Provinciales"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "42 Milicias Provinciales"
+		location = 3938	#
+		division_template = "Batallon de Infanteria"
+		start_equipment_factor = 0.3	# Militias
+	}
+
+### Guardias de Infanteria
+
+	division= {
+		name = "Guardias de Infanteria Espanola"
+		location = 3938	#
+		division_template = "Guardias de Infanteria"
+	}
+	division= {
+		name = "Guardias de Infanteria Walonna"
+		location = 3938	#
+		division_template = "Guardias de Infanteria"
+	}
+
+### Infanteria de Marina
+
+	division= {
+		name = "1 Regimiento de Marina"
+		location = 3938	#
+		division_template = "Infanteria de Marina"
+	}
+	division= {
+		name = "2 Regimiento de Marina"
+		location = 3938	#
+		division_template = "Infanteria de Marina"
+	}
+	division= {
+		name = "3 Regimiento de Marina"
+		location = 3938	#
+		division_template = "Infanteria de Marina"
+	}
+	division= {
+		name = "4 Regimiento de Marina"
+		location = 3938	#
+		division_template = "Infanteria de Marina"
+	}
+
+}

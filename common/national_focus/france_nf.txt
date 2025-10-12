@@ -1,0 +1,1279 @@
+focus_tree = {
+	id = french_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = FRA
+		}
+	}
+
+	default = no
+
+### 1st Tree political
+
+	focus = {
+		id = fra_revolution
+		icon = GFX_goal_support_democracy
+		x = 4
+		y = 0
+		cost = 10
+		completion_reward = {
+			add_ideas = french_revolution
+		}
+	}
+
+	focus = {
+		id = fra_support_republic
+		icon = GFX_focus_generic_strike_at_democracy2
+		prerequisite = { focus = fra_revolution }
+		mutually_exclusive = { focus = fra_save }
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+			if = {
+				limit = { country_exists = FRA }
+				FRA = { country_event = france.1 }
+			}
+			if = {
+				limit = { NOT = { country_exists = FRA } }
+				country_event = { id = france.1 hours = 6 }
+			}
+			add_ideas = fra_home_of_the_free
+		}
+	}
+
+	focus = {
+		id = fra_war
+		available = {
+			AUS = {
+				exists = yes
+				NOT = { is_in_faction_with = FRA }
+			}
+		}
+		prerequisite = { focus = fra_support_republic }
+		mutually_exclusive = { focus = fra_negotiate }
+		icon = GFX_goal_generic_major_war
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			declare_war_on = {
+				target = AUS
+				type = liberate_wargoal
+			}
+			if = {
+				limit = { country_exists = PRE }
+				AUS = { country_event = austria.2 }
+				news_event = { id = news.1 }
+				}
+		}
+	}
+
+	focus = {
+		id = fra_negotiate
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = fra_support_republic }
+		mutually_exclusive = { focus = fra_war }
+		x = 2
+		y = 2
+		cost = 10
+		completion_reward = {
+			FRA = { country_event = france.28 }
+			AUS = {
+				country_event = { days = 14 id = austria.6 }
+			}
+		}
+	}
+
+	focus = {
+		id = fra_jacobin
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = fra_war focus = fra_negotiate }
+		x = 1
+		y = 3
+		cost = 10
+		completion_reward = {
+			if = {
+				limit = { country_exists = FRA }
+				FRA = { country_event = france.2 }
+			}
+			if = {
+				limit = { NOT = { country_exists = FRA } }
+				country_event = { id = france.2 hours = 6 }
+			}
+		}
+	}
+
+	focus = {
+		id = fra_tuileries
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = fra_jacobin }
+		x = 1
+		y = 4
+		cost = 10
+		completion_reward = {
+			if = {
+				limit = { country_exists = FRA }
+				FRA = { country_event = france.3 }
+			}
+			if = {
+				limit = { NOT = { country_exists = FRA } }
+				country_event = { id = france.3 hours = 6 }
+			}
+		}
+	}
+
+	focus = {
+		id = fra_kill
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = fra_tuileries }
+		mutually_exclusive = { focus = fra_exile }
+		x = 0
+		y = 5
+		cost = 10
+		completion_reward = {
+			if = {
+				limit = { country_exists = FRA }
+				FRA = { country_event = france.4 }
+			}
+			if = {
+				limit = { NOT = { country_exists = FRA } }
+				country_event = { id = france.4 hours = 6 }
+			}
+			#add_ideas = kill_theking
+		}
+	}
+
+	focus = {
+		id = fra_exile
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = fra_tuileries }
+		mutually_exclusive = { focus = fra_kill }
+		x = 2
+		y = 5
+		cost = 10
+		completion_reward = {
+			if = {
+				limit = { country_exists = FRA }
+				FRA = { country_event = france.5 }
+			}
+			if = {
+				limit = { NOT = { country_exists = FRA } }
+				country_event = { id = france.5 hours = 6 }
+			}
+			#add_ideas = exile_theking
+		}
+	}
+
+	focus = {
+		id = fra_kroyalists
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus = fra_kill }
+		x = 0
+		y = 6
+		cost = 10
+		completion_reward = {
+			if = {
+				limit = { country_exists = FRA }
+				FRA = { country_event = france.6 }
+			}
+			if = {
+				limit = { NOT = { country_exists = FRA } }
+				country_event = { id = france.6 hours = 6 }
+			}
+		}
+	}
+
+	focus = {
+		id = fra_royalists
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = fra_exile }
+		x = 2
+		y = 6
+		cost = 10
+		completion_reward = {
+			if = {
+				limit = { country_exists = FRA }
+				FRA = { country_event = france.7 }
+			}
+			if = {
+				limit = { NOT = { country_exists = FRA } }
+				country_event = { id = france.7 hours = 6 }
+			}
+		}
+	}
+
+	focus = {
+		id = fra_protect
+		icon = GFX_goal_generic_defence
+		prerequisite = { focus = fra_royalists focus = fra_kroyalists }
+		x = 1
+		y = 7
+		cost = 10
+		completion_reward = {
+			if = {
+				limit = { country_exists = FRA }
+				FRA = { country_event = france.8 }
+			}
+			if = {
+				limit = { NOT = { country_exists = FRA } }
+				country_event = { id = france.8 hours = 6 }
+			}
+			remove_ideas = exile_royalists
+			remove_ideas = kill_royalists
+		}
+	}
+
+	focus = {
+		id = fra_reform
+		icon = GFX_goal_molotov_ribbentrop_pact
+		prerequisite = { focus = fra_protect }
+		x = 1
+		y = 8
+		cost = 10
+		completion_reward = {
+			if = {
+				limit = { country_exists = FRA }
+				FRA = { country_event = france.9 }
+			}
+			if = {
+				limit = { NOT = { country_exists = FRA } }
+				country_event = { id = france.9 hours = 6 }
+			}
+		}
+	}
+
+	focus = {
+		id = fra_reign
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = fra_reform }
+		mutually_exclusive = { focus = fra_trials }
+		x = 0
+		y = 9
+		cost = 10
+		completion_reward = {
+			if = {
+				limit = { country_exists = FRA }
+				FRA = { country_event = france.10 }
+			}
+			if = {
+				limit = { NOT = { country_exists = FRA } }
+				country_event = { id = france.10 hours = 6 }
+			}
+		}
+	}
+
+	focus = {
+		id = fra_trials
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { focus = fra_reform }
+		mutually_exclusive = { focus = fra_reign }
+		x = 2
+		y = 9
+		cost = 10
+		completion_reward = {
+			if = {
+				limit = { country_exists = FRA }
+				FRA = { country_event = france.11 }
+			}
+			if = {
+				limit = { NOT = { country_exists = FRA } }
+				country_event = { id = france.11 hours = 6 }
+			}
+			remove_ideas = jacobin_constitution
+		}
+	}
+
+### 2nd Tree Army
+
+	focus = {
+		id = fra_revolutionary
+		icon = GFX_goal_generic_army_doctrines
+		x = 14
+		y = 0
+		cost = 10
+		completion_reward = {
+			add_stability = 0.05
+		add_ideas = revolutionaryarmy
+		}
+	}
+
+	focus = {
+		id = fra_levee
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = fra_revolutionary }
+		mutually_exclusive = { focus = fra_defense focus = fra_need }
+		x = 12
+		y = 1
+		cost = 10
+		completion_reward = {
+		add_ideas = levee
+		}
+	}
+
+	focus = {
+		id = fra_defense
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = fra_revolutionary }
+		mutually_exclusive = { focus = fra_levee focus = fra_need }
+		x = 14
+		y = 1
+		cost = 10
+		completion_reward = {
+		add_ideas = defense
+		}
+	}
+
+	focus = {
+		id = fra_need
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = fra_revolutionary }
+		mutually_exclusive = { focus = fra_levee focus = fra_defense }
+		x = 16
+		y = 1
+		cost = 10
+		completion_reward = {
+		add_ideas = need
+		}
+	}
+
+	focus = {
+		id = fra_militia
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = fra_levee }
+		x = 12
+		y = 2
+		cost = 10
+		completion_reward = {
+			army_experience = 10
+			remove_ideas = levee
+			add_ideas = militia
+		}
+	}
+
+	focus = {
+		id = fra_farms
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = fra_need }
+		x = 16
+		y = 2
+		cost = 10
+		completion_reward = {
+			army_experience = 10
+			remove_ideas = need
+			add_ideas = worker
+		}
+	}
+
+	focus = {
+		id = fra_officers
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = fra_defense }
+		x = 14
+		y = 2
+		cost = 10
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = fra_demi
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = fra_militia focus = fra_farms focus = fra_officers }
+		mutually_exclusive = { focus = fra_guard focus = fra_guerilla }
+		x = 12
+		y = 3
+		cost = 10
+		completion_reward = {
+		add_ideas = demi
+		}
+	}
+
+	focus = {
+		id = fra_guard
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = fra_militia focus = fra_farms focus = fra_officers }
+		mutually_exclusive = { focus = fra_demi focus = fra_guerilla }
+		x = 14
+		y = 3
+		cost = 10
+		completion_reward = {
+		add_ideas = nationalguard
+		}
+	}
+
+	focus = {
+		id = fra_guerilla
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = fra_militia focus = fra_farms focus = fra_officers }
+		mutually_exclusive = { focus = fra_demi focus = fra_guard }
+		x = 16
+		y = 3
+		cost = 10
+		completion_reward = {
+			#add_ideas = guerilla
+		}
+	}
+
+	focus = {
+		id = fra_forced
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = fra_demi }
+		x = 12
+		y = 4
+		cost = 10
+		completion_reward = {
+			add_ideas = massconscription
+			remove_ideas = militia
+			remove_ideas = demi
+		}
+	}
+
+	focus = {
+		id = fra_volunteers
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = fra_guard }
+		x = 14
+		y = 4
+		cost = 10
+		completion_reward = {
+			add_ideas = volunteers
+			remove_ideas = nationalguard
+		}
+	}
+
+	focus = {
+		id = fra_hunters
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = fra_guerilla }
+		x = 16
+		y = 4
+		cost = 10
+		completion_reward = {
+			add_ideas = hunters
+		}
+	}
+
+	focus = {
+		id = fra_imperial
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = fra_forced focus = fra_volunteers focus = fra_hunters }
+		x = 14
+		y = 5
+		cost = 10
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+			add_ideas = why_we_fight_focus
+		}
+	}
+
+	focus = {
+		id = fra_grand
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = fra_imperial }
+		x = 13
+		y = 6
+		cost = 10
+		completion_reward = {
+			#add_ideas = grand
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		add_ideas = grandarmy
+		}
+	}
+
+	focus = {
+		id = fra_corp
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = fra_imperial }
+		x = 15
+		y = 6
+		cost = 10
+		completion_reward = {
+			#add_ideas = corp
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = fra_change
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = fra_corp }
+		x = 15
+		y = 7
+		cost = 10
+		completion_reward = {
+			#add_ideas = change
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = fra_conventional
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = fra_grand }
+		x = 13
+		y = 7
+		cost = 10
+		completion_reward = {
+			#add_ideas = conventional
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+
+	focus = {
+		id = fra_charv
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 22
+		y = 0
+		cost = 10
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+				type = arms_factory
+				level = 4
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = fra_import
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = fra_charv }
+		x = 20
+		y = 1
+		cost = 10
+		completion_reward = {
+		add_ideas = importedweapons
+		}
+	}
+
+	focus = {
+		id = fra_expand
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = fra_charv }
+		x = 24
+		y = 1
+		cost = 10
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+				type = arms_factory
+				level = 4
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = fra_research
+		icon = GFX_focus_research
+		prerequisite = { focus = fra_import focus = fra_expand }
+		x = 20
+		y = 2
+		cost = 10
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+### 3rd Tree Industry
+
+	focus = {
+		id = fra_industry
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = fra_import focus = fra_expand }
+		x = 22
+		y = 2
+		cost = 100
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+	}
+
+	focus = {
+		id = fra_workers
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = fra_import focus = fra_expand }
+		x = 24
+		y = 2
+		cost = 100
+		completion_reward = {
+		add_ideas = workers
+		}
+	}
+
+	focus = {
+		id = fra_steal
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = fra_research focus = fra_industry focus = fra_workers }
+		x = 19
+		y = 3
+		cost = 10
+		completion_reward = {
+			if = {
+				limit = { country_exists = ENG }
+				ENG = { country_event = eng.1 }
+			}
+			if = {
+				limit = { NOT = { country_exists = ENG } }
+				country_event = { id = eng.1 hours = 6 }
+			}
+		}
+	}
+
+	focus = {
+		id = fra_weapons
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = fra_research focus = fra_industry focus = fra_workers }
+		x = 21
+		y = 3
+		cost = 10
+		completion_reward = {
+			if = {
+				limit = { country_exists = SPR }
+				SPR = { country_event = spain.1 }
+			}
+			if = {
+				limit = { NOT = { country_exists = SPR } }
+				country_event = { id = spain.1 hours = 6 }
+			}
+		}
+	}
+
+	focus = {
+		id = fra_buy
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = fra_research focus = fra_industry focus = fra_workers }
+		x = 23
+		y = 3
+		cost = 10
+		completion_reward = {
+			if = {
+				limit = { country_exists = USA }
+				USA = { country_event = usa.1 }
+			}
+			if = {
+				limit = { NOT = { country_exists = USA } }
+				country_event = { id = usa.1 hours = 6 }
+			}
+		}
+	}
+
+	focus = {
+		id = fra_develop
+		icon = GFX_focus_research
+		prerequisite = { focus = fra_research focus = fra_industry focus = fra_workers }
+		x = 25
+		y = 3
+		cost = 10
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = fra_usa
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = fra_steal focus = fra_buy focus = fra_weapons focus = fra_develop }
+		mutually_exclusive = { focus = fra_spa }
+		x = 21
+		y = 4
+		cost = 10
+		completion_reward = {
+			if = {
+				limit = { country_exists = USA }
+				USA = { country_event = usa.2 }
+			}
+			if = {
+				limit = { NOT = { country_exists = USA } }
+				country_event = { id = usa.2 hours = 6 }
+			}
+		}
+	}
+
+	focus = {
+		id = fra_spa
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = fra_steal focus = fra_buy focus = fra_weapons focus = fra_develop }
+		mutually_exclusive = { focus = fra_usa }
+		x = 23
+		y = 4
+		cost = 10
+		completion_reward = {
+			if = {
+				limit = { country_exists = SPR }
+				SPR = { country_event = spain.1 }
+			}
+			if = {
+				limit = { NOT = { country_exists = SPR } }
+				country_event = { id = spain.1 hours = 6 }
+			}
+		}
+	}
+
+###
+
+	focus = {
+		id = fra_save
+		icon = GFX_focus_generic_home_defense
+		prerequisite = { focus = fra_revolution }
+		mutually_exclusive = { focus = fra_support_republic }
+		x = 7
+		y = 1
+		cost = 10
+		completion_reward = {
+			if = {
+				limit = { country_exists = FRA }
+				FRA = { country_event = france.13 }
+			}
+			if = {
+				limit = { NOT = { country_exists = FRA } }
+				country_event = { id = france.13 hours = 6 }
+			}
+		}
+	}
+
+	focus = {
+		id = fra_cake
+		icon = GFX_goal_anti_comintern_pact
+		prerequisite = { focus = fra_save }
+		x = 7
+		y = 2
+		cost = 10
+		completion_reward = {
+			if = {
+				limit = { country_exists = FRA }
+				FRA = { country_event = france.14 }
+			}
+			if = {
+				limit = { NOT = { country_exists = FRA } }
+				country_event = { id = france.14 hours = 6 }
+			}
+		}
+	}
+
+	focus = {
+		id = fra_give
+		icon = GFX_goal_tripartite_pact
+		prerequisite = { focus = fra_cake }
+		mutually_exclusive = { focus = fra_refuse }
+		x = 6
+		y = 3
+		cost = 10
+		completion_reward = {
+		add_ideas = nationalassembly
+		}
+	}
+
+	focus = {
+		id = fra_refuse
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = fra_cake }
+		mutually_exclusive = { focus = fra_give }
+		x = 8
+		y = 3
+		cost = 10
+		completion_reward = {
+			#add_ideas = refusenationalassembly
+		}
+	}
+
+	focus = {
+		id = fra_allies
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = fra_give focus = fra_refuse }
+		x = 7
+		y = 4
+		cost = 10
+		completion_reward = {
+			if = {
+				limit = { country_exists = AUS }
+				AUS = { country_event = austria.1 }
+			}
+			if = {
+				limit = { NOT = { country_exists = AUS } }
+				country_event = { id = austria.1 hours = 6 }
+			}
+		}
+	}
+
+	focus = {
+		id = fra_civilwar
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = fra_allies }
+		mutually_exclusive = { focus = fra_terms focus = fra_flee }
+		x = 5
+		y = 5
+		cost = 10
+		completion_reward = {
+			if = {
+				limit = { country_exists = FRA }
+				FRA = { country_event = france.16 }
+			}
+			if = {
+				limit = { NOT = { country_exists = FRA } }
+				country_event = { id = france.16 hours = 6 }
+			}
+		}
+	}
+
+	focus = {
+		id = fra_terms
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = fra_allies }
+		mutually_exclusive = { focus = fra_civilwar focus = fra_flee }
+		x = 7
+		y = 5
+		cost = 10
+		completion_reward = {
+			if = {
+				limit = { country_exists = FRA }
+				FRA = { country_event = france.15 }
+			}
+			if = {
+				limit = { NOT = { country_exists = FRA } }
+				country_event = { id = france.15 hours = 6 }
+			}
+		}
+	}
+
+	focus = {
+		id = fra_flee
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = fra_allies }
+		mutually_exclusive = { focus = fra_terms focus = fra_civilwar }
+		x = 9
+		y = 5
+		cost = 10
+		completion_reward = {
+			if = {
+				limit = { country_exists = FRA }
+				FRA = { country_event = france.12 }
+			}
+			if = {
+				limit = { NOT = { country_exists = FRA } }
+				country_event = { id = france.12 hours = 6 }
+			}
+		}
+	}
+
+	focus = {
+		id = fra_coalition
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = fra_flee }
+		x = 9
+		y = 6
+		cost = 10
+		completion_reward = {
+			if = {
+				limit = { country_exists = ENG }
+				ENG = { country_event = england.1 }
+			}
+			if = {
+				limit = { NOT = { country_exists = ENG } }
+				country_event = { id = england.1 hours = 6 }
+			}
+		}
+	}
+
+	focus = {
+		id = fra_constitution
+		icon = GFX_goal_anschluss
+		prerequisite = { focus = fra_terms }
+		x = 7
+		y = 6
+		cost = 10
+		completion_reward = {
+			#add_ideas = constitutionalmonarchy
+		}
+	}
+
+	focus = {
+		id = fra_neighbors
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = fra_civilwar }
+		x = 5
+		y = 6
+		cost = 10
+		completion_reward = {
+			if = {
+				limit = { country_exists = HOL }
+				HOL = { country_event = holland.1 }
+			}
+			if = {
+				limit = { NOT = { country_exists = HOL } }
+				country_event = { id = holland.1 hours = 6 }
+			}
+		}
+	}
+
+	focus = {
+		id = fra_execute
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus = fra_neighbors }
+		x = 5
+		y = 7
+		cost = 10
+		completion_reward = {
+		add_ideas = kill_royalists
+		}
+	}
+
+	focus = {
+		id = fra_enemies
+		available = {
+			AUS = {
+				exists = yes
+				NOT = { is_in_faction_with = FRA }
+			}
+			PRE = {
+				exists = yes
+				NOT = { is_in_faction_with = FRA }
+			}
+			ENG = {
+				exists = yes
+				NOT = { is_in_faction_with = FRA }
+			}
+		}
+		will_lead_to_war_with = AUS
+		will_lead_to_war_with = ENG
+		will_lead_to_war_with = PRE
+		prerequisite = { focus = fra_constitution }
+		icon = GFX_goal_generic_major_war
+		x = 7
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = AUS
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = PRE
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = ENG
+			}
+		}
+	}
+
+	focus = {
+		id = fra_dontrepay
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = fra_coalition }
+		x = 9
+		y = 7
+		cost = 10
+		completion_reward = {
+			if = {
+				limit = { country_exists = AUS }
+				AUS = { country_event = austria.3 }
+			}
+			if = {
+				limit = { NOT = { country_exists = AUS } }
+				country_event = { id = austria.3 hours = 6 }
+			}
+			if = {
+				limit = { country_exists = PRE }
+				PRE = { country_event = pussia.3 }
+			}
+			if = {
+				limit = { NOT = { country_exists = PRE } }
+				country_event = { id = prussia.3 hours = 6 }
+			}
+		}
+	}
+
+	focus = {
+		id = fra_debt
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { focus = fra_coalition }
+		x = 11
+		y = 7
+		cost = 10
+		completion_reward = {
+			if = {
+				limit = { country_exists = AUS }
+				AUS = { country_event = austria.2 }
+			}
+			if = {
+				limit = { NOT = { country_exists = AUS } }
+				country_event = { id = austria.2 hours = 6 }
+			}
+			if = {
+				limit = { country_exists = PRE }
+				PRE = { country_event = prussia.2 }
+			}
+			if = {
+				limit = { NOT = { country_exists = PRE } }
+				country_event = { id = prussia.2 hours = 6 }
+			}
+		}
+	}
+
+	focus = {
+		id = fra_europeon
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = fra_dontrepay focus = fra_debt }
+		x = 10
+		y = 8
+		cost = 10
+		completion_reward = {
+			if = {
+				limit = { country_exists = HOL }
+				HOL = { country_event = holland.2 }
+			}
+			if = {
+				limit = { NOT = { country_exists = HOL } }
+				country_event = { id = holland.2 hours = 6 }
+			}
+			if = {
+				limit = { country_exists = PRE }
+				PRE = { country_event = prussia.3 }
+			}
+			if = {
+				limit = { NOT = { country_exists = PRE } }
+				country_event = { id = prussia.3 hours = 6 }
+			}
+			if = {
+				limit = { country_exists = AUS }
+				AUS = { country_event = austria.3 }
+			}
+			if = {
+				limit = { AUS = { country_exists = AUS } }
+				country_event = { id = austria.3 hours = 6 }
+			}
+			if = {
+				limit = { country_exists = ENG }
+				ENG = { country_event = england.2 }
+			}
+			if = {
+				limit = { NOT = { country_exists = ENG } }
+				country_event = { id = england.2 hours = 6 }
+			}
+		}
+	}
+
+	focus = {
+		id = fra_time
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = fra_execute focus = fra_enemies }
+		x = 6
+		y = 8
+		cost = 10
+		completion_reward = {
+			if = {
+				limit = { country_exists = FRA }
+				FRA = { country_event = fra.17 }
+			}
+			if = {
+				limit = { NOT = { country_exists = FRA } }
+				country_event = { id = fra.17 hours = 6 }
+			}
+		}
+	}
+
+###
+
+	focus = {
+		id = fra_infantry
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = fra_usa focus = fra_spa }
+		x = 20
+		y = 5
+		cost = 100
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+
+	focus = {
+		id = fra_cavalry
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = fra_usa focus = fra_spa }
+		x = 22
+		y = 5
+		cost = 100
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+
+	focus = {
+		id = fra_artillery
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = fra_usa focus = fra_spa }
+		x = 24
+		y = 5
+		cost = 100
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.5
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+
+}

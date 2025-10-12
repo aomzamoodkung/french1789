@@ -1,0 +1,595 @@
+ideas = {
+
+	country = {
+
+		french_revolution = {
+
+			allowed = {
+				original_tag = FRA
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+
+			modifier = {
+				fascism_drift = -0.1
+				army_morale_factor = -0.2
+				political_power_gain = -1
+				stability_factor = -0.2
+			}
+		}
+
+		jacobin_constitution = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_gain = 1
+			}
+		}
+
+		tuileries = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_gain = -0.25
+			}
+		}
+
+		kill_royalists = {
+
+			allowed = {
+				original_tag = FRA
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+
+			modifier = {
+				conscription = -0.005
+				stability_factor = -0.10
+			}
+		}
+
+		exile_royalists = {
+
+			allowed = {
+				original_tag = FRA
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+
+			modifier = {
+				conscription = -0.005
+				stability_factor = -0.05
+			}
+		}
+
+		protect = {
+
+			allowed = {
+				original_tag = FRA
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+
+			modifier = {
+				conscription = 0.01
+				stability_factor = 0.05
+			}
+		}
+
+		reforms = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_gain = 1
+			}
+		}
+
+		reignofterror = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_gain = -1
+				conscription = -0.01
+			}
+		}
+
+		trials = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_gain = -1
+				conscription = -0.0075
+			}
+		}
+
+		save = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_gain = 0.5
+				conscription = 0.005
+			}
+		}
+
+		cake = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_gain = -1
+				conscription = 0.005
+			}
+		}
+
+		nocake = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_gain = -0.5
+				conscription = -0.005
+			}
+		}
+
+		nationalassembly = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				political_power_gain = 0.5
+			}
+		}
+
+		revolutionaryarmy = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				conscription = 0.01
+			}
+		}
+
+		levee = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				conscription = 0.015
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+				build_cost_ic = 0.015 instant = yes
+				}
+			}
+		}
+
+		defense = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				conscription = 0.01
+			}
+
+			equipment_bonus = {
+				infantry_equipment = {
+				build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+
+		need = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				conscription = 0.005
+			}
+
+				equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+
+		militia = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				conscription = 0.02
+			}
+
+			equipment_bonus = {
+				infantry_equipment = {
+				build_cost_ic = 0.03 instant = yes
+				}
+			}
+		}
+
+		worker = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				conscription = -0.005
+			}
+
+			equipment_bonus = {
+				infantry_equipment = {
+				build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+
+		demi = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				conscription = 0.005
+			}
+
+			equipment_bonus = {
+				infantry_equipment = {
+				build_cost_ic = 0.05 instant = yes
+				}
+			}
+		}
+
+		nationalguard = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				conscription = 0.01
+			}
+
+			equipment_bonus = {
+				infantry_equipment = {
+				build_cost_ic = 0.1 instant = yes
+				}
+			}
+		}
+
+		massconscription = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				conscription = 0.05
+			}
+
+			equipment_bonus = {
+				infantry_equipment = {
+				build_cost_ic = 0.3 instant = yes
+				}
+			}
+		}
+
+		volunteers = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				conscription = 0.02
+			}
+		}
+
+		hunters = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				conscription = 0.01
+			}
+		}
+
+		grandarmy = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				conscription = 0.015
+			}
+		}
+
+		importedweapons = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			equipment_bonus = {
+				infantry_equipment = {
+				build_cost_ic = 0.05 instant = yes
+				}
+			}
+		}
+
+		workers = {
+
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			equipment_bonus = {
+				infantry_equipment = {
+				build_cost_ic = 0.05 instant = yes
+				}
+			}
+		}
+		fra_home_of_the_free = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = GFX_goal_support_democracy
+
+			rule = {
+				can_join_opposite_factions = no
+				can_create_factions = yes
+			}
+			modifier = {
+				drift_defence_factor = -0.2
+			}
+		}
+
+	########################
+	#### Starting Ideas ####
+	########################
+
+		FRA_haitian_revolt = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = FRA_haitian_revolt
+
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		FRA_divided_clergy = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = FRA_divided_clergy
+
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+
+		FRA_assignat = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = FRA_assignat
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+	}
+}

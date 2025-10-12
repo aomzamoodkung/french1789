@@ -1,0 +1,601 @@
+﻿division_template = {
+	name = "Régiment d'Infanterie"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+
+units = {
+
+	division= {
+		name = "1er Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "2e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "3e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "4e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "5e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "6e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "7e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "8e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "9e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "10e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "11e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "12e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "13e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "14e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "15e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "16e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "17e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "18e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "19e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "20e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "21e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "22e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "23e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "24e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "25e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "26e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "27e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "28e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "29e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "30e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "31e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "32e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "33e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "34e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "35e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "36e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "37e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "38e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "39e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "40e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "41e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "42e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "43e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "44e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "45e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "46e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "47e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "48e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "49e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "50e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "51e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "52e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "53e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "54e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "55e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "56e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "57e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "58e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "59e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "60e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "61e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "62e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "63e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "68e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "69e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "70e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "71e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "72e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "73e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "74e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "75e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "76e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "77e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "78e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "79e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "80e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "81e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "82e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "83e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "84e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "87e Régiment d'Infanterie"
+		location = 4641
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "88e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "890e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "90e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "91e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "92e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "93e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "94e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "95e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "96e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "97e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "98e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "99 Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "100e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "101e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "102e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "103e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+	division= {
+		name = "104e Régiment d'Infanterie"
+		location = 11506
+		division_template = "Régiment d'Infanterie"
+		start_experience_factor = 0.1
+	}
+}

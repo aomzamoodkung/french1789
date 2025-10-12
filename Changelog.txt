@@ -1,0 +1,353 @@
+v0.1
+  -reworked entire map (new countrys and states)
+  -added english translation
+  -added the head of states for every country
+  -added temporary oob for every other country
+  -decreased unit size of infantry
+  -new music
+  -new ideology: absolutism
+  -new loadingscreens
+  -new unit: grenadier
+  -new oob for prussia, france and russia
+  -reduced technology tree
+  -deleted all airports
+  -deleted aircraft national focus
+  -deleted specific national focuses (germany, england... )
+  -deleted all aircraft, submarine, armored and motorized equipment
+
+v0.2
+  -updated version to patch 1.1
+  -brazil now portuguese puppet
+  -switzerland leader now democratic
+  -countries now dont start with all technologies still researched
+  -darkened russias country colour
+  -changed communism, democracy parties to liberal and conservative ones
+  -renamed Prussia to Kingdom of Prussia
+  GFX:
+  -updated infantry weapon1, 2 and 3 icon
+  -new gui for naval battles, technology tab, equipment
+  -new fascism icon
+  -changed spain leader pic
+  Bugfixes:
+  -fixed crash when loaded a saved game
+
+v0.21
+  -Deleted all technologies besides infantry ones due to massive problems, will be enabled again in future updates
+  -deleted generic focus tree
+  -haiti now controlled by france
+  -reworked french oob
+
+v0.22
+  -rebalanced technology slots
+  -changed ideology names
+  -added political parties from france
+  -added some new events
+  -added a national focus tree for france
+  -new ideas for france
+  -added austrian oob
+  -added first coalition war
+
+v0.23
+  -added treaty of jassy from the russo-turkish war
+  -better borders at west balkan
+  -tons of new event pics
+  -new convoy picture
+  -added a idea for native countries
+  -reworked hawaii
+  -fixed danish country name
+  -changed native countries to  neutrality
+  -india isnt anymore a puppet of uk
+  -fixed new south wales isnt a puppet of uk
+  -fixed flags
+  -rearanged a little bit the french tree
+  -fixed some state bugs (unowned provinces, moved serbian provinces to hungary, implemented 2 new states)
+  -many other fixes
+
+v0.3
+  -reworked haiti
+  -added the leaders for south america
+  -added 2 new corps leader to hawaii and a new event
+  -costa rica is now owned by new spain
+  -deleted all vanilla ideas
+  -changed some new spain states to france
+  -added for all hawaii nations generic leaders
+  -added all election events for usa
+  -added new generals for usa
+
+v0.31
+  -added the mahgreb states algiers, tunis and tripolatia
+  -changed tunisian and libyan manpower
+  -added generic pics for the middle east
+  -reworked massive borders in north africa
+  -some loc. changes
+  -added a ton of new leaders for uk
+  -made some adjustments to the music and added 2 new songs for the arabic countries
+
+v0.31.1
+  -changed wallachia and moldavia to neutrality and added there leaders
+  -added morocco
+  -fixed the arabic songs
+
+v0.32
+  -changed name vatican to papal states
+  -add wood as a new ressource instead of aluminium
+  -placed all oak forest on map for the resource
+  -changed the resource requirements for rifles and battleships
+  -added ships of line
+  -tweaked some leader pics
+  -added for eng the HMS Victory for testing
+  -added an claim by Savoy to corsica
+  -added some new countries in italy
+  -changed toscana to neutrality and extented its name
+  -Savoy gets now controlled by Savoy
+  -changed usa colour
+
+v0.33
+  -added the country lucca
+  -added missing flags from tuscany
+  -fixed the capital for aborigines, kauai and maui
+  -fixed usa's neutrality leader
+  -many map fixes
+  -changed bavarian flags
+  -fixed flags for russia
+  -many localisation fixes
+  -some technology fixes
+  -changed some german countries to neutrality
+  -deleted rocket sites, airports, anti air and synthetic factories
+
+v0.34
+  -new gui elements
+  -reworked ideology icons
+  -added last missing flags for crimea, aborigines, mapuche and malta
+  -added some missing localisations
+  -added a leader to malta and changed its ideology to neutrality
+  -china now controlls the vladivostock region
+  -fixed a wrong loadingscreen
+  -fixed some wrong encoddings of files
+  -some minor fixes
+
+v0.34.1
+  -fixed new south wales
+  -changed spanish leader picture
+  -added Hong Kong and Guangzhouwan back to China
+  -reworked canada
+  -updated version to 1.3
+  -added some features from the new dlc 'Together for Victory' into the game
+
+v0.4
+  -added louisiana colony
+  -changed some colors in north america
+  -fixed name of poland
+  -fixed brazil name when its a portuguese puppet
+  -added usa election events for 1796, 1800, 1804, 1808, 1812, 1816 and 1820 and improved the 1792 one
+  -moved the contious focus tree down
+  -deleted all equipment names
+  -added some new localisations
+  -france now starts as a absolutist country
+  -fixed a bug that the focus 'Support the Royalist' wasnt doable
+  -reworked some effects for the french NF
+  -added belgium as an integrated puppet of austria back
+  -deleted the military access from the first coalition event to prevent the AI from spamming divisions at the belgium border
+  -changed building costs of convoys to 5 wood and 1 steel
+  -added some french generals
+  -now prussia joins the first coalition not instantly
+  -some effect changes for the 'French Revolution' idea
+  -changed some icons in the french focus
+  -shortened the name from first coalition to coalition
+  -added a bunch of new events related to the first coalition war
+  -added 200 convoys to france
+  -changed the portrait of Stanislaus II of poland
+  -updated mod to version 1.3.1
+
+v4.1
+  -added some indian countries
+  -cocos island are now unclaimed
+  -added the historical path for france nf
+  -new tech bg
+  -new naval technologies
+  -some impovements in technologies overall
+  -added a leader event to korea and gave it a generic portrait
+  -changed korean absolutism popularity to 100%
+  -changed Taiwan and sakhalin from japan and russia to china
+  -added ryukyu nation as a dominion from japan
+  -changed korean and japanese flags
+  -japan starts now neutral and with the shogun as its leader
+  -renamed japan
+  -changed some owners from the pacific isles
+  -created the kingdom of tahiti
+  -west australia is now unowned and aborigines just have now cores on australia
+  -readded indonesia as Dutch East India company back
+  -added matchlock as a prequesite to the hand cannon
+  -changed some tech effects
+
+v4.2
+  -added lesser sunda islands and sulawesi to Dutch east india
+  -added some political parties in asia
+  -added Sakoku idea to japan
+  -fixed some localisation issues
+  -added an basic oob for the uk, portugal, spain, bavaria and savoy
+  -expanded russian oob
+  New events:
+  Japan
+  -1792 unzen earthquake
+  China
+  -Jiaqing becomes emperor
+
+v4.3 'Arabia'
+  Reworked arabia:
+  -new focus tree for saudi arabia
+  -20 new provinces
+  -9 new states
+  -6 new countries
+  -15 new events
+  -historical oobs
+  -accurate population amounts (as far as possible)
+  -added some new countries to arabian music
+  -changed saudi arabias color to difference it from turkey
+  -added 2 impassable regions in arabia
+
+  Other changes:
+  -readded aborigines on map
+  -reduced infantry mp from 1000 to 800
+  -added localisation for bookmarks
+  -fixed wrong template in russian oob
+  -improved japanese sakoku icon
+  -some localisation fixes
+  -updated mod to 1.3.2
+
+v4.4.1
+  -fixed that SAU 'Copy Western Tactics' has a wrong prequesite
+  -added SAU general 'Sulaiman ibn Ufaysan'
+  -added a persian claim to Qatar
+  -added a civilian factory to Qatar
+  -fixed persian flag
+  -BEL is now a AUS puppet instead of beeing free when you dont own the DLC
+  -readded transport technology
+  -improved 'Cultivate the Desert' icon
+  -added SAU focus 'Gateway to Persian Gulf'
+  -added SAU focus 'Raid Ottoman Karawans'
+  -added a civilian factory to Al-Hasa
+  -MOR and QAT now are more likely to accept wahhabsim event
+  -'Al-Hasa refugees' event for QAT
+  -'Attack Saudis' event for MUS
+  -some focus effect changes
+  -some localisation fixes
+
+v4.5 'England'
+  -IRE now starts as an integrated puppet of ENG
+  -HNV is now a dominion of ENG
+  -improved music system
+  -changed mod logo
+
+v4.51
+  -ENG starts now democratic
+  -added ENG parties
+  -added more leaders for ENG
+  -changed ENG name
+  -changed some ideology rules
+  -changed ENG names
+  -changed ENG flags
+  -changed irish leader
+  -permamently deleted political advisors
+  -added (mostly) historical correct populations to: UK, France, Spain, Portugal, Malta, Belgium, Netherlands, Denmark, Norway, Swiss, Finland, Sweden, Austria-Hungary, Italy, Luxembourg, Germany, Poland
+  -fixed ottomans capital and its name
+  -some map changes in egypt
+  -reduced POR tech slots from 3 to 2
+  -deleted some weird core states for POR
+  -added some more ship icons
+  -reworked austrias states
+  -some strategic and supply area changes
+  -updates the bookmarks
+  -renamed some states
+  -readded infantry back
+
+v4.52
+  -fixed all states
+  -some other fixes
+  -replaced a loadingscreen
+
+v4.53
+  -added some naval technologies
+  -changed some naval tech icons
+  -reworked the difficulty settings
+  -fixed that ai could still research motorized rocket artillery
+  -fixed two austrian states
+
+v4.54
+  -added some new songs for ENG
+  -new technology bg
+  -fixed flag flickering problem
+
+v4.6
+  -new mechanics for german nations
+  -updated bookmarks
+  -added new generic portraits for europe
+  -deleted some useless ideas
+  -added some ideas back
+  -fixed research bug
+  -fixed missing localisation in the loading screen
+  -fixed some other localisations
+
+v5.0
+  -updated mod to the newest version
+  -deleted broken vanilla ideas
+  -fixed broken gui
+  -deleted unused names in the nameslist
+  -deleted all decisions for now
+  -corrected the main menu background
+  -added to the main menu logo LRF text
+  -added a new decision to the italian states to form Italy
+  -split the state of Tyrol into two states
+  -italian neutral leaders are now absolutist too and the way around
+  -removed dlc songs from the music player
+  -now every country which hasnt unique songs should hear Bach now
+  -made the two desserts in arabia impassable
+  -fixed some errors with the map
+
+v5.0.1
+  *map
+  -added some new states to china
+  *music
+  -renamed some songs
+  -added a new song for TUR
+  -added a new song for german nations
+  *bugfixes
+  -replaced unity_factor with stability_factor
+  -fixed many map bugs
+  -fixed some bugs which were caused by dlc's
+  -fixed the production screen gui
+  -fixed the missing technology tab bg's
+  -fixed a ton of localisation errors
+
+v6.0.0
+*Database
+ -the native idea now also gives a -50% research modifier to slow down there research
+ -the MAP (Mapuche) now have the Coyag (Parliament) as the starting leader instead of an generic guy
+ -added the following countries to Africa: BAM (Bamana), MAD (Madagascar), NGA (Oyo)
+*GFX
+ -new Portrait for MAP (Mapuche)
+ -added 2 generic portraits for african nations
+ -changed the convoy icon a little bit
+*Map
+ -reduced Patagonias (owned by Mapuche) infrastructure to 1 and removed its port
+ -Madagascar is now controlled by the Merida Kingdom (MAD) instead of France (FRA)
+ -Mali is now controlled by the Bamana Empire (BAM)
+ -added a VP to Madagascar called Antananarivo (3P)
+ -State 298 (Liberia) is now unowned
+ -State 515 (Southern Sahara) is now unowned
+ -State 557 (Mauritania) is now unowned
+ -State 699 (Rio de Oro) is now unowned
+*Localisation
+ -renamed French West Africa to Mali (556)
+*Bugfixes
+ -BEL now also has an test division template
+ -Prussia (PRE) medium and small sized flags should be correct now instead of using the German Empire ones
+
+v7.0.0
+-updated mod to the latest updates
+-slighty improved the text in the main screen
+-added asian, arabian and western radio stations
+-renamed Somaliland to Somalia
+-fixed some map errors
+-renamed state Leningrad to St. Petersburg
+-renamed Stalingrad to Tsaritsyn 

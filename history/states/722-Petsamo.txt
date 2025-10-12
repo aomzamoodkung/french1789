@@ -1,0 +1,26 @@
+state={
+	id=722
+	name="STATE_722"
+	manpower = 400107
+
+	state_category = rural
+
+	resources={
+		wood=4
+	}
+
+	history={
+		owner = MOD
+		buildings = {
+			infrastructure = 7
+			6973 = {
+				naval_base = 10
+			}	#La Spezia in Genoa
+		}
+		add_core_of = MOD
+	}
+
+	provinces={
+		3976 6973 9752 11734
+	}
+}

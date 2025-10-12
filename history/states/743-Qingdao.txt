@@ -1,0 +1,27 @@
+state={
+	id=743
+	name="STATE_743"
+
+	history={
+		owner = MUS
+		buildings = {
+			infrastructure = 2
+			10760 = {
+				naval_base = 3
+			}
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		victory_points = {
+			10760 3
+		}
+		add_core_of = MUS
+	}
+
+	provinces={
+		1947 4993 8002 8020 10760 10904
+	}
+	manpower=111000
+	state_category=rural
+	buildings_max_level_factor=1.000
+}

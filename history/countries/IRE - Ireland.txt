@@ -1,0 +1,36 @@
+﻿capital = 113
+
+oob = "IRE_1792"
+
+set_research_slots = 1
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+}
+
+set_convoys = 10
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1792.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 0
+	fascism = 100
+	communism = 0
+	neutrality = 0
+}
+
+create_country_leader = {
+	name = "John Fane"
+	desc = ""
+	picture = "Portrait_Hannover_John_Fane.dds"
+	expire = "1820.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}

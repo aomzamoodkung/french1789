@@ -1,0 +1,134 @@
+﻿division_template = {
+	name = "Regimento de Infantaria"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+}
+
+units = {
+
+### Regiment of Foot
+
+	division= {
+		name = "1 Regimento de Lippe"
+		location = 11805	#
+		division_template = "Regimento de Infantaria"
+	}
+	division= {
+		name = "2 Regimento de Lagos"
+		location = 11805	#
+		division_template = "Regimento de Infantaria"
+	}
+	division= {
+		name = "3 Regimento de Olivenca"
+		location = 11805	#
+		division_template = "Regimento de Infantaria"
+	}
+	division= {
+		name = "4 Regimento de Freire de Andrade"
+		location = 11805	#
+		division_template = "Regimento de Infantaria"
+	}
+	division= {
+		name = "5 Regimento de Elvas"
+		location = 11805	#
+		division_template = "Regimento de Infantaria"
+	}
+	division= {
+		name = "6 Regimento de Porto"
+		location = 11805	#
+		division_template = "Regimento de Infantaria"
+	}
+	division= {
+		name = "7 Regimento de Setubal"
+		location = 11805	#
+		division_template = "Regimento de Infantaria"
+	}
+	division= {
+		name = "8 Regimento de Castilo de Vide"
+		location = 11805	#
+		division_template = "Regimento de Infantaria"
+	}
+	division= {
+		name = "9 Regimento de Viano"
+		location = 11805	#
+		division_template = "Regimento de Infantaria"
+	}
+	division= {
+		name = "10 Regimento de Lisboa"
+		location = 11805	#
+		division_template = "Regimento de Infantaria"
+	}
+	division= {
+		name = "11 Regimento de Penamacor"
+		location = 11805	#
+		division_template = "Regimento de Infantaria"
+	}
+	division= {
+		name = "12 Regimento de Chaves"
+		location = 11805	#
+		division_template = "Regimento de Infantaria"
+	}
+	division= {
+		name = "13 Regimento de Peniche"
+		location = 11805	#
+		division_template = "Regimento de Infantaria"
+	}
+	division= {
+		name = "14 Regimento de Tavira"
+		location = 11805	#
+		division_template = "Regimento de Infantaria"
+	}
+	division= {
+		name = "15 Regimento de Olivenca"
+		location = 11805	#
+		division_template = "Regimento de Infantaria"
+	}
+	division= {
+		name = "16 Regimento de Vieira Tales"
+		location = 11805	#
+		division_template = "Regimento de Infantaria"
+	}
+	division= {
+		name = "17 Regimento de Elvas"
+		location = 11805	#
+		division_template = "Regimento de Infantaria"
+	}
+	division= {
+		name = "18 Regimento de Porto"
+		location = 11805	#
+		division_template = "Regimento de Infantaria"
+	}
+	division= {
+		name = "19 Regimento de Cascais"
+		location = 11805	#
+		division_template = "Regimento de Infantaria"
+	}
+	division= {
+		name = "20 Regimento de Campo Maior"
+		location = 11805	#
+		division_template = "Regimento de Infantaria"
+	}
+	division= {
+		name = "21 Regimento de Valenca"
+		location = 11805	#
+		division_template = "Regimento de Infantaria"
+	}
+	division= {
+		name = "22 Regimento de Serpa"
+		location = 11805	#
+		division_template = "Regimento de Infantaria"
+	}
+	division= {
+		name = "23 Regimento de Almeida"
+		location = 11805	#
+		division_template = "Regimento de Infantaria"
+	}
+	division= {
+		name = "24 Regimento de Braganca"
+		location = 11805	#
+		division_template = "Regimento de Infantaria"
+	}
+}

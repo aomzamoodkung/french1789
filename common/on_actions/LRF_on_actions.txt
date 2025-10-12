@@ -1,0 +1,141 @@
+on_actions = { #used when puppeting in a peace conference
+#ROOT = nation being puppeted, FROM = overlord
+on_puppet = {
+	effect = {
+		if = {
+			limit = {
+				AND = {
+					TAG = BEL
+					is_subject_of = AUS
+					}
+				 }
+			set_cosmetic_tag = BEL_AUS
+		}
+		if = {
+			limit = {
+				AND = {
+					TAG = SRL
+					is_subject_of = ENG
+					}
+				 }
+			set_cosmetic_tag = SRL_ENG
+		}
+		if = {
+			limit = {
+				AND = {
+					TAG = SRL
+					is_subject_of = HOL
+					}
+				 }
+			set_cosmetic_tag = SRL_HOL
+		}
+		if = {
+			limit = {
+				AND = {
+					TAG = TRV
+					is_subject_of = ENG
+					}
+				 }
+			set_cosmetic_tag = TRV_ENG
+		}
+		if = {
+			limit = {
+				AND = {
+					TAG = MRS
+					is_subject_of = ENG
+					}
+				 }
+			set_cosmetic_tag = MRS_ENG
+		}
+		if = {
+			limit = {
+				AND = {
+					TAG = MRS
+					is_subject_of = HOL
+					}
+				 }
+			set_cosmetic_tag = MRS_HOL
+		}
+		if = {
+			limit = {
+				AND = {
+					TAG = MRS
+					is_subject_of = FRA
+					}
+				 }
+			set_cosmetic_tag = MRS_FRA
+		}
+	}
+}
+
+#used when puppeting through the occupied territories menu during peace time (or when releasing from non-core but owned territory, f.e. Britain releasing Egypt)
+#ROOT = nation being released, FROM = overlord
+	on_release_as_puppet = {
+		effect = {
+			if = {
+				limit = {
+					AND = {
+						TAG = BEL
+						is_subject_of = AUS
+					}
+				}
+				set_cosmetic_tag = BEL_AUS
+			}
+			if = {
+				limit = {
+					AND = {
+						TAG = SRL
+						is_subject_of = ENG
+					}
+				}
+				set_cosmetic_tag = SRL_ENG
+			}
+			if = {
+				limit = {
+					AND = {
+						TAG = SRL
+						is_subject_of = HOL
+					}
+				}
+				set_cosmetic_tag = SRL_HOL
+			}
+			if = {
+				limit = {
+					AND = {
+						TAG = TRV
+						is_subject_of = ENG
+					}
+				}
+				set_cosmetic_tag = TRV_ENG
+			}
+			if = {
+				limit = {
+					AND = {
+						TAG = MRS
+						is_subject_of = HOL
+					}
+				}
+				set_cosmetic_tag = MRS_HOL
+			}
+			if = {
+				limit = {
+					AND = {
+						TAG = MRS
+						is_subject_of = ENG
+					}
+				}
+				set_cosmetic_tag = MRS_ENG
+			}
+			if = {
+				limit = {
+					AND = {
+						TAG = MRS
+						is_subject_of = FRA
+					}
+				}
+				set_cosmetic_tag = MRS_FRA
+			}
+		}
+	}
+
+}

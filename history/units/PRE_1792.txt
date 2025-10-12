@@ -1,0 +1,343 @@
+﻿division_template = {
+	name = "Infanterieregiment"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		grenadier = { x = 1 y = 0 }
+	}
+}
+
+units = {
+
+	division= {
+		name = "Infanterieregiment No. 1"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 2"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 3"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 4"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 5"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 6"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 7"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 8"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 9"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 10"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 11"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 12"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 13"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 14"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 15"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 16"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 17"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 18"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 19"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 20"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 21"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 22"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 23"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 24"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 25"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 26"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 27"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 28"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 29"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 30"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 31"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 32"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 33"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 34"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 35"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 36"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 37"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 38"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 39"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 40"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 41"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 42"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 43"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 44"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 45"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 46"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 47"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 48"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 49"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 50"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 51"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 52"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 53"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 54"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Infanterieregiment No. 55"
+		location = 6521
+		division_template = "Infanterieregiment"
+		start_experience_factor = 0.2
+	}
+}

@@ -1,0 +1,181 @@
+﻿capital = 361
+
+oob = "USA_1792"
+
+set_research_slots = 2
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+add_ideas = {
+#
+}
+
+
+set_convoys = 200
+#set_stability = 0.6
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1792.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 100
+	fascism = 0
+	communism = 0
+	neutrality = 0
+}
+
+
+# DIPLOMACY
+
+create_country_leader = {
+	name = "George Washington"
+	desc = ""
+	picture = "Portrait_USA_George_Washington.dds"
+	expire = "1947.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "George Washington"
+	desc = ""
+	picture = "Portrait_USA_George_Washington.dds"
+	expire = "1799.12.14"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "George Clinton"
+	desc = ""
+	picture = "Portrait_USA_George_Clinton.dds"
+	expire = "1812.4.20"
+	ideology = republicanism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "John Jay"
+	desc = ""
+	picture = "Portrait_USA_John_Jay.dds"
+	expire = "1821.1.1"
+	ideology = despotism
+	traits = {
+	}
+}
+
+### Army
+### Skill 1 - Major
+
+create_corps_commander = {
+	name = "Jean-François Hamtramck"
+	picture = "Portrait_USA_Hamtramck.dds"
+	traits = {  }
+	skill = 1
+}
+create_corps_commander = {
+	name = "David Strong"
+	picture = "Portrait_USA_Generic_land_1.dds"
+	traits = {  }
+	skill = 1
+}
+create_corps_commander = {
+	name = "Henry Gaither"
+	picture = "Portrait_USA_Generic_land_1.dds"
+	traits = {  }
+	skill = 1
+}
+create_corps_commander = {
+	name = "John Clark"
+	picture = "Portrait_USA_Generic_land_1.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_corps_commander = { ### 9th president and 1793 aide-de-camp
+	name = "William Henry Harrison"
+	picture = "Portrait_USA_William_Harrison.dds"
+	traits = {  }
+	skill = 1
+}
+
+### Skill 2 - Lieutenant Colonel
+
+create_corps_commander = {
+	name = "William Hull"
+	picture = "Portrait_USA_William_Hull.dds"
+	traits = {  }
+	skill = 2
+}
+
+create_corps_commander = {
+	name = "James Wilkinson"
+	picture = "Portrait_USA_James_Wilkinson.dds"
+	traits = {  }
+	skill = 2
+}
+
+create_corps_commander = {
+	name = "William Darke"
+	picture = "Portrait_USA_William_Darke.dds"
+	traits = {  }
+	skill = 2
+}
+
+### Skill 4 - Brigadier General
+
+create_field_marshal = {	### commander of Tennessee militia
+	name = "Andrew Jackson"
+	picture = "Portrait_USA_Andrew_Jackson.dds"
+	traits = {  }
+	skill = 4
+}
+
+create_corps_commander = {
+	name = "Josiah Harmar"
+	picture = "Portrait_USA_Josiah_Harmar.dds"
+	traits = {  }
+	skill = 4
+}
+
+create_corps_commander = {	### legion commander
+	name = "Anthony Wayne"
+	picture = "Portrait_USA_Anthony_Wayne.dds"
+	traits = {  }
+	skill = 4
+}
+
+### Skill 5 - Major General
+
+create_field_marshal = {	### marshal of maine militia
+	name = "Henry Dearborn"
+	picture = "Portrait_USA_Henry_Dearborn.dds"
+	traits = {  }
+	skill = 5
+}
+
+create_field_marshal = {	### marshal of maine militia
+	name = "Arthur St. Clair"
+	picture = "Portrait_USA_Arthur_Clair.dds"
+	traits = {  }
+	skill = 5
+}
+
+### Navy
+
+create_navy_leader = {
+	name = "Richard Dale"
+		picture = "Portrait_USA_Richard_Dale.dds"
+	traits = {  }
+	skill = 2
+}

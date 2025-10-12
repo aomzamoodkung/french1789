@@ -1,0 +1,32 @@
+﻿#######################
+### Britain Events ###
+######################
+
+add_namespace = britain
+
+# France asks for help
+country_event = {
+	id = britain.1
+	title = britain.1.t
+	desc = britain.1.d
+	picture = GFX_report_event_fra_exile
+
+	is_triggered_only	= yes
+
+	option = {
+		name = britain.1.a
+    set_country_flag = french_alliance_3
+    FRA = { create_faction = "french_alliance" add_to_faction = ENG }
+		FRA = { country_event = france.29 }
+		ai_chance = {
+			factor = 30
+		}
+	}
+	option = {
+		name = britain.1.b
+		FRA = { country_event = france.30 }
+		ai_chance = {
+			factor = 70
+		}
+	}
+}

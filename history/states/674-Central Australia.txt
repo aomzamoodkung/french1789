@@ -1,0 +1,28 @@
+
+state={
+	id=674
+	name="STATE_674"
+	manpower = 181698
+
+	state_category = large_city
+
+	resources={
+		wood=2
+	}
+
+	history={
+		owner = GEN
+		buildings = {
+			infrastructure = 8
+			6788 = {
+				naval_base = 8
+			}
+			dockyard = 3
+		}
+		add_core_of = GEN
+	}
+
+	provinces={
+		3772 6788
+	}
+}

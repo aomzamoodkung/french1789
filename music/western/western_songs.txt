@@ -1,0 +1,158 @@
+music_station = "western_music"
+
+music = {
+	song = "bach_brandenburg_concerto_no_5"
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "bach_double_concerto"
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "bach_gavotte"
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = no
+		}
+	}
+}
+
+### ENG ###
+
+	music = {
+		song = "ENG_anthem"
+
+		chance = {
+			modifier = {
+				factor = 10
+					tag = ENG
+				}
+			modifier = {
+				factor = 0
+
+				NOT = {
+					tag = ENG
+				}
+			}
+		}
+	}
+
+	music = {
+		song = "ENG_rule_britannia"
+
+		chance = {
+			modifier = {
+				factor = 10
+					tag = ENG
+				}
+			modifier = {
+				factor = 0
+
+				NOT = {
+					tag = ENG
+				}
+			}
+		}
+	}
+
+	music = {
+		song = "ENG_grenadiers"
+
+		chance = {
+			modifier = {
+				factor = 10
+					tag = ENG
+					has_war = yes
+				}
+			modifier = {
+				factor = 0
+
+				NOT = {
+					tag = ENG
+					has_war = yes
+				}
+			}
+		}
+	}
+
+	### FRA ###
+
+		music = {
+			song = "FRA_anthem"
+
+			chance = {
+				modifier = {
+					factor = 10
+						tag = FRA
+					}
+				modifier = {
+					factor = 0
+
+					NOT = {
+						tag = FRA
+					}
+					OR = {
+						has_government = democratic
+						has_government = communism
+					}
+				}
+			}
+		}
+
+		music = {
+			song = "FRA_anthem1"
+
+			chance = {
+				modifier = {
+					factor = 10
+						tag = FRA
+					}
+				modifier = {
+					factor = 0
+
+					NOT = {
+						tag = FRA
+					}
+					OR = {
+						has_government = fascism
+						has_government = neutrality
+					}
+				}
+			}
+		}
+
+	### GER ###
+
+		music = {
+			song = "GER_althessischer_reitermarsch"
+
+			chance = {
+				modifier = {
+					factor = 10
+						has_country_flag = german_music
+					}
+				modifier = {
+					factor = 0
+
+					NOT = {
+						has_country_flag = german_music
+					}
+				}
+			}
+		}

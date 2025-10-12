@@ -1,0 +1,34 @@
+ideas = {
+
+	# Special ones that can be applied on other countries through focus system.
+	country = {
+
+		hre = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			removal_cost = -1
+			picture = hre
+			modifier = {
+				political_power_gain = -0.5
+			}
+		}
+		hre_kaiser = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			removal_cost = -1
+			picture = hre_kaiser
+			modifier = {
+				political_power_gain = 1
+			}
+		}
+
+	}
+}

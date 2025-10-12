@@ -1,0 +1,468 @@
+﻿capital = 126
+
+oob = "ENG_1792"
+
+set_research_slots = 2
+
+#set_stability = 0.6
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	early_battleship = 1
+	basic_battleship = 1
+}
+
+add_ideas = {
+	#
+}
+
+set_convoys = 800
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1792.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 70
+	fascism = 10
+	communism = 20
+	neutrality = 0
+}
+
+# DIPLOMACY
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = IRE
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = NSW
+		autonomous_state = autonomy_colony
+		freedom_level = 0.35
+	}
+	set_autonomy = {
+		target = NVS
+		autonomous_state = autonomy_colony
+		freedom_level = 0.35
+	}
+	set_autonomy = {
+		target = NBR
+		autonomous_state = autonomy_colony
+		freedom_level = 0.35
+	}
+	set_autonomy = {
+		target = UCN
+		autonomous_state = autonomy_colony
+		freedom_level = 0.35
+	}
+	set_autonomy = {
+		target = LCN
+		autonomous_state = autonomy_colony
+		freedom_level = 0.35
+	}
+	set_autonomy = {
+		target = NFL
+		autonomous_state = autonomy_colony
+		freedom_level = 0.35
+	}
+	set_autonomy = {
+		target = HBC
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.4
+	}
+	set_autonomy = {
+		target = NWC
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.4
+	}
+	set_autonomy = {
+		target = HAN
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.4
+	}
+	else = {
+		puppet = NVS
+		puppet = NSW
+		puppet = NBR
+		puppet = UCN
+		puppet = LCN
+		puppet = HBC
+		puppet = NWC
+		puppet = NFL
+		puppet = IRE
+		puppet = HAN
+	}
+}
+if = {
+	limit = { has_dlc = "Together for Victory" }
+	add_to_tech_sharing_group = commonwealth_research
+}
+
+# Order matters - here Chamberlain becomes starting leader
+
+create_country_leader = {
+	name = "Georg III. Wilhelm Friedrich"
+	desc = ""
+	picture = "Portrait_Britain_Georg_III.dds"
+	expire = "1820.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Charles James Fox"
+	desc = ""
+	picture = "Portrait_Britain_Charles_Fox.dds"
+	expire = "1820.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "William Pitt the Younger"
+	desc = ""
+	picture = "Portrait_Britain_William_Younger.dds"
+	expire = "1820.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+### Army
+### Skill 2 - Major General
+
+create_corps_commander = {
+	name = "Prince Edward"
+	picture = "Portrait_Britain_Edward.dds"
+	traits = {  }
+	skill = 2
+}
+create_corps_commander = {
+	name = "Arthur Wellesley"
+	picture = "Portrait_Britain_Arthur_Wellesley.dds"
+	traits = {  }
+	skill = 2
+}
+create_corps_commander = {
+	name = "William Harcourt"
+	picture = "Portrait_Britain_William_Harcourt.dds"
+	traits = {  }
+	skill = 2
+}
+create_corps_commander = {
+	name = "Alured Clarke"
+	picture = "Portrait_Britain_Alured_Clarke.dds"
+	traits = {  }
+	skill = 2
+}
+create_corps_commander = {
+	name = "Samuel Hulse"
+	picture = "Portrait_Britain_Samuel_Hulse.dds"
+	traits = {  }
+	skill = 2
+}
+
+### Skill 3 - Leutnant General
+
+create_corps_commander = {
+	name = "Prince Frederick"
+	picture = "Portrait_Britain_Frederick.dds"
+	traits = {  }
+	skill = 3
+}
+create_corps_commander = {
+	name = "Charles Moore"
+	picture = "Portrait_Britain_Charles_Moore.dds"
+	traits = {  }
+	skill = 3
+}
+
+### Skill 4 - General
+
+create_field_marshal = {	### marshal of maine militia
+	name = "George Townshend"
+	picture = "Portrait_Britain_George_Townshend.dds"
+	traits = {  }
+	skill = 4
+}
+create_corps_commander = {
+	name = "John Campbell"
+	picture = "Portrait_Britain_John_Campbell.dds"
+	traits = {  }
+	skill = 4
+}
+create_corps_commander = {
+	name = "Jeffery Amherst"
+	picture = "Portrait_Britain_Jeffery_Amherst.dds"
+	traits = {  }
+	skill = 4
+}
+create_corps_commander = {
+	name = "Studholme Hodgson"
+	picture = "Portrait_Britain_Studholme_Hodgson.dds"
+	traits = {  }
+	skill = 4
+}
+create_corps_commander = {
+	name = "Lord Frederick Cavendish"
+	picture = "Portrait_Britain_Generic_land_1.dds"
+	traits = {  }
+	skill = 4
+}
+create_corps_commander = {
+	name = "Charles Lennox"
+	picture = "Portrait_Britain_Charles_Lennox.dds"
+	traits = {  }
+	skill = 4
+}
+
+### Skill 5 - Field marshal
+
+create_field_marshal = {	### marshal of maine militia
+	name = "John Griffin"
+	picture = "Portrait_Britain_John_Griffin.dds"
+	traits = {  }
+	skill = 5
+}
+create_corps_commander = {
+	name = "Henry Seymour Conway"
+	picture = "Portrait_Britain_Henry_Conway.dds"
+	traits = {  }
+	skill = 5
+}
+create_corps_commander = {
+	name = "William Henry"
+	picture = "Portrait_Britain_William_Henry.dds"
+	traits = {  }
+	skill = 5
+}
+create_corps_commander = {
+	name = "George Howard"
+	picture = "Portrait_Britain_George_Howard.dds"
+	traits = {  }
+	skill = 5
+}
+
+### Navy
+### Skill 1 - Lieutnant
+
+create_navy_leader = {
+	name = "Sir Thomas Hardy"
+		picture = "Portrait_Britain_Thomas_Hardy.dds"
+	traits = {  }
+	skill = 1
+}
+create_navy_leader = {
+	name = "Edward Berry"
+		picture = "Portrait_Britain_Edward_Berry.dds"
+	traits = {  }
+	skill = 1
+}
+
+### Skill 2 - Commander
+
+create_navy_leader = {
+	name = "Benjamin Hallowell Carew"
+		picture = "Portrait_Britain_Benjamin_Carew.dds"
+	traits = {  }
+	skill = 2
+}
+
+### Skill 3 - Captain
+
+create_navy_leader = {
+	name = "Henry Mowat"
+		picture = "Portrait_Britain_Henry_Mowat.dds"
+	traits = {  }
+	skill = 3
+}
+create_navy_leader = {
+	name = "Edward Pellew"
+		picture = "Portrait_Britain_Edward_Pellew.dds"
+	traits = {  }
+	skill = 3
+}
+create_navy_leader = {
+	name = "Horatio Nelson"
+		picture = "Portrait_Britain_Horatio_Nelson.dds"
+	traits = {  }
+	skill = 3
+}
+create_navy_leader = {
+	name = "Sir Peter Halkett"
+		picture = "Portrait_Britain_Peter_Halkett.dds"
+	traits = {  }
+	skill = 3
+}
+create_navy_leader = {
+	name = "Philip Charles Durham"
+		picture = "Portrait_Britain_Philip_Durham.dds"
+	traits = {  }
+	skill = 3
+}
+create_navy_leader = {
+	name = "Charles Tyler"
+		picture = "Portrait_Britain_Charles_Tyler.dds"
+	traits = {  }
+	skill = 3
+}
+create_navy_leader = {
+	name = "Cuthbert Collingwood"
+		picture = "Portrait_Britain_Cuthbert_Collingwood.dds"
+	traits = {  }
+	skill = 3
+}
+create_navy_leader = {
+	name = "Alexander Ball"
+		picture = "Portrait_Britain_Alexander_Ball.dds"
+	traits = {  }
+	skill = 3
+}
+create_navy_leader = {
+	name = "Davidge Gould"
+		picture = "Portrait_Britain_Davidge_Gould.dds"
+	traits = {  }
+	skill = 3
+}
+create_navy_leader = {
+	name = "Robert Stopford"
+		picture = "Portrait_Britain_Robert_Stopford.dds"
+	traits = {  }
+	skill = 3
+}
+create_navy_leader = {
+	name = "Henry D'Esterre Darby"
+		picture = "Portrait_Britain_Henry_Darby.dds"
+	traits = {  }
+	skill = 3
+}
+create_navy_leader = {
+	name = "Sir Thomas Troubridge"
+		picture = "Portrait_Britain_Thomas_Troubridge.dds"
+	traits = {  }
+	skill = 3
+}
+create_navy_leader = {
+	name = "Thomas Foley"
+		picture = "Portrait_Britain_Thomas_Foley.dds"
+	traits = {  }
+	skill = 3
+}
+create_navy_leader = {
+	name = "George Blagdon Westcott"
+		picture = "Portrait_Britain_George_Westcott.dds"
+	traits = {  }
+	skill = 3
+}
+create_navy_leader = {
+	name = "John Laforey"
+		picture = "Portrait_Britain_Generic_navy_1.dds"
+	traits = {  }
+	skill = 3
+}
+create_navy_leader = {
+	name = "Benjamin Caldwell"
+		picture = "Portrait_Britain_Benjamin_Caldwell.dds"
+	traits = {  }
+	skill = 3
+}
+create_navy_leader = {
+	name = "Thomas Louis"
+		picture = "Portrait_Britain_Thomas_Louis.dds"
+	traits = {  }
+	skill = 3
+}
+create_navy_leader = {
+	name = "John Knight"
+		picture = "Portrait_Britain_John_Knight.dds"
+	traits = {  }
+	skill = 3
+}
+create_navy_leader = {
+	name = "James Saumarez"
+		picture = "Portrait_Britain_James_Saumarez.dds"
+	traits = {  }
+	skill = 3
+}
+create_navy_leader = {
+	name = "Ralph Willett Miller"
+		picture = "Portrait_Britain_Generic_navy_1.dds"
+	traits = {  }
+	skill = 3
+}
+create_navy_leader = {
+	name = "Sir Thomas Thompson"
+		picture = "Portrait_Britain_Thomas_Thompson.dds"
+	traits = {  }
+	skill = 3
+}
+
+
+### Skill 4 - Commodore
+
+create_navy_leader = {
+	name = "Sir George Bowyer"
+		picture = "Portrait_Britain_George_Bowyer.dds"
+	traits = {  }
+	skill = 4
+}
+
+### Skill 5 - Admiral/General of sea
+
+create_navy_leader = {
+	name = "Mark Milbanke"
+		picture = "Portrait_Britain_Generic_navy_1.dds"
+	traits = {  }
+	skill = 5
+}
+create_navy_leader = {
+	name = "William Hotham"
+		picture = "Portrait_Britain_William_Hotham.dds"
+	traits = {  }
+	skill = 5
+}
+create_navy_leader = {
+	name = "Alexander Hood"
+		picture = "Portrait_Britain_Alexander_Hood.dds"
+	traits = {  }
+	skill = 5
+}
+create_navy_leader = {
+	name = "Richard Howe"
+		picture = "Portrait_Britain_Richard Howe.dds"
+	traits = {  }
+	skill = 5
+}
+create_navy_leader = {
+	name = "Samuel Hood"
+		picture = "Portrait_Britain_Samuel_Hood.dds"
+	traits = {  }
+	skill = 5
+}
+create_navy_leader = {
+	name = "John Elliot"
+		picture = "Portrait_Britain_Generic_navy_1.dds"
+	traits = {  }
+	skill = 5
+}
+create_navy_leader = {
+	name = "George Vandeput"
+		picture = "Portrait_Britain_George_Vandeput.dds"
+	traits = {  }
+	skill = 5
+}
+create_navy_leader = {
+	name = "John Jervis"
+		picture = "Portrait_Britain_John_Jervis.dds"
+	traits = {  }
+	skill = 5
+}

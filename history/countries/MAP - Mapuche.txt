@@ -1,0 +1,45 @@
+﻿capital = 512
+
+oob = "MAP_1792"
+
+set_research_slots = 0
+
+#set_stability = 0.6
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+add_ideas = {
+	native_tribe
+	service_by_requirement
+}
+
+set_convoys = 3
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1792.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 0
+	fascism = 0
+	communism = 0
+	neutrality = 100
+}
+
+set_convoys = 0
+
+create_country_leader = {
+	name = "Coyag"
+	desc = ""
+	picture = "Portrait_Mapuche_Parliament.dds"
+	expire = "1821.1.1"
+	ideology = despotism
+	traits = {
+	}
+}

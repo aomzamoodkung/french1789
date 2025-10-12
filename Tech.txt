@@ -1,0 +1,11 @@
+Cavalry
+[CSUNC] Bonkaholic: http://prntscr.com/brecpx
+[CSUNC] Bonkaholic: That is cavalry
+[CSUNC] Bonkaholic: And just in case you need a quick reminder:
+[CSUNC] Bonkaholic: Hussar - Man with sabre on fast horse
+[CSUNC] Bonkaholic: Lancer - Man with lance on horse
+[CSUNC] Bonkaholic: Cuirassier - Man with armour and sword on horse
+[CSUNC] Bonkaholic: Carabinier - Man with carbine on horse
+[CSUNC] Bonkaholic: Mounted Infantry - Infantry soldier who uses horse to get to the battlefield, then dismounts
+
+Aethle: If you haven't seen it, look up the mod "Marching on Your Stomach" and see if maybe there's a way to integrate it into LRF. It's by Axelius and is on the Workshop, He's done some interesting-looking work at creating 'food'and munitions, as well as creating attrition by movement - all key aspects - food and movement-by-attrition especially, that could be key at proper simulating the war. Also, I'd run a couple games as France to see how things go with teh AI, and I'm really not sure yet how, or if, there's a suitable way to force much, much, greater concentrations of forces - with 1-2 province-wide fronts to force the large-scale conflicts that are necessary.

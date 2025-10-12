@@ -1,0 +1,25 @@
+
+state = {
+	id=154
+	name="STATE_154"
+	manpower = 2735383
+
+	state_category = rural
+
+	resources={
+		wood=4
+	}
+
+	history = {
+		owner = KAN
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = KAN
+		add_core_of = SRL
+	}
+
+	provinces={
+		1213 10287
+	}
+}

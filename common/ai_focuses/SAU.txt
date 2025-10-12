@@ -1,0 +1,75 @@
+ai_historical_focus_list_SAU = {
+	ai_national_focuses = {
+		SAU_first_saudi_state               #1
+    SAU_follow_wahhabs                  #2
+    SAU_spread_wahhabism                #3
+    SAU_unite_arabia                    #4
+    SAU_conquer_east                    #5
+    SAU_royal_saudi_land_forces         #6
+    SAU_conquer_south                   #7
+    SAU_cultivate_desert                #8
+		SAU_attack_bahrain									#9
+    SAU_etablish_salafi_scholar_schools #10
+    SAU_dschizya                        #11
+    SAU_rivalry_ottomans                #12
+		SAU_raid_caravans										#13
+    SAU_develop_oases                   #14
+    SAU_attack_karbala                  #15
+    SAU_dawa														#16
+    SAU_form_ikhwan                     #17
+    SAU_conquer_north                   #18
+    SAU_conquer_west                    #19
+    SAU_fortify_holy_cities             #20
+    SAU_copy_western_tactics						#22
+		SAU_expand_into_oman
+		SAU_intigrate_asir
+		SAU_take_jerusalem           				#23
+    SAU_found_caliphate                 #24
+    SAU_declare_jihad               		#25
+	}
+}
+
+### 210 days
+  #1=29.7.1792
+  #2=23.2.1793
+  #3=21.9.1793
+  #4=19.4.1794
+  #5=14.11.1794
+  #6=12.6.1795
+  #7=7.1.1796
+  #8=2.11.1796
+  #9=31.5.1797
+  #10=26.12.1797
+  #11=24.7.1798
+  #12=18.2.1799
+  #13=16.9.1799
+  #14=14.4.1800
+  #15=9.11.1800
+  #16=7.6.1801
+  #17=2.1.1802
+  #18=31.7.1802
+  #19=25.2.1803
+  #20=23.9.1803
+
+### 280 days
+  #1=7.10.1792
+  #2=14.7.1793
+  #3=20.4.1794
+  #4=24.1.1795
+  #5=28.1.1796
+  #6=3.11.1796
+  #7=10.8.1797
+  #8=17.5.1798
+  #9=20.2.1799
+  #10=27.11.1799
+  #11=3.9.1800
+  #12=10.6.1801
+  #13=16.3.1802
+  #14=21.12.1802
+  #15=27.9.1803
+  #16=3.7.1804
+  #17=9.4.1805
+  #18=13.1.1806
+  #19=20.10.1806
+  #20=27.7.1807
+  #21=2.5.1808

@@ -1,0 +1,26 @@
+
+state={
+	id=91
+	name="STATE_91"
+
+	history={
+		owner = AUS
+		victory_points = {
+			11479 5
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+
+		}
+		add_core_of = AUS
+
+	}
+
+	provinces={
+		438 491 536 3434 3483 3562 6431 6460 6483 9425 9454 9468 9558 11411 11427 11479
+	}
+	manpower=1576000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

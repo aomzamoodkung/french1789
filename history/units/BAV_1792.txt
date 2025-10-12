@@ -1,0 +1,127 @@
+﻿division_template = {
+	name = "Infanterie-Regiment"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+		priority = 3
+}
+
+units = {
+
+### Infanterie-Regiment
+
+	division= {
+		name = "Leibgarde der Trabanlen"
+		location = 692	#
+		division_template = "Infanterie-Regiment"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "1. Grenadier und Leib-Infanterie-Regiment"
+		location = 692	#
+		division_template = "Infanterie-Regiment"
+	}
+	division= {
+		name = "2. Grenadier Regiment Kurprinz"
+		location = 692	#
+		division_template = "Infanterie-Regiment"
+	}
+	division= {
+		name = "3. Grenadier-Regiment Graf Ysenburg"
+		location = 692	#
+		division_template = "Infanterie-Regiment"
+	}
+	division= {
+		name = "4. Grenadier-Regiment Baden"
+		location = 692	#
+		division_template = "Infanterie-Regiment"
+	}
+	division= {
+		name = "1. Füsilier-Regiment"
+		location = 692	#
+		division_template = "Infanterie-Regiment"
+	}
+	division= {
+		name = "2. Füsilier-Regiment"
+		location = 692	#
+		division_template = "Infanterie-Regiment"
+	}
+	division= {
+		name = "3. Füsilier-Regiment"
+		location = 692	#
+		division_template = "Infanterie-Regiment"
+	}
+	division= {
+		name = "4. Füsilier-Regiment"
+		location = 692	#
+		division_template = "Infanterie-Regiment"
+	}
+	division= {
+		name = "5. Füsilier-Regiment"
+		location = 692	#
+		division_template = "Infanterie-Regiment"
+	}
+	division= {
+		name = "6. Füsilier-Regiment"
+		location = 692	#
+		division_template = "Infanterie-Regiment"
+	}
+	division= {
+		name = "7. Füsilier-Regiment"
+		location = 692	#
+		division_template = "Infanterie-Regiment"
+	}
+	division= {
+		name = "8. Füsilier-Regiment"
+		location = 692	#
+		division_template = "Infanterie-Regiment"
+	}
+	division= {
+		name = "9. Füsilier-Regiment"
+		location = 692	#
+		division_template = "Infanterie-Regiment"
+	}
+	division= {
+		name = "10. Füsilier-Regiment"
+		location = 692	#
+		division_template = "Infanterie-Regiment"
+	}
+	division= {
+		name = "11. Füsilier-Regiment"
+		location = 692	#
+		division_template = "Infanterie-Regiment"
+	}
+	division= {
+		name = "12. Füsilier-Regiment"
+		location = 692	#
+		division_template = "Infanterie-Regiment"
+	}
+	division= {
+		name = "13. Füsilier-Regiment"
+		location = 692	#
+		division_template = "Infanterie-Regiment"
+	}
+	division= {
+		name = "14. Füsilier-Regiment"
+		location = 692	#
+		division_template = "Infanterie-Regiment"
+	}
+	division= {
+		name = "1. Feldjäger-Regiment"
+		location = 692	#
+		division_template = "Infanterie-Regiment"
+	}
+	division= {
+		name = "2. Feldjäger-Regiment"
+		location = 692	#
+		division_template = "Infanterie-Regiment"
+	}
+	division= {
+		name = "Leibgarde der Hartschiere"
+		location = 692	#
+		division_template = "Infanterie-Regiment"
+		start_experience_factor = 0.1
+	}
+}

@@ -1,0 +1,26 @@
+
+state={
+	id=655
+	name="STATE_655"
+	manpower = 94759
+
+	state_category = pastoral
+
+	resources={
+		wood=6
+	}
+
+	history={
+		owner = CHI
+		add_core_of = CHI
+		add_claim_by = JAP
+		buildings = {
+			infrastructure = 3
+
+		}
+	}
+
+	provinces={
+		855 1742 1755
+	}
+}

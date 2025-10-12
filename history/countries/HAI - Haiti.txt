@@ -1,0 +1,55 @@
+﻿capital = 318
+
+oob = "HAI_1792"
+
+set_research_slots = 1
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_convoys = 5
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1792.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 0
+	fascism = 0
+	communism = 0
+	neutrality = 100
+}
+
+if = {
+	limit = { has_dlc = "Together for Victory" }
+	add_to_tech_sharing_group = french_research
+}
+
+create_country_leader = {
+	name = "André Rigaud"
+	desc = ""
+	picture = "gfx/leaders/HAI/Portrait_Haiti_Andre_Rigaud.dds"
+	expire = "1820.1.1"
+	ideology = conservatism
+}
+
+create_country_leader = {
+	name = "Toussaint Louverture"
+	desc = ""
+	picture = "gfx/leaders/HAI/Portrait_Haiti_Toussaint_Louverture.dds"
+	expire = "1820.1.1"
+	ideology = liberalism
+}
+
+create_country_leader = {
+	name = "Philibert François Rouxel de Blanchelande"
+	desc = ""
+	picture = "gfx/leaders/HAI/Portrait_Haiti_Philibert_Blanchrlande.dds"
+	expire = "1793.1.1"
+	ideology = despotism
+}

@@ -1,0 +1,44 @@
+﻿capital = 543
+
+oob = "MAD_1792"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+add_ideas = {
+	native_tribe
+}
+
+set_convoys = 5
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1792.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 0
+	fascism = 0
+	communism = 0
+	neutrality = 100
+}
+
+create_country_leader = {
+	name = "Andrianampoinimerina"
+	desc = ""
+	picture = "Portrait_Madagascar_Andrianampoinimerina.dds"
+	expire = "1821.1.1"
+	ideology = absolutism
+}
+
+create_country_leader = {
+	name = "Andrianampoinimerina"
+	desc = ""
+	picture = "Portrait_Madagascar_Andrianampoinimerina.dds"
+	expire = "1821.1.1"
+	ideology = despotism
+}

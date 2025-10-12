@@ -1,0 +1,768 @@
+﻿division_template = {
+	name = "Mushketer Polka"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Bolshoy Mushketer Polka"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "Nezavisimyy Mushketer Batalon"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Garnizon Batalon"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Yager Korpus"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Grenaderskogo Polka"
+
+	regiments = {
+		grenadier = { x = 0 y = 0 }
+		grenadier = { x = 0 y = 1 }
+		grenadier = { x = 0 y = 2 }
+		grenadier = { x = 0 y = 3 }
+		grenadier = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "Polskiy Pekhotnogo Polka"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+}
+
+units = {
+
+	division= {
+		name = "1. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "2. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "3. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "4. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "5. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "6. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "7. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "8. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "9. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "10. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "11. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "12. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "13. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "14. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "15. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "16. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "17. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "18. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "19. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "20. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "21. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "22. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "23. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "24. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "25. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "26. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "27. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "28. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "29. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "30. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "31. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "32. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "33. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "34. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "35. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "36. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "37. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "38. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "39. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "40. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "41. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "42. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "43. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "44. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "45. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "46. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "47. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "48. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "49. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "50. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "51. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "52. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "53. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "54. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "55. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "56. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "57. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+	division= {
+		name = "58. Mushketer Polka"
+		location = 3151
+		division_template = "Mushketer Polka"
+	}
+
+### Bolshoy Mushketer Polka
+
+	division= {
+		name = "1. Bolshoy Mushketer Polka"
+		location = 3151
+		division_template = "Bolshoy Mushketer Polka"
+	}
+
+### Nezavisimyy Mushketer Batalon
+
+	division= {
+		name = "1. Nezavisimyy Mushketer Batalon"
+		location = 3151
+		division_template = "Nezavisimyy Mushketer Batalon"
+	}
+	division= {
+		name = "2. Nezavisimyy Mushketer Batalon"
+		location = 3151
+		division_template = "Nezavisimyy Mushketer Batalon"
+	}
+	division= {
+		name = "3. Nezavisimyy Mushketer Batalon"
+		location = 3151
+		division_template = "Nezavisimyy Mushketer Batalon"
+	}
+	division= {
+		name = "4. Nezavisimyy Mushketer Batalon"
+		location = 3151
+		division_template = "Nezavisimyy Mushketer Batalon"
+	}
+	division= {
+		name = "5. Nezavisimyy Mushketer Batalon"
+		location = 3151
+		division_template = "Nezavisimyy Mushketer Batalon"
+	}
+	division= {
+		name = "6. Nezavisimyy Mushketer Batalon"
+		location = 3151
+		division_template = "Nezavisimyy Mushketer Batalon"
+	}
+	division= {
+		name = "7. Nezavisimyy Mushketer Batalon"
+		location = 3151
+		division_template = "Nezavisimyy Mushketer Batalon"
+	}
+	division= {
+		name = "8. Nezavisimyy Mushketer Batalon"
+		location = 3151
+		division_template = "Nezavisimyy Mushketer Batalon"
+	}
+	division= {
+		name = "9. Nezavisimyy Mushketer Batalon"
+		location = 3151
+		division_template = "Nezavisimyy Mushketer Batalon"
+	}
+	division= {
+		name = "10. Nezavisimyy Mushketer Batalon"
+		location = 3151
+		division_template = "Nezavisimyy Mushketer Batalon"
+	}
+	division= {
+		name = "11. Nezavisimyy Mushketer Batalon"
+		location = 3151
+		division_template = "Nezavisimyy Mushketer Batalon"
+	}
+	division= {
+		name = "12. Nezavisimyy Mushketer Batalon"
+		location = 3151
+		division_template = "Nezavisimyy Mushketer Batalon"
+	}
+	division= {
+		name = "13. Nezavisimyy Mushketer Batalon"
+		location = 3151
+		division_template = "Nezavisimyy Mushketer Batalon"
+	}
+	division= {
+		name = "14. Nezavisimyy Mushketer Batalon"
+		location = 3151
+		division_template = "Nezavisimyy Mushketer Batalon"
+	}
+	division= {
+		name = "15. Nezavisimyy Mushketer Batalon"
+		location = 3151
+		division_template = "Nezavisimyy Mushketer Batalon"
+	}
+
+### Garnizon Batalon
+
+	division= {
+		name = "1. Garnizon Batalon"
+		location = 3151
+		division_template = "Garnizon Batalon"
+	}
+	division= {
+		name = "2. Garnizon Batalon"
+		location = 3151
+		division_template = "Garnizon Batalon"
+	}
+	division= {
+		name = "3. Garnizon Batalon"
+		location = 3151
+		division_template = "Garnizon Batalon"
+	}
+	division= {
+		name = "4. Garnizon Batalon"
+		location = 3151
+		division_template = "Garnizon Batalon"
+	}
+	division= {
+		name = "5. Garnizon Batalon"
+		location = 3151
+		division_template = "Garnizon Batalon"
+	}
+	division= {
+		name = "6. Garnizon Batalon"
+		location = 3151
+		division_template = "Garnizon Batalon"
+	}
+	division= {
+		name = "7. Garnizon Batalon"
+		location = 3151
+		division_template = "Garnizon Batalon"
+	}
+	division= {
+		name = "8. Garnizon Batalon"
+		location = 3151
+		division_template = "Garnizon Batalon"
+	}
+	division= {
+		name = "9. Garnizon Batalon"
+		location = 3151
+		division_template = "Garnizon Batalon"
+	}
+	division= {
+		name = "10. Garnizon Batalon"
+		location = 3151
+		division_template = "Garnizon Batalon"
+	}
+	division= {
+		name = "11. Garnizon Batalon"
+		location = 3151
+		division_template = "Garnizon Batalon"
+	}
+	division= {
+		name = "12. Garnizon Batalon"
+		location = 3151
+		division_template = "Garnizon Batalon"
+	}
+	division= {
+		name = "13. Garnizon Batalon"
+		location = 3151
+		division_template = "Garnizon Batalon"
+	}
+	division= {
+		name = "14. Garnizon Batalon"
+		location = 3151
+		division_template = "Garnizon Batalon"
+	}
+	division= {
+		name = "15. Garnizon Batalon"
+		location = 3151
+		division_template = "Garnizon Batalon"
+	}
+	division= {
+		name = "16. Garnizon Batalon"
+		location = 3151
+		division_template = "Garnizon Batalon"
+	}
+	division= {
+		name = "17. Garnizon Batalon"
+		location = 3151
+		division_template = "Garnizon Batalon"
+	}
+	division= {
+		name = "18. Garnizon Batalon"
+		location = 3151
+		division_template = "Garnizon Batalon"
+	}
+	division= {
+		name = "19. Garnizon Batalon"
+		location = 3151
+		division_template = "Garnizon Batalon"
+	}
+	division= {
+		name = "20. Garnizon Batalon"
+		location = 3151
+		division_template = "Garnizon Batalon"
+	}
+	division= {
+		name = "21. Garnizon Batalon"
+		location = 3151
+		division_template = "Garnizon Batalon"
+	}
+	division= {
+		name = "22. Garnizon Batalon"
+		location = 3151
+		division_template = "Garnizon Batalon"
+	}
+	division= {
+		name = "23. Garnizon Batalon"
+		location = 3151
+		division_template = "Garnizon Batalon"
+	}
+	division= {
+		name = "24. Garnizon Batalon"
+		location = 3151
+		division_template = "Garnizon Batalon"
+	}
+	division= {
+		name = "25. Garnizon Batalon"
+		location = 3151
+		division_template = "Garnizon Batalon"
+	}
+	division= {
+		name = "26. Garnizon Batalon"
+		location = 3151
+		division_template = "Garnizon Batalon"
+	}
+	division= {
+		name = "27. Garnizon Batalon"
+		location = 3151
+		division_template = "Garnizon Batalon"
+	}
+	division= {
+		name = "28. Garnizon Batalon"
+		location = 3151
+		division_template = "Garnizon Batalon"
+	}
+	division= {
+		name = "29. Garnizon Batalon"
+		location = 3151
+		division_template = "Garnizon Batalon"
+	}
+	division= {
+		name = "30. Garnizon Batalon"
+		location = 3151
+		division_template = "Garnizon Batalon"
+	}
+	division= {
+		name = "31. Garnizon Batalon"
+		location = 3151
+		division_template = "Garnizon Batalon"
+	}
+	division= {
+		name = "32. Garnizon Batalon"
+		location = 3151
+		division_template = "Garnizon Batalon"
+	}
+	division= {
+		name = "33. Garnizon Batalon"
+		location = 3151
+		division_template = "Garnizon Batalon"
+	}
+	division= {
+		name = "34. Garnizon Batalon"
+		location = 3151
+		division_template = "Garnizon Batalon"
+	}
+
+### Yager Korpus
+
+	division= {
+		name = "1. Yager Korpus"
+		location = 3151
+		division_template = "Yager Korpus"
+	}
+	division= {
+		name = "2. Yager Korpus"
+		location = 3151
+		division_template = "Yager Korpus"
+	}
+	division= {
+		name = "3. Yager Korpus"
+		location = 3151
+		division_template = "Yager Korpus"
+	}
+	division= {
+		name = "4. Yager Korpus"
+		location = 3151
+		division_template = "Yager Korpus"
+	}
+	division= {
+		name = "5. Yager Korpus"
+		location = 3151
+		division_template = "Yager Korpus"
+	}
+	division= {
+		name = "6. Yager Korpus"
+		location = 3151
+		division_template = "Yager Korpus"
+	}
+	division= {
+		name = "7. Yager Korpus"
+		location = 3151
+		division_template = "Yager Korpus"
+	}
+	division= {
+		name = "8. Yager Korpus"
+		location = 3151
+		division_template = "Yager Korpus"
+	}
+	division= {
+		name = "9. Yager Korpus"
+		location = 3151
+		division_template = "Yager Korpus"
+	}
+	division= {
+		name = "10. Yager Korpus"
+		location = 3151
+		division_template = "Yager Korpus"
+	}
+	division= {
+		name = "11. Yager Korpus"
+		location = 3151
+		division_template = "Yager Korpus"
+	}
+	division= {
+		name = "12. Yager Korpus"
+		location = 3151
+		division_template = "Yager Korpus"
+	}
+
+### Grenaderskogo Polka
+
+	division= {
+		name = "1. Grenaderskogo Polka"
+		location = 3151
+		division_template = "Grenaderskogo Polka"
+	}
+	division= {
+		name = "2. Grenaderskogo Polka"
+		location = 3151
+		division_template = "Grenaderskogo Polka"
+	}
+	division= {
+		name = "3. Grenaderskogo Polka"
+		location = 3151
+		division_template = "Grenaderskogo Polka"
+	}
+	division= {
+		name = "4. Grenaderskogo Polka"
+		location = 3151
+		division_template = "Grenaderskogo Polka"
+	}
+	division= {
+		name = "5. Grenaderskogo Polka"
+		location = 3151
+		division_template = "Grenaderskogo Polka"
+	}
+	division= {
+		name = "6. Grenaderskogo Polka"
+		location = 3151
+		division_template = "Grenaderskogo Polka"
+	}
+	division= {
+		name = "7. Grenaderskogo Polka"
+		location = 3151
+		division_template = "Grenaderskogo Polka"
+	}
+	division= {
+		name = "8. Grenaderskogo Polka"
+		location = 3151
+		division_template = "Grenaderskogo Polka"
+	}
+	division= {
+		name = "9. Grenaderskogo Polka"
+		location = 3151
+		division_template = "Grenaderskogo Polka"
+	}
+	division= {
+		name = "10. Grenaderskogo Polka"
+		location = 3151
+		division_template = "Grenaderskogo Polka"
+	}
+	division= {
+		name = "11. Grenaderskogo Polka"
+		location = 3151
+		division_template = "Grenaderskogo Polka"
+	}
+
+### Polskiy Pekhotnogo Polka
+
+	division= {
+		name = "1. Polskiy Pekhotnogo Polka"
+		location = 3151
+		division_template = "Polskiy Pekhotnogo Polka"
+	}
+	division= {
+		name = "2. Polskiy Pekhotnogo Polka"
+		location = 3151
+		division_template = "Polskiy Pekhotnogo Polka"
+	}
+	division= {
+		name = "3. Polskiy Pekhotnogo Polka"
+		location = 3151
+		division_template = "Polskiy Pekhotnogo Polka"
+	}
+	division= {
+		name = "4. Polskiy Pekhotnogo Polka"
+		location = 3151
+		division_template = "Polskiy Pekhotnogo Polka"
+	}
+}

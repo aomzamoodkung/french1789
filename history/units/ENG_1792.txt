@@ -1,0 +1,449 @@
+﻿division_template = {
+	name = "Regiment of Foot"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+	}
+		priority = 3
+}
+
+division_template = {
+	name = "Foot Guard"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+		priority = 1
+}
+
+division_template = {
+	name = "Royal Marines"
+
+	regiments = {
+		marine = { x = 0 y = 0 }
+	}
+		priority = 1
+}
+
+units = {
+
+### Regiment of Foot
+
+	division= {
+		name = "1st Regiment of Foot"
+		location = 12304	# Jamaica
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "2nd Regiment of Foot"
+		location = 9458	# Portsmouth
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "3rd Regiment of Foot"
+		location = 507	# Windsor
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "4th Regiment of Foot"
+		location = 7758	# New Foundland
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "5th Regiment of Foot"
+		location = 3778	# Canada
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "6th Regiment of Foot"
+		location = 634	# New Brunswick
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "7th Regiment of Foot"
+		location = 3911	# Quebec
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "8th Regiment of Foot"
+		location = 11293	# Ireland
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "9th Regiment of Foot"
+		location = 4450	# St. Kitt
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "10th Regiment of Foot"
+		location = 10254	# West Indies
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "11th Regiment of Foot"
+		location = 11333	# England
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "12th Regiment of Foot"
+		location = 3379	# Ireland
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "13th Regiment of Foot"
+		location = 12304	# Jamaica
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "14th Regiment of Foot"
+		location = 3501	# Dover
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "15th Regiment of Foot"
+		location = 11350	# Barbados
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "16th Regiment of Foot"
+		location = 12304	# Jamaica
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "17th Regiment of Foot"
+		location = 7394	# Ireland
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "18th Regiment of Foot"
+		location = 4135	# Gibraltar
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "19th Regiment of Foot"
+		location = 9392	# Scotland
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "20th Regiment of Foot"
+		location = 12304	# Jamaica
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "21th Regiment of Foot"
+		location = 7361	# Nova Scotia
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "22th Regiment of Foot"
+		location = 9255	# Ireland
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "23th Regiment of Foot"
+		location = 9255	# Cork
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "24th Regiment of Foot"
+		location = 9667	# Lower Canada
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "25th Regiment of Foot"
+		location = 540	# Plymouth
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "26th Regiment of Foot"
+		location = 4285	# New Brunswick
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "27th Regiment of Foot"
+		location = 11293	# Dublin
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "28th Regiment of Foot"
+		location = 9255	# Ireland
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "29th Regiment of Foot"
+		location = 507	# Windsor
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "30th Regiment of Foot"
+		location = 9297	# England
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "31th Regiment of Foot"
+		location = 9255	# Ireland
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "32th Regiment of Foot"
+		location = 4135	# Gibraltar
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "33th Regiment of Foot"
+		location = 9255	# Ireland
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "34th Regiment of Foot"
+		location = 9255	# Ireland
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "35th Regiment of Foot"
+		location = 11293	# Dublin
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "36th Regiment of Foot"
+		location = 12251	# Bangalore xxx
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "37th Regiment of Foot"
+		location = 3501	# Dover
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "38th Regiment of Foot"
+		location = 9255	# Ireland
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "39th Regiment of Foot"
+		location = 9255	# Ireland
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "40th Regiment of Foot"
+		location = 9255	# Ireland
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "41th Regiment of Foot"
+		location = 9255	# Ireland
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "42th Regiment of Foot"
+		location = 9075	# Fort George
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "43th Regiment of Foot"
+		location = 3342	# Kilkenny
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "44th Regiment of Foot"
+		location = 11293	# Dublin
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "45th Regiment of Foot"
+		location = 11106	# Grenada
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "46th Regiment of Foot"
+		location = 4135	# Gibraltar
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "47th Regiment of Foot"
+		location = 13010	# Bermuda
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "48th Regiment of Foot"
+		location = 11253	# England
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "49th Regiment of Foot"
+		location = 10440	# San Domingo xxx
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "50th Regiment of Foot"
+		location = 4135	# Gibraltar
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "51th Regiment of Foot"
+		location = 4135	# Gibraltar
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "52th Regiment of Foot"
+		location = 12251	# Madras xxx
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "53th Regiment of Foot"
+		location = 377	# England
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "54th Regiment of Foot"
+		location = 3463	# Guernsey xxx
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "55th Regiment of Foot"
+		location = 385	# Londonderry
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "56th Regiment of Foot"
+		location = 3369	# England
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "57th Regiment of Foot"
+		location = 11297	# England
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "58th Regiment of Foot"
+		location = 11374	# England
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "59th Regiment of Foot"
+		location = 271	# England
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "60th Regiment of Foot"
+		location = 4345	# Montreal
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "61th Regiment of Foot"
+		location = 6384	# England
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "62th Regiment of Foot"
+		location = 6318	# England
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "63th Regiment of Foot"
+		location = 9379	# England
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "64th Regiment of Foot"
+		location = 9315	# England
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "65th Regiment of Foot"
+		location = 6103	# England
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "66th Regiment of Foot"
+		location = 351	# England
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "67th Regiment of Foot"
+		location = 6103	# England
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "68th Regiment of Foot"
+		location = 4135	# Gibraltar
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "69th Regiment of Foot"
+		location = 6103	# England
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "70th Regiment of Foot"
+		location = 385	# Londonderry
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "71th Regiment of Foot"
+		location = 12251	# Warriore xxx
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "72th Regiment of Foot"
+		location = 12251	# Wallahjabad xxx
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "73th Regiment of Foot"
+		location = 12251	# India xxx
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "74th Regiment of Foot"
+		location = 12251	# xxx
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "75th Regiment of Foot"
+		location = 12251	# xxx
+		division_template = "Regiment of Foot"
+	}
+	division= {
+		name = "76th Regiment of Foot"
+		location = 12251	# Calcutta xxx
+		division_template = "Regiment of Foot"
+		start_equipment_factor = 0.3	# Recruits for India
+	}
+	division= {
+		name = "77th Regiment of Foot"
+		location = 12251	# Calcutta xxx
+		division_template = "Regiment of Foot"
+		start_equipment_factor = 0.3	# Recruits for India
+	}
+
+### Foot Guard
+
+	division= {
+		name = "1st Regiment of Foot Guard"
+		location = 6103
+		division_template = "Foot Guard"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "2nd Coldstream Foot Guard"
+		location = 6103
+		division_template = "Foot Guard"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "3rd Scots Foot Guard"
+		location = 6103
+		division_template = "Foot Guard"
+		start_experience_factor = 0.3
+	}
+
+### MEDITERRANIAN FLEET ###
+#	navy = {
+#		name = "Mediterranean Fleet"
+#		base = 4135
+#		location = 4135 # Gibraltar
+#		ship = { name = "HMS Victory" definition = battleship equipment = { battleship_2 = { amount = 1 owner = ENG } } }
+#	}

@@ -1,0 +1,25 @@
+
+state={
+	id=152
+	name="STATE_152"
+	resources={
+		steel=8.000
+		wood=16
+	}
+
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+		}
+		add_core_of = AUS
+	}
+
+	provinces={
+		732 3684 3703 6552 6708 6723 9665 11651
+	}
+	manpower=533047
+	buildings_max_level_factor=1.000
+	state_category=city
+}

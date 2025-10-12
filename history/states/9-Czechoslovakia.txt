@@ -1,0 +1,29 @@
+state={
+	id=9
+	name="STATE_9"
+	manpower = 3000000
+
+	state_category = large_city
+
+	resources={
+		wood=28
+	}
+
+	history={
+		owner = AUS
+		victory_points = { 11542 20 }
+		victory_points = { 6418 5 }
+		buildings = {
+			infrastructure = 7
+			arms_factory = 6
+			industrial_complex = 1
+
+		}
+		add_core_of = AUS
+
+	}
+
+	provinces={
+		424 445 469 494 543 583 3418 3462 3585 5283 6418 6440 6470 6592 7857 9414 9421 9429 9541 9555 9569 11401 11414 11432 11542 11556
+	}
+}

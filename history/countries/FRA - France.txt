@@ -1,0 +1,111 @@
+﻿capital = 16
+
+oob = "FRA_1792"
+
+set_research_slots = 2
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+add_ideas = {
+	FRA_haitian_revolt
+	FRA_divided_clergy
+	FRA_assignat
+}
+
+set_convoys = 200
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1792.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 15
+	fascism = 70
+	communism = 15
+	neutrality = 0
+}
+
+	# DIPLOMACY
+	if = {
+		limit = {
+			has_dlc = "Together for Victory"
+		}
+		set_autonomy = {
+			target = HAI
+			autonomous_state = autonomy_colony
+			freedom_level = 0.35
+		}
+		set_autonomy = {
+			target = LOU
+			autonomous_state = autonomy_colony
+			freedom_level = 0.35
+		}
+		set_autonomy = {
+			target = MRS
+			autonomous_state = autonomy_colony
+			freedom_level = 0.35
+		}
+		else = {
+			puppet = HAI
+			puppet = LOU
+			puppet = MRS
+		}
+	}
+	if = {
+		limit = { has_dlc = "Together for Victory" }
+		add_to_tech_sharing_group = french_research
+	}
+
+create_country_leader = {
+	name = "Napoleon Bonaparte"
+	desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
+	picture = "gfx/leaders/FRA/Portrait_Napoleon_Bonaparte.dds"
+	expire = "1820.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Louis XVI."
+	desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
+	picture = "gfx/leaders/FRA/Portrait_Ludwig_XVI.dds"
+	expire = "1792.1.21"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+### Army
+### Skill 5 - Général d'armée
+
+### Skill 4 - Général de corps d'armée // Général de division
+
+### Skill 3 - Général de brigade
+
+create_corps_commander = {
+	name = "Jean Baptiste"
+	picture = "Portrait_France_Jean_Baptiste.dds"
+	traits = {  }
+	skill = 3
+}
+
+### Skill 2 - Colonel
+
+### Skill 2 - Lieutenant-colonel
+
+
+### Skill 5 - Admiral/General of sea
+
+create_navy_leader = {
+	name = "François-Paul Brueys d'Aigalliers"
+		picture = "Portrait_France_Francois_Aigalliers.dds"
+	traits = {  }
+	skill = 5
+}

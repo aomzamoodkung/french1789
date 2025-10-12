@@ -1,0 +1,283 @@
+﻿###########################
+# Haiti Events
+###########################
+
+add_namespace = haiti
+
+# Riaud vs Louverture
+country_event = {
+	id = haiti.1
+	title = haiti.1.t
+	desc = haiti.1.d
+	picture = GFX_report_event_haiti_01
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	trigger = {
+		tag = HAI
+		date > 1799.1.1
+		NOT = { has_government = democratic }
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = haiti.1.a
+		start_civil_war = {
+			ideology = democratic
+			size = 0.5
+		}
+		set_country_flag = haiti_civil_war
+		ai_chance = {
+			factor = 90
+		}
+	}
+	option = {
+		name = haiti.1.b
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.80
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+# 1804 massacre
+country_event = {
+	id = haiti.2
+	title = haiti.2.t
+	desc = haiti.2.d
+	picture = GFX_report_event_haiti_02
+
+	mean_time_to_happen = {
+		days = 3
+	}
+
+	trigger = {
+		tag = HAI
+		is_puppet = no
+		NOT = { has_government = neutrality }
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = haiti.2.a
+		450 = {
+			add_manpower = -2000
+		}
+		318 = {
+			add_manpower = -2000
+		}
+		USA = { country_event = usa.1}
+	}
+}
+
+# Deportation of Sonthonax
+country_event = {
+	id = haiti.3
+	title = haiti.3.t
+	desc = haiti.3.d
+	picture = GFX_report_event_haiti_03
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	trigger = {
+		tag = HAI
+		date > 1797.1.1
+		has_government = neutrality
+	}
+
+		fire_only_once = yes
+
+	option = {
+		name = haiti.3.a
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.80
+		}
+		ai_chance = {
+			factor = 90
+		}
+	}
+	option = {
+		name = haiti.3.b
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+# Sonthonax gets 2nd time governor
+country_event = {
+	id = haiti.4
+	title = haiti.4.t
+	desc = haiti.4.d
+	picture = GFX_report_event_haiti_03
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	trigger = {
+		tag = HAI
+		date > 1796.5.9
+		has_government = neutrality
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = haiti.4.a
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Léger-Félicité Sonthonax"
+			desc = ""
+			picture = "gfx/leaders/HAI/Portrait_Haiti_Sonthonax.dds"
+			expire = "1797.8.24"
+			ideology = despotism
+		}
+	}
+}
+
+# Sonthonax gets governor
+country_event = {
+	id = haiti.5
+	title = haiti.5.t
+	desc = haiti.5.d
+	picture = GFX_report_event_haiti_03
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	trigger = {
+		tag = HAI
+		date > 1793.1.1
+		has_government = neutrality
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = haiti.5.a
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Léger-Félicité Sonthonax"
+			desc = ""
+			picture = "gfx/leaders/HAI/Portrait_Haiti_Sonthonax.dds"
+			expire = "1793.6.19"
+			ideology = despotism
+		}
+	}
+}
+
+# Rochambeau gets governor
+country_event = {
+	id = haiti.6
+	title = haiti.6.t
+	desc = haiti.6.d
+	picture = GFX_report_event_haiti_03
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	trigger = {
+		tag = HAI
+		date > 1793.1.1
+		has_government = neutrality
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = haiti.6.a
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Donatien-Marie-Joseph de Vimeur"
+			desc = ""
+			picture = "gfx/leaders/HAI/Portrait_Haiti_Vimeur.dds"
+			expire = "1793.1.1"
+			ideology = despotism
+		}
+	}
+}
+
+# Haiti gains independence
+country_event = {
+	id = haiti.7
+	title = haiti.7.t
+	desc = haiti.7.d
+	picture = GFX_report_event_haiti_01
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	trigger = {
+		tag = HAI
+		date > 1804.1.1
+		NOT = { has_government = neutrality }
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = haiti.7.a
+		FRA = {	end_puppet = HAI }
+		FRA = { country_event = france.26 }
+		news_event = { id = news.3 }
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = haiti.7.b
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+# Haiti after civil war
+country_event = {
+	id = haiti.8
+	title = haiti.8.t
+	desc = haiti.8.d
+	picture = GFX_report_event_haiti_01
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	trigger = {
+		HAI = { has_country_flag = haiti_civil_war }
+		NOT = {	is_puppet_of = FRA }
+		has_war = yes
+		date > 1804.1.1
+		NOT = { has_government = neutrality }
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = haiti.8.a
+		white_peace = FRA
+		FRA = { puppet = ROOT }
+	}
+}

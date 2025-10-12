@@ -1,0 +1,209 @@
+﻿###########################
+# Austrian Events
+###########################
+
+add_namespace = austria
+
+# Ally France
+country_event = {
+	id = austria.1
+	title = austria.1.t
+	desc = austria.1.d
+	picture = GFX_report_event_hitler_croatia_handshake
+
+	is_triggered_only	= yes
+
+	option = { # Support the Yugoslavs alone
+		name = austria.1.a
+		ai_chance = {
+			factor = 99
+		}
+		if = {
+			limit = {
+				is_in_faction = yes
+				is_faction_leader = yes
+			}
+			create_faction = "french_alliance"
+			add_to_faction = FRA
+			add_to_faction = PRE
+			FRA = {
+				add_ai_strategy = {
+					type = alliance
+					id = "AUS"
+					value = 200
+				}
+			}
+			PRE = {
+				add_ai_strategy = {
+					type = alliance
+					id = "AUS"
+					value = 200
+				}
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					is_in_faction = no
+					is_faction_leader = no
+				}
+			}
+			create_faction = "french_alliance"
+			add_to_faction = FRA
+			add_to_faction = PRE
+			FRA = {
+				add_ai_strategy = {
+					type = alliance
+					id = "AUS"
+					value = 200
+				}
+			}
+			PRE = {
+				add_ai_strategy = {
+					type = alliance
+					id = "AUS"
+					value = 200
+				}
+			}
+		}
+	}
+}
+
+# War with France
+country_event = {
+	id = austria.2
+	title = austria.2.t
+	desc = austria.2.d
+	picture = GFX_report_event_fra_first_coalition
+
+	is_triggered_only = yes
+
+	option = {
+		name = austria.2.a
+		ai_chance = {
+			factor = 100
+		}
+		PRE = {
+			country_event = { id = prussia.1 days = 14 }
+		}
+	}
+}
+
+# Austria lose first coalition
+country_event = {
+	id = austria.3
+	title = austria.3.t
+	desc = austria.3.d
+	picture = GFX_report_event_france_first_coalition_treaty
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			FRA = { controls_state = 39 }
+			FRA = { controls_state = 102 }
+			FRA = { controls_state = 103 }
+			FRA = { controls_state = 153 }
+		}
+	}
+
+	option = {
+		name = austria.3.a
+		effect_tooltip = {
+			FRA = {
+				transfer_state = 6
+				transfer_state = 34
+			}
+			white_peace = FRA
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = austria.3.b
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+# france rejects
+country_event = {
+	id = austria.4
+	title = austria.4.t
+	desc = austria.4.d
+	picture = GFX_report_event_france_first_coalition_treaty
+
+	is_triggered_only = yes
+
+	option = {
+		name = austria.4.a
+	}
+}
+
+# Put king back on throne
+country_event = {
+	id = austria.5
+	title = austria.5.t
+	desc = austria.5.d
+	picture = GFX_report_event_france_first_coalition_treaty
+
+	is_triggered_only = yes
+
+	option = {
+		name = austria.5.a
+		FRA = {
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 1.0
+			}
+		}
+		PRE = {
+			white_peace = FRA
+			remove_from_faction = PRE
+		}
+		white_peace = FRA
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = austria.5.b
+	}
+}
+
+# France searched for allies
+country_event = {
+	id = austria.6
+	title = austria.6.t
+	desc = austria.6.d
+	picture = GFX_report_event_fra_first_coalition
+
+	is_triggered_only = yes
+
+	option = {
+		name = austria.6.a
+		ai_chance = {
+			factor = 100
+		}
+		declare_war_on = {
+			target = FRA
+			type = take_state
+			generator = { 1 }
+		}
+		PRE = {
+			country_event = { id = prussia.1 days = 14 }
+		}
+	}
+	option = {
+		name = austria.6.b
+		ai_chance = {
+			factor = 0
+		}
+	}
+}

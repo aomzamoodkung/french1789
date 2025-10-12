@@ -1,0 +1,21 @@
+state={
+	id=45
+	name="STATE_45"
+
+	history={
+		owner = KAH
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = KAH
+		victory_points = {
+			2029 1
+		}
+	}
+	provinces={
+		2029
+	}
+	manpower=15000
+	state_category = rural
+	buildings_max_level_factor=1.000
+}

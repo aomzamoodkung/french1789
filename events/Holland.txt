@@ -1,0 +1,32 @@
+﻿#######################
+### Holland Events ###
+######################
+
+add_namespace = holland
+
+# France asks for help
+country_event = {
+	id = holland.1
+	title = holland.1.t
+	desc = holland.1.d
+	picture = GFX_report_event_fra_exile
+
+	is_triggered_only	= yes
+
+	option = {
+		name = holland.1.a
+    FRA = { country_event = france.29 }
+    set_country_flag = french_alliance_1
+    FRA = { create_faction = "french_alliance" add_to_faction = HOL }
+		ai_chance = {
+			factor = 70
+		}
+	}
+	option = {
+		name = holland.1.b
+		FRA = { country_event = france.30 }
+		ai_chance = {
+			factor = 30
+		}
+	}
+}

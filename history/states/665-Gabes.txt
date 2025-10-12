@@ -1,0 +1,24 @@
+
+state={
+	id=665
+	name="STATE_665"
+
+	history={
+		owner = KAU
+		buildings = {
+			infrastructure = 1
+			7112 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = KAU
+
+	}
+
+	provinces={
+		7112
+	}
+	manpower=15000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

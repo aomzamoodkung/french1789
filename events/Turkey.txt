@@ -1,0 +1,37 @@
+﻿###########################
+# turkey Events
+###########################
+
+add_namespace = turkey
+
+# Treaty of Jassy
+country_event = {
+	id = turkey.1
+	title = turkey.1.t
+	desc = turkey.1.d
+	picture = GFX_report_event_tur_treaty_jassy
+
+  trigger = {
+		date > 1792.1.9
+		TAG = TUR
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = turkey.1.a
+    RUS = { country_event = { days = 1 id = russia.1 } }
+		effect_tooltip = {
+	  	RUS = { transfer_state = 192 }
+	    137 = { add_core_of = RUS }
+	    197 = { add_core_of = RUS }
+	    196 = { add_core_of = RUS }
+	    200 = { add_core_of = RUS }
+	    218 = { add_core_of = RUS }
+		}
+	}
+}

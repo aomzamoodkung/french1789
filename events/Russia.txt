@@ -1,0 +1,38 @@
+﻿###########################
+# Russian Events
+###########################
+
+add_namespace = russia
+
+# Treaty of Jassy
+country_event = {
+	id = russia.1
+	title = russia.1.t
+	desc = russia.1.d
+	picture = GFX_report_event_tur_treaty_jassy
+
+	is_triggered_only	= yes
+
+	option = {
+		name = russia.1.a
+    RUS = {
+  		transfer_state = 192
+  	}
+    137 = {
+      add_core_of = RUS
+    }
+    197 = {
+      add_core_of = RUS
+    }
+    196 = {
+      add_core_of = RUS
+    }
+    200 = {
+      add_core_of = RUS
+    }
+    218 = {
+      add_core_of = RUS
+    }
+    news_event = { hours = 6 id = news.2 }
+	}
+}

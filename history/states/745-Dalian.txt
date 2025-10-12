@@ -1,0 +1,27 @@
+state={
+	id=745
+	name="STATE_745"
+
+	history={
+		owner = BKH
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			12702 = {
+				naval_base = 6
+			}
+		}
+		victory_points = {
+			13207 1
+		}
+		add_core_of = BKH
+	}
+
+
+	provinces={
+		1955 12702 13207 13208 13209
+	}
+	manpower=53000
+	state_category=rural
+	buildings_max_level_factor=1.000
+}

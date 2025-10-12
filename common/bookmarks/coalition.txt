@@ -1,0 +1,57 @@
+bookmarks = {
+	bookmark = {
+		name = "COALITION_NAME"
+		desc = "COALITION_DESC"
+		date = 1805.1.1.12
+		picture = "GFX_select_date_1805"
+		default_country = "FRA"
+		default = yes
+
+		"AUS"={
+			history = "AUS_COALITION_DESC"
+			ideology = fascism
+		}
+		"PRE"={
+			history = "AUS_COALITION_DESC"
+			ideology = fascism
+		}
+		"SPR"={
+			history = "AUS_COALITION_DESC"
+			ideology = fascism
+		}
+		"FRA"={
+			history = "AUS_COALITION_DESC"
+			ideology = neutrality
+		}
+		"ENG"={
+			history = "AUS_COALITION_DESC"
+			ideology = fascism
+		}
+		"USA"={
+			history = "AUS_COALITION_DESC"
+			ideology = democratic
+		}
+		"RUS"={
+			history = "AUS_COALITION_DESC"
+			ideology = fascism
+		}
+
+		"---"={
+			history = "OTHER_COALITION_DESC"
+		}
+
+		"RAJ"={
+			minor = yes
+			history = "RAJ_COALITION_DESC"
+			ideology = fascism
+			ideas = {
+
+			}
+		}
+
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+  }
+}

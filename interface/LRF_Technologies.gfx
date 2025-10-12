@@ -1,0 +1,83 @@
+spriteTypes = {
+
+	SpriteType = {
+			name = "GFX_gunpowder_medium"
+			texturefile = "gfx/interface/technologies/gunpowder.dds"
+	}
+
+	SpriteType = {
+			name = "GFX_subtech_bajonett"
+			texturefile = "gfx/interface/technologies/subtech_bajonett.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_infantry_weapons3_medium"
+		texturefile = "gfx/interface/technologies/infantry3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_heavy_battleship3_medium"
+		texturefile = "gfx/interface/technologies/heavy_battleship3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_heavy_battleship3_medium"
+		texturefile = "gfx/interface/technologies/heavy_battleship3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_carronade_medium"
+		texturefile = "gfx/interface/technologies/carronade.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_carronade1_medium"
+		texturefile = "gfx/interface/technologies/carronade1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_carronade2_medium"
+		texturefile = "gfx/interface/technologies/carronade2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_coppering_medium"
+		texturefile = "gfx/interface/technologies/coppering.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_coppering1_medium"
+		texturefile = "gfx/interface/technologies/coppering1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_coppering2_medium"
+		texturefile = "gfx/interface/technologies/coppering2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_naval_architecture_medium"
+		texturefile = "gfx/interface/technologies/naval_architecture.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_naval_architecture1_medium"
+		texturefile = "gfx/interface/technologies/naval_architecture1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_naval_architecture2_medium"
+		texturefile = "gfx/interface/technologies/naval_architecture2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_rigging_medium"
+		texturefile = "gfx/interface/technologies/rigging.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_rigging1_medium"
+		texturefile = "gfx/interface/technologies/rigging1.dds"
+	}
+
+}

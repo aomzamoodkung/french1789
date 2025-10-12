@@ -1,0 +1,139 @@
+ideas = {
+
+	country = {
+
+    sau_ikhwan = {
+
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = yes
+      }
+
+      removal_cost = -1
+
+      picture = generic_manpower_bonus
+
+      modifier = {
+        conscription = 0.05
+      }
+    }
+
+		wahhabism = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_raj_marginalized_muslim_community_angry
+
+			modifier = {
+				drift_defence_factor = -0.5
+			}
+		}
+
+		wahhabism2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_raj_marginalized_muslim_community_angry
+
+			modifier = {
+				drift_defence_factor = -0.5
+			}
+		}
+
+		sau_jizya = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_great_depression
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		sau_salafi_schools = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_raj_marginalized_muslim_community_happy
+
+			modifier = {
+				stability_factor = 0.1
+			}
+		}
+
+		sau_sharia = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_FRA_matignon_agreements
+
+			modifier = {
+				resistance_damage_to_garrison = -0.15
+			}
+		}
+
+		sau_jihad = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_FRA_scw_intervention_nationalists_focus
+
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_morale_factor = 0.25
+			}
+		}
+  }
+}

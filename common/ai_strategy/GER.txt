@@ -1,0 +1,218 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+# contain
+# area_priority
+
+
+GER_unit_production = {
+	enable = {
+		original_tag = GER
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = paratroopers
+		value = 0
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = mountaineers
+		value = 0
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = marines
+		value = 0
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = cavalry
+		value = 0
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = motorized
+		value = 0 #5 to 0
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = mechanized
+		value = 0 #3 to 0
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = armor
+		value = 1 #Reducing value 20 to 2
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = infantry
+		value = 95 # Since all other values are 0 this means 100% #Increasing the value from 75 to 95
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = 5
+	}
+
+	# These values are used only by when evaluating for producing factories
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = 3
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = 3
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = 3
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = 3
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = 75 #Original value multiplied by 3
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = 60 #Original value multiplied by 3
+	}
+}
+
+GER_motorized_production = {
+	enable = {
+		original_tag = GER
+		ai_wants_divisions > 4 #Decreasing the amount of motorized the AI wants
+	}
+	abort = {
+		ai_wants_divisions < 5 #Decreasing the amount of motorized the AI wants
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = motorized
+		value = 0
+	}
+}
+
+less_naval_focused_nation = {
+	enable = {
+		tag = GER
+		date < "1936.1.1" #Don't Germany, just dont
+	}
+	abort = {
+		date > "1943.1.1" #Don't Germany, just dont, if you haven't already won
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = -1
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = -1
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = -1
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = -1
+	}
+}
+
+GER_area_priority = {
+	enable = {
+		original_tag = GER
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = europe
+		value = 110 #more focus here
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = north_america
+		value = 100
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = south_america
+		value = 75
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = asia
+		value = 75
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = middle_east
+		value = 50
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = africa
+		value = 25
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = pacific
+		value = 120 #less focus here
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = oceania
+		value = 80
+	}
+}

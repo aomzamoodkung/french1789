@@ -1,0 +1,24 @@
+state=
+{
+	id=69
+	name="STATE_69"
+	manpower = 400107
+
+	state_category = enclave
+
+	resources={
+		wood=2
+	}
+
+	history={
+		owner = PMR
+		buildings = {
+			infrastructure = 6
+		}
+		add_core_of = PMR
+
+	}
+	provinces = {
+		3773 6790
+	}
+}

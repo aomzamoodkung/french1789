@@ -1,0 +1,289 @@
+﻿division_template = {
+	name = "Regiment des Infanterie"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+		priority = 3
+}
+
+division_template = {
+	name = "Legion Legere"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+		priority = 1
+}
+
+units = {
+
+### Infanterie-Regiment
+
+	division= {
+		name = "1. Régiment des Gardes"
+		location = 6780	#
+		division_template = "Regiment des Infanterie"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "2. Régiment de Savoie"
+		location = 6780	#
+		division_template = "Regiment des Infanterie"
+	}
+	division= {
+		name = "3. Régiment de Montferrat"
+		location = 6780	#
+		division_template = "Regiment des Infanterie"
+	}
+	division= {
+		name = "4. Régiment de Piémont"
+		location = 6780	#
+		division_template = "Regiment des Infanterie"
+	}
+	division= {
+		name = "5. Régiment de Saluces"
+		location = 6780	#
+		division_template = "Regiment des Infanterie"
+	}
+	division= {
+		name = "6. Régiment d'Aoste"
+		location = 6780	#
+		division_template = "Regiment des Infanterie"
+	}
+	division= {
+		name = "7. Régiment de la Marine"
+		location = 6780	#
+		division_template = "Regiment des Infanterie"
+	}
+	division= {
+		name = "8. Régiment de Chablais"
+		location = 6780	#
+		division_template = "Regiment des Infanterie"
+	}
+	division= {
+		name = "9. Régiment de la Reine"
+		location = 6780	#
+		division_template = "Regiment des Infanterie"
+	}
+	division= {
+		name = "10. Régiment de Sardigne"
+		location = 6780	#
+		division_template = "Regiment des Infanterie"
+	}
+	division= {
+		name = "11. Régiment de Lombardie"
+		location = 6780	#
+		division_template = "Regiment des Infanterie"
+	}
+	division= {
+		name = "12. Régiment d'Oneglia"
+		location = 6780	#
+		division_template = "Regiment des Infanterie"
+	}
+
+# Foreign
+
+	division= {
+		name = "1. Royal-Allemand"
+		location = 6780	#
+		division_template = "Regiment des Infanterie"
+	}
+	division= {
+		name = "2. Suise-Valaisan"
+		location = 6780	#
+		division_template = "Regiment des Infanterie"
+	}
+	division= {
+		name = "3. Suisse-Bernois"
+		location = 6780	#
+		division_template = "Regiment des Infanterie"
+	}
+	division= {
+		name = "4. Suise-Grison"
+		location = 6780	#
+		division_template = "Regiment des Infanterie"
+	}
+
+# Provincial Regiments
+
+	division= {
+		name = "1. Régiment de Genevois"
+		location = 6780	#
+		division_template = "Regiment des Infanterie"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "2. Régiment de Maurienne"
+		location = 6780	#
+		division_template = "Regiment des Infanterie"
+	}
+	division= {
+		name = "3. Régiment d'Ivrée"
+		location = 6780	#
+		division_template = "Regiment des Infanterie"
+	}
+	division= {
+		name = "4. Régiment de Turin"
+		location = 6780	#
+		division_template = "Regiment des Infanterie"
+	}
+	division= {
+		name = "5. Régiment de Nice"
+		location = 6780	#
+		division_template = "Regiment des Infanterie"
+	}
+	division= {
+		name = "6. Régiment de Mondovi"
+		location = 6780	#
+		division_template = "Regiment des Infanterie"
+	}
+	division= {
+		name = "7. Régiment de Verceil"
+		location = 6780	#
+		division_template = "Regiment des Infanterie"
+	}
+	division= {
+		name = "8. Régiment d'Asti"
+		location = 6780	#
+		division_template = "Regiment des Infanterie"
+	}
+	division= {
+		name = "9. Régiment de Pignerol"
+		location = 6780	#
+		division_template = "Regiment des Infanterie"
+	}
+	division= {
+		name = "10. Régiment de Casal"
+		location = 6780	#
+		division_template = "Regiment des Infanterie"
+	}
+	division= {
+		name = "11. Régiment de Novare"
+		location = 6780	#
+		division_template = "Regiment des Infanterie"
+	}
+	division= {
+		name = "12. Régiment de Tortone"
+		location = 6780	#
+		division_template = "Regiment des Infanterie"
+	}
+	division= {
+		name = "13. Régiment de Suse"
+		location = 6780	#
+		division_template = "Regiment des Infanterie"
+	}
+	division= {
+		name = "14. Régiment d'Acqui"
+		location = 6780	#
+		division_template = "Regiment des Infanterie"
+	}
+	division= {
+		name = "Légion des Campements"
+		location = 6780	#
+		division_template = "Regiment des Infanterie"
+		start_experience_factor = 0.3
+	}
+
+### Legion Legere
+
+	division= {
+		name = "Legion Legere"
+		location = 6780	#
+		division_template = "Legion Legere"
+	}
+	division= {
+		name = "1. Societe de Milice"
+		location = 6780	#
+		division_template = "Legion Legere"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "2. Societe de Milice"
+		location = 6780	#
+		division_template = "Legion Legere"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "3. Societe de Milice"
+		location = 6780	#
+		division_template = "Legion Legere"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "4. Societe de Milice"
+		location = 6780	#
+		division_template = "Legion Legere"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "5. Societe de Milice"
+		location = 6780	#
+		division_template = "Legion Legere"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "6. Societe de Milice"
+		location = 6780	#
+		division_template = "Legion Legere"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "7. Societe de Milice"
+		location = 6780	#
+		division_template = "Legion Legere"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "8. Societe de Milice"
+		location = 6780	#
+		division_template = "Legion Legere"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "9. Societe de Milice"
+		location = 6780	#
+		division_template = "Legion Legere"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "10. Societe de Milice"
+		location = 6780	#
+		division_template = "Legion Legere"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "11. Societe de Milice"
+		location = 6780	#
+		division_template = "Legion Legere"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "12. Societe de Milice"
+		location = 6780	#
+		division_template = "Legion Legere"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "13. Societe de Milice"
+		location = 6780	#
+		division_template = "Legion Legere"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "14. Societe de Milice"
+		location = 6780	#
+		division_template = "Legion Legere"
+		start_equipment_factor = 0.3	# Militias
+	}
+	division= {
+		name = "15. Societe de Milice"
+		location = 6780	#
+		division_template = "Legion Legere"
+		start_equipment_factor = 0.3	# Militias
+	}
+
+}

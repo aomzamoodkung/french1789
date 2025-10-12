@@ -1,0 +1,14 @@
+ai_historical_focus_list_FRA = {
+	ai_national_focuses = {
+		fra_revolution				#1789
+		fra_support_republic
+		fra_war								#20.3.1792
+		fra_jacobin						#24.6.1792
+		fra_tuileries					#11.7.1792
+		fra_kill							#21.1.1793
+		fra_kroyalists
+		fra_protect
+		fra_reform
+		fra_reign							#17.8.1792
+	}
+}
