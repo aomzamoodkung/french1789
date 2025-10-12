@@ -5,29 +5,24 @@ state={
 	manpower = 152000
 
 	resources={
-		aluminium=60 # was: 104
-	}	
-	
+		wood=6
+	}
+
 	state_category = rural
 
 	history={
-		add_core_of = SUR
 		owner = HOL
-		victory_points = {
-			10906 1
-		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			industrial_complex = 1
 			12828 = {
 				naval_base = 1
 			}
 		}
+	#	add_core_of = HOL
 	}
 
 	provinces={
-		1928 10906 12828 
+		1928 10906 12828
 	}
-
-	local_supplies=0.0 
 }

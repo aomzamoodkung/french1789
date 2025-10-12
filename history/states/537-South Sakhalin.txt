@@ -3,17 +3,18 @@ state= {
 	name="STATE_537"
 	manpower = 295196
 	resources={
-		oil=3 # was: 4
+		oil=4
+		wood=6
 	}
-	
+
 	state_category = rural
 
 	history= {
-		owner = JAP
-		add_core_of = JAP
-		
+		owner = CHI
+		add_core_of = CHI
+		add_claim_by = JAP # Removed because of too much aggression
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			12446 = {
 				naval_base = 1
 
@@ -27,6 +28,4 @@ state= {
 	provinces=
 	{
 1322 1820 12446 	}
-
-	local_supplies=0.0 
 }

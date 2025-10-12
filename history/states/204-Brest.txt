@@ -1,34 +1,24 @@
 
-state = {
-	id = 204
-	name = "STATE_204" # Bobruysk
-	manpower = 1041084
-	
+state={
+	id=204
+	name="STATE_204" # Bobruysk
+	manpower = 330000
+
 	state_category = rural
 
-	history = {
+	resources={
+		wood=208
+	}
 
-		victory_points = {
-			3350 3
-		}
-
-		#victory_points = {
-		#	11313 1 # Salihorsk was not founded until 1958 earliest
-		#}
-
-		owner = SOV
-
+	history={
+		owner = POL
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 5
 		}
-
-		add_core_of = SOV
-		add_core_of = BLR
+		add_core_of = POL
 	}
 
-	provinces = {
-		304 331 360 386 3350 3759 6373 11313 
+	provinces={
+		304 331 360 386 3350 3759 6373 11313
 	}
-
-	local_supplies = 0.0 
 }

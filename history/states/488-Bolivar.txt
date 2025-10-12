@@ -3,24 +3,23 @@ state={
 	id=488
 	name="STATE_488"
 	manpower = 245642
-	
+
 	state_category = pastoral
 
+	resources={
+		wood=14
+	}
+
 	history={
-		owner = VEN
+		owner = COL
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = VEN
-		victory_points = {
-			10879 1
-		}
+		add_core_of = COL
 	}
 
 	provinces={
-		1981 5317 7915 8050 10736 10849 10879 13362
+		1981 5317 7915 8050 10736 10849 10879
 	}
-
-	local_supplies=0.0 
 }

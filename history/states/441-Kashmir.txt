@@ -2,28 +2,23 @@
 state={
 	id=441
 	name="STATE_441"
-	manpower = 2598027
-	
+	manpower = 3539500
+
 	state_category = rural
+
+	resources={
+		wood=10
+	}
 
 	history={
 		owner = RAJ
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 		}
-		add_claim_by = RAJ
-		add_claim_by = PAK
-		add_core_of = KAS
-		add_core_of = KHL 
 
-		victory_points = {
-			12754 1
-		}
 	}
 
 	provinces={
-		5042 7273 7316 8005 10905 12754 12884 
+		1910 2041 5042 7273 7316 8005 10821 10905 12754 12884
 	}
-
-	local_supplies=0.0 
 }

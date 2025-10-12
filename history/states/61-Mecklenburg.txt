@@ -1,40 +1,32 @@
-state = {
-	id = 61
-	name = "STATE_61"
-	manpower = 836353
-
+state={
+	id=61
+	name="STATE_61"
+	manpower = 287355
 
 	state_category = town
 
-	history = {
+	resources={
+		wood=7
+	}
 
-		owner = GER
-		add_core_of = GER
-		add_core_of = MEK
-
+	history={
+		owner = MEK
 		victory_points = {
-			321 5 # Rostocj
+			321 1
 		}
-
-		victory_points = {
-			11305 3 # Lübeck
-		}
-
 		buildings = {
-			infrastructure = 3
+			infrastructure = 6
 			arms_factory = 3
 			321 = {
 				naval_base = 6
 
 			}
-			air_base = 3
+
 		}
-		
+		add_core_of = MEK
 	}
 
 	provinces={
-		268 293 321 9294 11276 11305 
+		268 293 321 3258 9294 11276 11305
 	}
-
-	local_supplies=3.0 
 }

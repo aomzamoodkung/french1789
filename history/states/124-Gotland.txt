@@ -2,18 +2,19 @@ state=
 {
 	id=124
 	name="STATE_124"
-	manpower = 56988
-	
+	manpower = 21870
+
 	state_category = small_island
-	
-	history = {
-		victory_points = {
-			408 1
-		}
+
+	resources={
+		wood=2
+	}
+
+	history=
+	{
 		owner = SWE
-		add_core_of = SWE
 		buildings = {
-			infrastructure = 3 #was: 6
+			infrastructure = 6
 			408 = {
 				naval_base = 1
 			}
@@ -22,6 +23,4 @@ state=
 	provinces={
 		408 6258
 	}
-
-	local_supplies=0.0 
 }

@@ -1,9 +1,9 @@
 state={
 	id=720
 	name="STATE_720"
-	manpower=30	
+	manpower=30
 	state_category = tiny_island
-	
+
 	history=
 	{
 		owner = ENG
@@ -13,12 +13,10 @@ state={
 				naval_base = 1
 			}
 		}
-		add_claim_by = ARG
-	}
-	
-	provinces={
-		10995 
+		add_core_of = ENG
 	}
 
-	local_supplies=0.0 
+	provinces={
+		10995
+	}
 }

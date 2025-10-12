@@ -1,19 +1,22 @@
+
 state={
 	id=617
-	name="STATE_617"
+	name="STATE_617" # Urumqi
+	manpower = 1780500
+	
+	state_category = town
 
 	history={
-		owner = SIK
-		add_core_of = SIK
+		owner = CHI
 		add_core_of = CHI
-		add_core_of = PRC
+		add_core_of = CHI
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 2
-
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 3
 		}
 		victory_points = {
-			4709 5
+			4709 3 
 		}
 
 	}
@@ -21,9 +24,4 @@ state={
 	provinces={
 		1703 4682 4709 4770 7702 7792 7850 10545 10614 12526 12601 12656 
 	}
-	manpower=1080500
-	buildings_max_level_factor=1.000
-	state_category=rural
-
-	local_supplies=6.0 
 }
