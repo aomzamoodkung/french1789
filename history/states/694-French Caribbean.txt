@@ -6,10 +6,14 @@ state={
 	state_category = rural
 
 	history={
+		add_core_of = GDL
 		owner = FRA
+		victory_points = {
+			9377 1
+		}
 		buildings = {
-			infrastructure = 4
-			
+			infrastructure = 2
+			air_base = 1
 			177 = {
 				naval_base = 3
 			}
@@ -17,10 +21,11 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = FRA
 	}
 	
 	provinces={
 		177 9377 13084 
 	}
+
+	local_supplies=3.0 
 }

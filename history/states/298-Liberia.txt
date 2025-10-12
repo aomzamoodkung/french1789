@@ -3,18 +3,17 @@ state=
 	id=298
 	name="STATE_298"
 	manpower = 745000
-
+	
 	state_category = rural
-
 	resources={
-		rubber=4
-		wood=4
-	}
+		rubber=6 # was: 7
+	}	
+	
 
 	history= {
-	#	owner = LIB
+		owner = LIB
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 			arms_factory = 1
 			industrial_complex = 1
 			7959 = {
@@ -24,9 +23,11 @@ state=
 		victory_points = {
 			7959 3
 		}
-	#	add_core_of = LIB
+		add_core_of = LIB
 	}
 	provinces={
 		7959 8006
 	}
+
+	local_supplies=0.0 
 }
